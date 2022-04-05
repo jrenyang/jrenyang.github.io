@@ -23,6 +23,14 @@
         <description>&lt;img src="https://jrenyang.github.io/categories/linux/linux.jpg" alt="Featured image of post Linux" /&gt;</description>
         </item>
         <item>
+        <title>Programming</title>
+        <link>https://jrenyang.github.io/categories/programming/</link>
+        <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://jrenyang.github.io/categories/programming/</guid>
+        <description>&lt;img src="https://jrenyang.github.io/categories/programming/programming.jpg" alt="Featured image of post Programming" /&gt;</description>
+        </item>
+        <item>
         <title>IDE</title>
         <link>https://jrenyang.github.io/categories/ide/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
@@ -37,6 +45,14 @@
         
         <guid>https://jrenyang.github.io/categories/life/</guid>
         <description>&lt;img src="https://jrenyang.github.io/categories/life/still-life-g9eb9b9019_640.jpg" alt="Featured image of post Life" /&gt;</description>
+        </item>
+        <item>
+        <title>Database</title>
+        <link>https://jrenyang.github.io/categories/database/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://jrenyang.github.io/categories/database/</guid>
+        <description>&lt;img src="https://jrenyang.github.io/categories/database/database.jpg" alt="Featured image of post Database" /&gt;</description>
         </item>
         
     </channel>
