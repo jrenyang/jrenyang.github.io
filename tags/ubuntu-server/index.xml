@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Linux on JR&#39;s Blog</title>
-        <link>https://jrenyang.github.io/categories/linux/</link>
-        <description>Recent content in Linux on JR&#39;s Blog</description>
+        <title>Ubuntu Server on JR&#39;s Blog</title>
+        <link>https://jrenyang.github.io/tags/ubuntu-server/</link>
+        <description>Recent content in Ubuntu Server on JR&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Mon, 28 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jrenyang.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 28 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jrenyang.github.io/tags/ubuntu-server/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Ubuntu Server-架設Samba Server</title>
         <link>https://jrenyang.github.io/p/ubuntu-server-install-samba-server/</link>
         <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>

@@ -26,11 +26,20 @@
     <loc>https://jrenyang.github.io/categories/linux/</loc>
     <lastmod>2021-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jrenyang.github.io/tags/ubuntu/</loc>
+    <loc>https://jrenyang.github.io/tags/ubuntu-server/</loc>
     <lastmod>2021-06-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jrenyang.github.io/p/ubuntu-server-install-samba-server/</loc>
     <lastmod>2021-06-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jrenyang.github.io/p/ubuntu-server-static-ip/</loc>
+    <lastmod>2021-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jrenyang.github.io/p/ubuntu-server-iptables-nat/</loc>
+    <lastmod>2021-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jrenyang.github.io/p/ubuntu-server-iptables/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jrenyang.github.io/tags/apache-maven/</loc>
     <lastmod>2021-06-06T00:00:00+00:00</lastmod>

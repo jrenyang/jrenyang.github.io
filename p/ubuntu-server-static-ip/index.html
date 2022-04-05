@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Ubuntu Server做為Windows的「網路上的芳鄰」'><title>Ubuntu Server-架設Samba Server</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='為Ubuntu Server設定一個靜態IP'><title>Ubuntu Server-靜態IP設定</title>
 
-<link rel='canonical' href='https://jrenyang.github.io/p/ubuntu-server-install-samba-server/'>
+<link rel='canonical' href='https://jrenyang.github.io/p/ubuntu-server-static-ip/'>
 
-<link rel="stylesheet" href="/scss/style.min.5417867e02b6407371157183861454b9be63ea824e05e9c82282a4cfc52b24e5.css"><meta property='og:title' content='Ubuntu Server-架設Samba Server'>
-<meta property='og:description' content='Ubuntu Server做為Windows的「網路上的芳鄰」'>
-<meta property='og:url' content='https://jrenyang.github.io/p/ubuntu-server-install-samba-server/'>
+<link rel="stylesheet" href="/scss/style.min.5417867e02b6407371157183861454b9be63ea824e05e9c82282a4cfc52b24e5.css"><meta property='og:title' content='Ubuntu Server-靜態IP設定'>
+<meta property='og:description' content='為Ubuntu Server設定一個靜態IP'>
+<meta property='og:url' content='https://jrenyang.github.io/p/ubuntu-server-static-ip/'>
 <meta property='og:site_name' content='JR&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Ubuntu Server' /><meta property='article:published_time' content='2021-06-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-06-28T00:00:00&#43;00:00'/><meta property='og:image' content='https://jrenyang.github.io/images/linux/ubuntu.jpg' />
-<meta name="twitter:title" content="Ubuntu Server-架設Samba Server">
-<meta name="twitter:description" content="Ubuntu Server做為Windows的「網路上的芳鄰」"><meta name="twitter:card" content="summary_large_image">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Ubuntu Server' /><meta property='article:published_time' content='2021-06-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-06-26T00:00:00&#43;00:00'/><meta property='og:image' content='https://jrenyang.github.io/images/linux/ubuntu.jpg' />
+<meta name="twitter:title" content="Ubuntu Server-靜態IP設定">
+<meta name="twitter:description" content="為Ubuntu Server設定一個靜態IP"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://jrenyang.github.io/images/linux/ubuntu.jpg' />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
     <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
@@ -238,9 +238,9 @@ if (!doNotTrack) {
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/ubuntu-server-install-samba-server/">
+            <a href="/p/ubuntu-server-static-ip/">
                 
-                    <img src="/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-架設Samba Server" />
+                    <img src="/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-靜態IP設定" />
                 
             </a>
         </div>
@@ -259,12 +259,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/ubuntu-server-install-samba-server/">Ubuntu Server-架設Samba Server</a>
+            <a href="/p/ubuntu-server-static-ip/">Ubuntu Server-靜態IP設定</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Ubuntu Server做為Windows的「網路上的芳鄰」
+            為Ubuntu Server設定一個靜態IP
         </h3>
         
     </div>
@@ -282,7 +282,7 @@ if (!doNotTrack) {
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jun 28, 2021</time>
+                <time class="article-time--published">Jun 26, 2021</time>
             </div>
         
 
@@ -312,63 +312,117 @@ if (!doNotTrack) {
     
     
     <h2 id="前言">前言</h2>
-<p>JR將閒置筆電規劃用途多了些，不過首先想先將它變成一個檔案伺服器，與JR的Windows系統共享檔案，因此來架設個 Samba Server。Samba Server有不同的認證機制，不過JR是自家使用，因此使用Linux本機帳戶認證，一下進行相關步驟紀錄。</p>
-<h2 id="安裝-samba">安裝 Samba</h2>
+<p>JR第一份工作是網路工程師，當時在公司內部大量使用CentOS建構機房伺服器，當時對CentOS的各項伺服器建置還算挺熟悉的，不過後來工作逐漸轉換成軟體工程師，因此就比較少碰伺服器管理了，最近JR都Work From Home，家裡有閒置的筆電，因此JR想來活用一下它點任務，準備拿它當伺服器使用，順道找回一些記憶。</p>
+<p>之所以不使用CentOS，其主要原因是Redhat被IBM收購之後改變了產品策略，而CentOS也因受到影響，雖然有替代品，不過 JR 思考之後，決定全面使用 Ubuntu Server 做為 JR 主要的 Linux 伺服器系統。既然要架設伺服器，有個靜態 IP 使很重要的，Ubuntu於 18.04 LTS 開始將原本網路管理方式改由 <a class="link" href="https://netplan.io/"  target="_blank" rel="noopener"
+    >Netplan</a> 方式，因此 JR 在此進行設定紀錄。</p>
+<h2 id="編輯-netplan-設定檔">編輯 netplan 設定檔</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo apt install samba
+<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo vim.tiny /etc/netplan/00-installer-config.yaml
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="建立-samba-使用者必須為-linux-本機帳戶">建立 Samba 使用者(必須為 Linux 本機帳戶)</h2>
+</div><p>修改：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo smbpasswd -a allen
-</span></span><span class="line"><span class="cl"><span class="go">New SMB password:
-</span></span></span><span class="line"><span class="cl"><span class="go">Retype new SMB password:
-</span></span></span><span class="line"><span class="cl"><span class="go">Added user allen.
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># This is the network config written by &#39;subiquity&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">network</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ethernets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">enp0s3</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">dhcp4</span><span class="p">:</span><span class="w"> </span><span class="kc">no</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">optional</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">addresses</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">192.168.137.254</span><span class="l">/24]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">gateway4</span><span class="p">:</span><span class="w"> </span><span class="m">192.168.137.1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">nameservers</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">addresses</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">8.8.8.8</span><span class="p">,</span><span class="w"> </span><span class="m">8.8.4.4</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="編輯-samba-設定檔">編輯 Samba 設定檔</h2>
+</div><p>修改完成之後可以先用以下指令檢查測試是否有錯誤。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo netplan try
+</span></span><span class="line"><span class="cl"><span class="go">Warning: Stopping systemd-networkd.service, but it can still be activated by:
+</span></span></span><span class="line"><span class="cl"><span class="go">  systemd-networkd.socket
+</span></span></span><span class="line"><span class="cl"><span class="go">Do you want to keep these settings?
+</span></span></span><span class="line"><span class="cl"><span class="go"></span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="go">Press ENTER before the timeout to accept the new configuration
+</span></span></span><span class="line"><span class="cl"><span class="go"></span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="go">Changes will revert in 114 seconds
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>確認沒問題就可以使用以下指令套用設定。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo vim.tiny /etc/samba/smb.conf
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ sudo netplan apply
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>新增以下設定：</p>
+</div><h2 id="確認ip修正">確認IP修正</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[allen]
-</span></span><span class="line"><span class="cl">    comment = allen
-</span></span><span class="line"><span class="cl">    path= /home/allen
-</span></span><span class="line"><span class="cl">    guest ok = no
-</span></span><span class="line"><span class="cl">    browseable = no
-</span></span><span class="line"><span class="cl">    read only = no
-</span></span><span class="line"><span class="cl">    valid users = allen
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ ip addr show
+</span></span><span class="line"><span class="cl">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span class="m">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</span></span><span class="line"><span class="cl">    inet 127.0.0.1/8 scope host lo
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
+</span></span><span class="line"><span class="cl">    inet6 ::1/128 scope host
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
+</span></span><span class="line"><span class="cl">2: enp0s3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc fq_codel state UP group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/ether 08:00:27:45:12:2c brd ff:ff:ff:ff:ff:ff
+</span></span><span class="line"><span class="cl">    inet 192.168.137.254/24 brd 192.168.137.255 scope global enp0s3
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
+</span></span><span class="line"><span class="cl">    inet6 fe80::a00:27ff:fe45:122c/64 scope link
+</span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>JR在此簡單進行紀錄Samba Server架設過程，詳細參數可至<a class="link" href="https://ubuntu.com/server/docs/samba-introduction"  target="_blank" rel="noopener"
-    >Ubuntu Server Docs</a>查找。</p>
+</div><p>看到enp0s3網卡inet資訊已於設定檔一樣就完成了。</p>
 
 </section>
 
@@ -411,18 +465,18 @@ if (!doNotTrack) {
             
                 
 <article class="has-image">
-    <a href="/p/ubuntu-server-static-ip/">
+    <a href="/p/ubuntu-server-install-samba-server/">
         
         
             <div class="article-image">
                 
-                    <img src="/images/linux/ubuntu.jpg" data-key="ubuntu-server-static-ip" data-hash="/images/linux/ubuntu.jpg"/>
+                    <img src="/images/linux/ubuntu.jpg" data-key="ubuntu-server-install-samba-server" data-hash="/images/linux/ubuntu.jpg"/>
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-靜態IP設定</h2>
+            <h2 class="article-title">Ubuntu Server-架設Samba Server</h2>
         </div>
     </a>
 </article>
@@ -628,9 +682,8 @@ if (!doNotTrack) {
             <nav id="TableOfContents">
   <ol>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#安裝-samba">安裝 Samba</a></li>
-    <li><a href="#建立-samba-使用者必須為-linux-本機帳戶">建立 Samba 使用者(必須為 Linux 本機帳戶)</a></li>
-    <li><a href="#編輯-samba-設定檔">編輯 Samba 設定檔</a></li>
+    <li><a href="#編輯-netplan-設定檔">編輯 netplan 設定檔</a></li>
+    <li><a href="#確認ip修正">確認IP修正</a></li>
   </ol>
 </nav>
         </div>

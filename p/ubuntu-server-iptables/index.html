@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Ubuntu Server做為Windows的「網路上的芳鄰」'><title>Ubuntu Server-架設Samba Server</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Ubuntu Server防火牆設定'><title>Ubuntu Server-iptables filter表設定</title>
 
-<link rel='canonical' href='https://jrenyang.github.io/p/ubuntu-server-install-samba-server/'>
+<link rel='canonical' href='https://jrenyang.github.io/p/ubuntu-server-iptables/'>
 
-<link rel="stylesheet" href="/scss/style.min.5417867e02b6407371157183861454b9be63ea824e05e9c82282a4cfc52b24e5.css"><meta property='og:title' content='Ubuntu Server-架設Samba Server'>
-<meta property='og:description' content='Ubuntu Server做為Windows的「網路上的芳鄰」'>
-<meta property='og:url' content='https://jrenyang.github.io/p/ubuntu-server-install-samba-server/'>
+<link rel="stylesheet" href="/scss/style.min.5417867e02b6407371157183861454b9be63ea824e05e9c82282a4cfc52b24e5.css"><meta property='og:title' content='Ubuntu Server-iptables filter表設定'>
+<meta property='og:description' content='Ubuntu Server防火牆設定'>
+<meta property='og:url' content='https://jrenyang.github.io/p/ubuntu-server-iptables/'>
 <meta property='og:site_name' content='JR&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Ubuntu Server' /><meta property='article:published_time' content='2021-06-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-06-28T00:00:00&#43;00:00'/><meta property='og:image' content='https://jrenyang.github.io/images/linux/ubuntu.jpg' />
-<meta name="twitter:title" content="Ubuntu Server-架設Samba Server">
-<meta name="twitter:description" content="Ubuntu Server做為Windows的「網路上的芳鄰」"><meta name="twitter:card" content="summary_large_image">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Ubuntu Server' /><meta property='article:published_time' content='2021-06-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-06-24T00:00:00&#43;00:00'/><meta property='og:image' content='https://jrenyang.github.io/images/linux/ubuntu.jpg' />
+<meta name="twitter:title" content="Ubuntu Server-iptables filter表設定">
+<meta name="twitter:description" content="Ubuntu Server防火牆設定"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://jrenyang.github.io/images/linux/ubuntu.jpg' />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
     <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
@@ -238,9 +238,9 @@ if (!doNotTrack) {
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/ubuntu-server-install-samba-server/">
+            <a href="/p/ubuntu-server-iptables/">
                 
-                    <img src="/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-架設Samba Server" />
+                    <img src="/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-iptables filter表設定" />
                 
             </a>
         </div>
@@ -259,12 +259,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/ubuntu-server-install-samba-server/">Ubuntu Server-架設Samba Server</a>
+            <a href="/p/ubuntu-server-iptables/">Ubuntu Server-iptables filter表設定</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Ubuntu Server做為Windows的「網路上的芳鄰」
+            Ubuntu Server防火牆設定
         </h3>
         
     </div>
@@ -282,7 +282,7 @@ if (!doNotTrack) {
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jun 28, 2021</time>
+                <time class="article-time--published">Jun 24, 2021</time>
             </div>
         
 
@@ -312,63 +312,110 @@ if (!doNotTrack) {
     
     
     <h2 id="前言">前言</h2>
-<p>JR將閒置筆電規劃用途多了些，不過首先想先將它變成一個檔案伺服器，與JR的Windows系統共享檔案，因此來架設個 Samba Server。Samba Server有不同的認證機制，不過JR是自家使用，因此使用Linux本機帳戶認證，一下進行相關步驟紀錄。</p>
-<h2 id="安裝-samba">安裝 Samba</h2>
+<p>iptables是個相當強大的防火牆，可以用來過濾、轉發甚至是竄改封包。iptables總共有5個節點可以處理封包，分別為PREROUTING、POSTROUTING、INPUT、OUTPUT與FORWARD；而依用途不同又可分filter、mangle與 nat 表。以下先示範如何設本機的iptables，JR自己在設本機時，屬於開放派先都ACCEPT之後再說。不過網路滿多都是先DROP掉再來開PORT，使用這種方式最好加入iptables外掛模組的指令，否則用起來可能會卡卡的。以下對本機防護做個範例並說明參數。</p>
+<h2 id="範例">範例</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo apt install samba
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#清除規則
+</span></span><span class="line"><span class="cl">iptables -F	#清除所有規則
+</span></span><span class="line"><span class="cl">iptables -X	#清除使用者自訂的chain
+</span></span><span class="line"><span class="cl">iptables -Z	#將所有chain計數與流量統計歸零
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#設定預設policy
+</span></span><span class="line"><span class="cl">iptables -P INPUT DROP	#如果你是封閉派的就設成DROP，後面再來開Port；如果是開放派的就設成ACCEPT，後面再來擋PORT
+</span></span><span class="line"><span class="cl">iptables -P OUTPUT ACCEPT
+</span></span><span class="line"><span class="cl">iptables -P FORWARD ACCEPT
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#外掛模組
+</span></span><span class="line"><span class="cl">iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+</span></span><span class="line"><span class="cl">iptables -A INPUT -m state --state INVALID -j DROP
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#開放允許網段
+</span></span><span class="line"><span class="cl">iptables -A INPUT -s 10.0.100.0/24 -j ACCEPT
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#內部lo通常設成ACCEPT
+</span></span><span class="line"><span class="cl">iptables -A INPUT -i lo -j ACCEPT
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#要開放的Port放的Port
+</span></span><span class="line"><span class="cl">iptables -A INPUT -i eth0 -p tcp --dport 22 -j ACCEPT
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="建立-samba-使用者必須為-linux-本機帳戶">建立 Samba 使用者(必須為 Linux 本機帳戶)</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo smbpasswd -a allen
-</span></span><span class="line"><span class="cl"><span class="go">New SMB password:
-</span></span></span><span class="line"><span class="cl"><span class="go">Retype new SMB password:
-</span></span></span><span class="line"><span class="cl"><span class="go">Added user allen.
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="編輯-samba-設定檔">編輯 Samba 設定檔</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo vim.tiny /etc/samba/smb.conf
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>新增以下設定：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[allen]
-</span></span><span class="line"><span class="cl">    comment = allen
-</span></span><span class="line"><span class="cl">    path= /home/allen
-</span></span><span class="line"><span class="cl">    guest ok = no
-</span></span><span class="line"><span class="cl">    browseable = no
-</span></span><span class="line"><span class="cl">    read only = no
-</span></span><span class="line"><span class="cl">    valid users = allen
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>JR在此簡單進行紀錄Samba Server架設過程，詳細參數可至<a class="link" href="https://ubuntu.com/server/docs/samba-introduction"  target="_blank" rel="noopener"
-    >Ubuntu Server Docs</a>查找。</p>
+</div><h2 id="參數說明">參數說明</h2>
+<p>-P 定義政策( Policy )</p>
+<ul>
+<li>ACCEPT ：該封包可接受</li>
+<li>DROP   ：該封包直接丟棄。</li>
+</ul>
+<p>-AI 鏈名</p>
+<ul>
+<li>-A ：新增規則在原本規則的最後面(常用)。</li>
+<li>-I ：插入一條規則。如果沒有指定此規則的順序，預設是插入變成第一條規則。
+鏈 ：有 INPUT, OUTPUT, FORWARD 等，鏈名稱又與-io有關。</li>
+</ul>
+<p>-io 網路介面(如果沒有設此參數代表套用所有介面)</p>
+<ul>
+<li>-i ：封包所進入的網路介面，需與 INPUT 鏈配合。</li>
+<li>-o ：封包所傳出的網路介面，需與 OUTPUT 鏈配合。</li>
+</ul>
+<p>--sport 埠口範圍：限制來源的埠口號碼，埠口號碼可以是連續的(如 1024:65535)。</p>
+<p>--dport 埠口範圍：限制目標的埠口號碼。</p>
+<p>-p 協定</p>
+<ul>
+<li>主要格式有：tcp, udp, icmp 及 all。</li>
+</ul>
+<p>-s 來源IP/網域(可指定單一IP或整個網域)</p>
+<ul>
+<li>
+<p>IP  ：10.0.100.1</p>
+</li>
+<li>
+<p>網域：10.0.100.0/24或1010.0.100.0/255.255.255.0。</p>
+<p>*若此IP或網域不許通過時可在IP或網域前加上!。(如：-s ! 10.0.100.0/24)</p>
+</li>
+<li>
+<p>-d：目標IP/網域用法同 -s。</p>
+</li>
+<li>
+<p>-j：後面接動作，主要選項有接受(ACCEPT)、丟棄(DROP)、拒絕(REJECT)及記錄(LOG)。</p>
+</li>
+</ul>
+<p>-m iptables的外掛模組</p>
+<ul>
+<li>state ：狀態模組。</li>
+<li>mac   ：網卡卡號。</li>
+</ul>
+<p>--state 一些封包的狀態</p>
+<ul>
+<li>INVALID    ：無效的封包(如資料破損的封包)。</li>
+<li>ESTABLISHED：已連線成功的連線狀態。</li>
+<li>NEW        ：想要新建立連線的封包狀態。</li>
+<li>RELATED    ：表示這個封包是與我們主機發送出去的封包。</li>
+</ul>
+<p>--mac-source ：來源主機的MAC。</p>
 
 </section>
 
@@ -411,6 +458,24 @@ if (!doNotTrack) {
             
                 
 <article class="has-image">
+    <a href="/p/ubuntu-server-install-samba-server/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/linux/ubuntu.jpg" data-key="ubuntu-server-install-samba-server" data-hash="/images/linux/ubuntu.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Ubuntu Server-架設Samba Server</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
     <a href="/p/ubuntu-server-static-ip/">
         
         
@@ -441,24 +506,6 @@ if (!doNotTrack) {
 
         <div class="article-details">
             <h2 class="article-title">Ubuntu Server-iptables NAT封包偽裝設定</h2>
-        </div>
-    </a>
-</article>
-            
-                
-<article class="has-image">
-    <a href="/p/ubuntu-server-iptables/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/images/linux/ubuntu.jpg" data-key="ubuntu-server-iptables" data-hash="/images/linux/ubuntu.jpg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-iptables filter表設定</h2>
         </div>
     </a>
 </article>
@@ -628,9 +675,8 @@ if (!doNotTrack) {
             <nav id="TableOfContents">
   <ol>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#安裝-samba">安裝 Samba</a></li>
-    <li><a href="#建立-samba-使用者必須為-linux-本機帳戶">建立 Samba 使用者(必須為 Linux 本機帳戶)</a></li>
-    <li><a href="#編輯-samba-設定檔">編輯 Samba 設定檔</a></li>
+    <li><a href="#範例">範例</a></li>
+    <li><a href="#參數說明">參數說明</a></li>
   </ol>
 </nav>
         </div>
