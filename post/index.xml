@@ -7,6 +7,28 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Fri, 04 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jrenyang.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Eclipse-程式碼提示設定</title>
+        <link>https://jrenyang.github.io/p/eclipse-auto-activation-triggers-for-java/</link>
+        <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://jrenyang.github.io/p/eclipse-auto-activation-triggers-for-java/</guid>
+        <description>&lt;img src="https://jrenyang.github.io/images/ide/eclipse.jpg" alt="Featured image of post Eclipse-程式碼提示設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Eclipse本身就具有程式碼提示功能，不過是有條件的觸發，因此要能夠像某些整合開發工具打一個字就出現提示的話得進行額外設定。否則以 JR 這個小腦袋怎麼記得住這麼多東西&amp;hellip;不過挺有趣的是 JR 常在職場上看到一些新人，不太了解 Eclipse 要更好用是需要自己稍加調校才行，所以不免說JR藏私&amp;hellip;好吧，近幾年大家都投入了&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/idea/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;IntelliJ&lt;/a&gt;的懷抱，一切都圓滿了。不過老實說 JR 始終決的蘿蔔白菜各有所愛，針對 IDE 工具只要能夠解決問題，統一專案上的設定就好，畢竟不論什麼年代都會有人不斷推從 Vim 很棒&amp;hellip; 但 JR 就是不會拿來開發 Java 使用，這肯定不是它的不好，是JR太廢了。&lt;/p&gt;
+&lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
+&lt;p&gt;其實在Eclipse程式碼提示方式相當簡單，可以在各語言底下的Editor下方找到Content Assist項目，找到Auto activation triggers for java等類似項目加入trigger條件即可，以Java為例的話，預設觸發條件只有一個“.”，使用這樣子的預設，有時候不知道完整指令時，就得去找找才知道要打什麼緊接著打“.”才會有進一步的提示，因此JR加入以下觸發條件。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其實撰寫這篇文章更大的意義是下次 JR 重新設定環境的時候可以直接來這邊複製設定值就好了，就不用到其他地方找或是自己重打一次😉。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Hahow-Github免費架站術！輕鬆打造個人品牌</title>
         <link>https://jrenyang.github.io/p/hahow-github-webite/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>

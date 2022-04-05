@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=''><title></title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Eclipse也是可以快速自動提示的～'><title>Eclipse-程式碼提示設定</title>
 
-<link rel='canonical' href='https://jrenyang.github.io/'>
+<link rel='canonical' href='https://jrenyang.github.io/p/eclipse-auto-activation-triggers-for-java/'>
 
-<link rel="stylesheet" href="/scss/style.min.5417867e02b6407371157183861454b9be63ea824e05e9c82282a4cfc52b24e5.css"><meta property='og:title' content=''>
-<meta property='og:description' content=''>
-<meta property='og:url' content='https://jrenyang.github.io/'>
+<link rel="stylesheet" href="/scss/style.min.5417867e02b6407371157183861454b9be63ea824e05e9c82282a4cfc52b24e5.css"><meta property='og:title' content='Eclipse-程式碼提示設定'>
+<meta property='og:description' content='Eclipse也是可以快速自動提示的～'>
+<meta property='og:url' content='https://jrenyang.github.io/p/eclipse-auto-activation-triggers-for-java/'>
 <meta property='og:site_name' content='JR&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' />
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='eclipse' /><meta property='article:published_time' content='2021-06-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-06-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://jrenyang.github.io/images/ide/eclipse.jpg' />
+<meta name="twitter:title" content="Eclipse-程式碼提示設定">
+<meta name="twitter:description" content="Eclipse也是可以快速自動提示的～"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://jrenyang.github.io/images/ide/eclipse.jpg' />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
     <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
 
@@ -234,22 +235,55 @@ if (!doNotTrack) {
     </ol>
 </aside>
 <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/p/eclipse-auto-activation-triggers-for-java/">
+                
+                    <img src="/images/ide/eclipse.jpg" alt="Featured image of post Eclipse-程式碼提示設定" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/ide/" style="background-color: #2a9d8f; color: #fff;">
+                IDE
+            </a>
+        
+    </header>
     
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/"></a>
+            <a href="/p/eclipse-auto-activation-triggers-for-java/">Eclipse-程式碼提示設定</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            Eclipse也是可以快速自動提示的～
+        </h3>
         
     </div>
 
     
     <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 04, 2021</time>
+            </div>
         
 
         
@@ -263,7 +297,7 @@ if (!doNotTrack) {
 
 
                 <time class="article-time--reading">
-                    閱讀時間: 0 分鐘
+                    閱讀時間: 1 分鐘
                 </time>
             </div>
         
@@ -277,12 +311,32 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    
+    <h2 id="前言">前言</h2>
+<p>Eclipse本身就具有程式碼提示功能，不過是有條件的觸發，因此要能夠像某些整合開發工具打一個字就出現提示的話得進行額外設定。否則以 JR 這個小腦袋怎麼記得住這麼多東西&hellip;不過挺有趣的是 JR 常在職場上看到一些新人，不太了解 Eclipse 要更好用是需要自己稍加調校才行，所以不免說JR藏私&hellip;好吧，近幾年大家都投入了<a class="link" href="https://www.jetbrains.com/idea/"  target="_blank" rel="noopener"
+    >IntelliJ</a>的懷抱，一切都圓滿了。不過老實說 JR 始終決的蘿蔔白菜各有所愛，針對 IDE 工具只要能夠解決問題，統一專案上的設定就好，畢竟不論什麼年代都會有人不斷推從 Vim 很棒&hellip; 但 JR 就是不會拿來開發 Java 使用，這肯定不是它的不好，是JR太廢了。</p>
+<h2 id="實作">實作</h2>
+<p>其實在Eclipse程式碼提示方式相當簡單，可以在各語言底下的Editor下方找到Content Assist項目，找到Auto activation triggers for java等類似項目加入trigger條件即可，以Java為例的話，預設觸發條件只有一個“.”，使用這樣子的預設，有時候不知道完整指令時，就得去找找才知道要打什麼緊接著打“.”才會有進一步的提示，因此JR加入以下觸發條件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其實撰寫這篇文章更大的意義是下次 JR 重新設定環境的時候可以直接來這邊複製設定值就好了，就不用到其他地方找或是自己重打一次😉。</p>
+
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/eclipse/">eclipse</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -444,62 +498,13 @@ if (!doNotTrack) {
             >
 
             </main>
-    
-
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+    <aside class="sidebar right-sidebar sticky">
+        
+            
                 
-                >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
-</html>
-="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">紀錄</h2>
-
-        
-        
-        
-        
-        
-        <div class="widget-archive--list">
-            <div class="archives-year">
-                    <a href="/archives/#2021">
-                        
-                            <span class="year">2021</span>
-                            <span class="count">2</span>
-                        
-                    </a> 
-                </div>
-            
-        </div>
-    </section>
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <line x1="5" y1="9" x2="19" y2="9" />
   <line x1="5" y1="15" x2="19" y2="15" />
@@ -509,50 +514,19 @@ if (!doNotTrack) {
 
 
 
-    </div>
-    <h2 class="widget-title section-title">Categories</h2>
+        </div>
+        <h2 class="widget-title section-title">目錄</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#實作">實作</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
 
-    <div class="tagCloud-tags">
-        
-            <a href="/categories/ide/" class="font_size_1">
-                IDE
-            </a>
-        
-            <a href="/categories/life/" class="font_size_1">
-                Life
-            </a>
-        
-    </div>
-</section>
-
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">標籤雲</h2>
-
-    <div class="tagCloud-tags">
-        
-            <a href="/tags/eclipse/" class="font_size_1">
-                eclipse
-            </a>
-        
-            <a href="/tags/learning/" class="font_size_1">
-                Learning
-            </a>
-        
-    </div>
-</section>
             
         
     </aside>
