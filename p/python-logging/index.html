@@ -315,7 +315,8 @@ if (!doNotTrack) {
     <h2 id="前言">前言</h2>
 <p>一般小程式上可能會比較少寫log記錄程式中發生了什麼事，一般可能會比較多用<code>print()</code>的方式，不過對於大型專案來說寫log是不可少的部分，畢竟大型專案涵蓋的層面廣，程式檔案數量多，甚至需要24小時運行，例如網站系統，因此如果再發生問題時未將訊息記錄下來，這樣會造成問題難以排查。</p>
 <p>在Python中提供了<code>logging</code>模組可以方便定義log的記錄方式，一般記錄於檔案以及顯示到console上，而<code>logging</code>模組也提自定義logger的方式，一般來說除非在專案開始的時候才比較有機會做這個動作，甚至到下個專案之後也會將自定義好的logger直接延續使用，所以要再寫一次的機會就更少了，因此JR將如何自定義logger記錄器的方法記錄下來，以後也方便直接拿範本下來改。</p>
-<h2 id="python-程式loggerpy">Python 程式：logger.py</h2>
+<h2 id="程式實作">程式實作</h2>
+<h3 id="python-程式loggerpy">Python 程式：logger.py</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -428,6 +429,24 @@ if (!doNotTrack) {
             
                 
 <article class="has-image">
+    <a href="/p/python-multithreading-and-multiprocessing/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/programming/python.jpg" data-key="python-multithreading-and-multiprocessing" data-hash="/images/programming/python.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Python-multithreading與multiprocessing使用</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
     <a href="/p/python-python-dotenv/">
         
         
@@ -464,6 +483,24 @@ if (!doNotTrack) {
             
                 
 <article class="has-image">
+    <a href="/p/python-get-file-current-path/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/programming/python.jpg" data-key="python-get-file-current-path" data-hash="/images/programming/python.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Python-取得執行檔案當前路徑</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
     <a href="/p/java-apache-velocity/">
         
         
@@ -476,24 +513,6 @@ if (!doNotTrack) {
 
         <div class="article-details">
             <h2 class="article-title">Java-Apache Velocity Template Engine</h2>
-        </div>
-    </a>
-</article>
-            
-                
-<article class="has-image">
-    <a href="/p/apache-maven-set-jdk-version/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/images/programming/maven.jpg" data-key="apache-maven-set-jdk-version" data-hash="/images/programming/maven.jpg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Apache Maven-Project指定JDK版本</h2>
         </div>
     </a>
 </article>
@@ -663,7 +682,11 @@ if (!doNotTrack) {
             <nav id="TableOfContents">
   <ol>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#python-程式loggerpy">Python 程式：logger.py</a></li>
+    <li><a href="#程式實作">程式實作</a>
+      <ol>
+        <li><a href="#python-程式loggerpy">Python 程式：logger.py</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>

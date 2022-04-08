@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jren.cc/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/categories/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/post/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/categories/programming/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/tags/python/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jren.cc/p/python-python-dotenv/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
+    <loc>https://jren.cc/p/python-multithreading-and-multiprocessing/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/tags/</loc>
+    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jren.cc/p/python-python-dotenv/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/p/python-logging/</loc>
@@ -28,6 +31,9 @@
   </url><url>
     <loc>https://jren.cc/p/python-virtualenv/</loc>
     <lastmod>2021-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jren.cc/p/python-get-file-current-path/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/tags/docker/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>

@@ -3,14 +3,14 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='我的跑龍套生活'><title>JR&#39;s Blog</title>
 
-<link rel='canonical' href='https://jren.cc/p/python-virtualenv/'>
+<link rel='canonical' href='https://jren.cc/p/python-multithreading-and-multiprocessing/'>
 
 <link rel="stylesheet" href="/scss/style.min.5417867e02b6407371157183861454b9be63ea824e05e9c82282a4cfc52b24e5.css"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1716269972223374"
      crossorigin="anonymous"></script><meta property='og:title' content='JR&#39;s Blog'>
 <meta property='og:description' content='我的跑龍套生活'>
-<meta property='og:url' content='https://jren.cc/p/python-virtualenv/'>
+<meta property='og:url' content='https://jren.cc/p/python-multithreading-and-multiprocessing/'>
 <meta property='og:site_name' content='JR&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2021-08-07T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-07T00:00:00&#43;00:00'/><meta property='og:image' content='https://jren.cc/images/programming/python.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2021-08-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-22T00:00:00&#43;00:00'/><meta property='og:image' content='https://jren.cc/images/programming/python.jpg' />
 <meta name="twitter:title" content="JR&#39;s Blog">
 <meta name="twitter:description" content="我的跑龍套生活"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://jren.cc/images/programming/python.jpg' />
@@ -239,9 +239,9 @@ if (!doNotTrack) {
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/python-virtualenv/">
+            <a href="/p/python-multithreading-and-multiprocessing/">
                 
-                    <img src="/images/programming/python.jpg" alt="Featured image of post Python-virtualenv虛擬開發環境" />
+                    <img src="/images/programming/python.jpg" alt="Featured image of post Python-multithreading與multiprocessing使用" />
                 
             </a>
         </div>
@@ -260,12 +260,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/python-virtualenv/">Python-virtualenv虛擬開發環境</a>
+            <a href="/p/python-multithreading-and-multiprocessing/">Python-multithreading與multiprocessing使用</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            使用virtualenv虛擬開發環境進行專案開發
+            multithreading與multiprocessing使用
         </h3>
         
     </div>
@@ -283,7 +283,7 @@ if (!doNotTrack) {
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Aug 07, 2021</time>
+                <time class="article-time--published">Aug 22, 2021</time>
             </div>
         
 
@@ -312,65 +312,120 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <p>於Python進行專案開發一般會建立虛擬開發環境，其實Python上的虛擬開發環境有點像是Java當中使用Maven或是像是JavaScript使用npm，甚至是PHP使用composer一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此Python專案需要安裝那些套件，不用自行<code>pip install &lt;packages&gt;</code>安裝依賴套件到專案可以執行為止。</p>
-<h2 id="安裝virtualenv套件">安裝<code>virtualenv</code>套件</h2>
+    <h2 id="前言">前言</h2>
+<p>一支Python程式在運行的時候如果沒加入multithreading或multiprocessing的設計，程式只會一行一行執行無法發揮CPU性能，multithreading或multiprocessing都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立process，而一個process內又運行著thread用來運行程式，因此若不使用multithreading或multiprocessing方式進行程式開發，程式就只能在一個process裡的thread執行了。</p>
+<p>Python的解釋器在每一個process內都設了一個GIL(Global Interpreter Lock)，用來避免資源死鎖，這是Python語言獨有的設計，GIL確保Python應用程式一次這會有一個Thread在運行，這也就是Python在這方面令許多人垢病的地方，關於GIL的歷史淵源，在此不加以探究，學習如何減少GIL對程式帶來的影響才是重點。</p>
+<p>至於要使用multithreading還是multiprocessing，這得取決於程式考量，multithreading是存在於process，因此較為輕量，但會受到GIL的限制，用於IO-bound較為適合，而multiprocessing適合用於CPU-bound，主要在於IO-bound的情境CPU大部分時間都在等待IO操作完成，因此任務越多CPU使用率也越高，而CPU-bound因CPU較為忙碌，若使用multithreading的方式，需花在任務切換的時間就越多，如此一來CPU執行效率就越低。</p>
+<p>說了這麼多JR將multithreading與multiprocessing記錄下來，使用時機對了，可讓程式效能增進不少。</p>
+<h2 id="程式實作">程式實作</h2>
+<h3 id="python程式multithreading_demopy">Python程式：multithreading_demo.py</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> pip install virtualenv
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">math</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">thread_demo</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;thread:&#39;</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60000000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">threads</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">()):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">threads</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">thread_demo</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">thread</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>安裝完成後於專案目錄下執行以下指令建立虛擬開發環境。</p>
-<h2 id="建立虛擬環境">建立虛擬環境</h2>
+</div><h3 id="python程式multiprocessing_demopy">Python程式：multiprocessing_demo.py</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> virtualenv venv
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>執行完成之後建立虛擬開發環境之後還需啟用，將目前的執行的環境轉換為虛擬開發環境。</p>
-<h2 id="啟用虛擬開發環境">啟用虛擬開發環境</h2>
-<p><strong>Windows</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> .<span class="se">\v</span>env<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Linux</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ source ./venv/bin/activate
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>執行成功後命令列前端會出現<code>(venv)</code>字符。</p>
-<p>之後專案所需要的套件都在虛擬開發環境進行安裝，不會影響到原本機Python環境。</p>
-<p>每當安裝新套件後，別忘了同時導出requirements.txt檔案，此檔案是用來管理Python專案使用的必要套件。</p>
-<h2 id="導出requirementstxt檔案">導出requirements.txt檔案</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> pip freeze &gt; requirements.txt
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>其他人拿到使用此專案時只需使用以下指令即可將所需套件安裝完成並使用了。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> pip install -r .<span class="se">\r</span>equirements.txt
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">math</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Process</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">thread_demo</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;process:&#39;</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60000000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">threads</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">()):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">threads</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Process</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">thread_demo</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">thread</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -415,24 +470,6 @@ if (!doNotTrack) {
             
                 
 <article class="has-image">
-    <a href="/p/python-multithreading-and-multiprocessing/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/images/programming/python.jpg" data-key="python-multithreading-and-multiprocessing" data-hash="/images/programming/python.jpg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Python-multithreading與multiprocessing使用</h2>
-        </div>
-    </a>
-</article>
-            
-                
-<article class="has-image">
     <a href="/p/python-python-dotenv/">
         
         
@@ -463,6 +500,24 @@ if (!doNotTrack) {
 
         <div class="article-details">
             <h2 class="article-title">Python-logging使用</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/p/python-virtualenv/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/programming/python.jpg" data-key="python-virtualenv" data-hash="/images/programming/python.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Python-virtualenv虛擬開發環境</h2>
         </div>
     </a>
 </article>
@@ -667,10 +722,13 @@ if (!doNotTrack) {
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#安裝virtualenv套件">安裝<code>virtualenv</code>套件</a></li>
-    <li><a href="#建立虛擬環境">建立虛擬環境</a></li>
-    <li><a href="#啟用虛擬開發環境">啟用虛擬開發環境</a></li>
-    <li><a href="#導出requirementstxt檔案">導出requirements.txt檔案</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#程式實作">程式實作</a>
+      <ol>
+        <li><a href="#python程式multithreading_demopy">Python程式：multithreading_demo.py</a></li>
+        <li><a href="#python程式multiprocessing_demopy">Python程式：multiprocessing_demo.py</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
