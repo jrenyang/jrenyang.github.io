@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Learning on JR&#39;s Blog</title>
-        <link>https://jrenyang.github.io/tags/learning/</link>
+        <link>https://jren.cc/tags/learning/</link>
         <description>Recent content in Learning on JR&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Fri, 04 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jrenyang.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 04 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/tags/learning/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hahow-Github免費架站術！輕鬆打造個人品牌</title>
-        <link>https://jrenyang.github.io/p/hahow-github-webite/</link>
+        <link>https://jren.cc/p/hahow-github-webite/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/hahow-github-webite/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/p/hahow-github-webite/hahow-github-webite-img01.png" alt="Featured image of post Hahow-Github免費架站術！輕鬆打造個人品牌" /&gt;&lt;h2 id=&#34;尋找適合自己的部落格&#34;&gt;尋找適合自己的部落格&lt;/h2&gt;
+        <guid>https://jren.cc/p/hahow-github-webite/</guid>
+        <description>&lt;img src="https://jren.cc/p/hahow-github-webite/hahow-github-webite-img01.png" alt="Featured image of post Hahow-Github免費架站術！輕鬆打造個人品牌" /&gt;&lt;h2 id=&#34;尋找適合自己的部落格&#34;&gt;尋找適合自己的部落格&lt;/h2&gt;
 &lt;p&gt;JR寫部落格的時間已經超過十個年頭，從早期的Yahoo!奇摩部落格、無名小站、痞客邦&amp;hellip;等，後來網路時代的變遷出現了Facebook，改變許多人過去寫文章的習慣，使得許多部落格紛紛收掉，面臨過轉移資料的麻煩，許多文章也多不復存在，為了取得資料的擁有權，因此JR開始租賃Linux主機架設自己的網站。&lt;/p&gt;
 &lt;h2 id=&#34;租賃主機的後來&#34;&gt;租賃主機的後來&lt;/h2&gt;
 &lt;p&gt;一般市面上主機大概可分為虛擬主機、VPS雲端主機、實體主機&amp;hellip;等，架站者可以依照自己的用途選用適合自己的主機，不同主機在效能與租賃金額上也有所不同。&lt;/p&gt;

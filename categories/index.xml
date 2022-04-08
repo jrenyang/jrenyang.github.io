@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on JR&#39;s Blog</title>
-        <link>https://jrenyang.github.io/categories/</link>
+        <link>https://jren.cc/categories/</link>
         <description>Recent content in Categories on JR&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jrenyang.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Programming</title>
-        <link>https://jrenyang.github.io/categories/programming/</link>
+        <link>https://jren.cc/categories/programming/</link>
         <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/categories/programming/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/categories/programming/programming.jpg" alt="Featured image of post Programming" /&gt;</description>
+        <guid>https://jren.cc/categories/programming/</guid>
+        <description>&lt;img src="https://jren.cc/categories/programming/programming.jpg" alt="Featured image of post Programming" /&gt;</description>
         </item>
         <item>
         <title>Virtualization</title>
-        <link>https://jrenyang.github.io/categories/virtualization/</link>
+        <link>https://jren.cc/categories/virtualization/</link>
         <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/categories/virtualization/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/categories/virtualization/virtualization.jpg" alt="Featured image of post Virtualization" /&gt;</description>
+        <guid>https://jren.cc/categories/virtualization/</guid>
+        <description>&lt;img src="https://jren.cc/categories/virtualization/virtualization.jpg" alt="Featured image of post Virtualization" /&gt;</description>
         </item>
         <item>
         <title>Linux</title>
-        <link>https://jrenyang.github.io/categories/linux/</link>
+        <link>https://jren.cc/categories/linux/</link>
         <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/categories/linux/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/categories/linux/linux.jpg" alt="Featured image of post Linux" /&gt;</description>
+        <guid>https://jren.cc/categories/linux/</guid>
+        <description>&lt;img src="https://jren.cc/categories/linux/linux.jpg" alt="Featured image of post Linux" /&gt;</description>
         </item>
         <item>
         <title>IDE</title>
-        <link>https://jrenyang.github.io/categories/ide/</link>
+        <link>https://jren.cc/categories/ide/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/categories/ide/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/categories/ide/laptop-g97bd50209_640.jpg" alt="Featured image of post IDE" /&gt;</description>
+        <guid>https://jren.cc/categories/ide/</guid>
+        <description>&lt;img src="https://jren.cc/categories/ide/laptop-g97bd50209_640.jpg" alt="Featured image of post IDE" /&gt;</description>
         </item>
         <item>
         <title>Life</title>
-        <link>https://jrenyang.github.io/categories/life/</link>
+        <link>https://jren.cc/categories/life/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/categories/life/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/categories/life/still-life-g9eb9b9019_640.jpg" alt="Featured image of post Life" /&gt;</description>
+        <guid>https://jren.cc/categories/life/</guid>
+        <description>&lt;img src="https://jren.cc/categories/life/still-life-g9eb9b9019_640.jpg" alt="Featured image of post Life" /&gt;</description>
         </item>
         <item>
         <title>Database</title>
-        <link>https://jrenyang.github.io/categories/database/</link>
+        <link>https://jren.cc/categories/database/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/categories/database/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/categories/database/database.jpg" alt="Featured image of post Database" /&gt;</description>
+        <guid>https://jren.cc/categories/database/</guid>
+        <description>&lt;img src="https://jren.cc/categories/database/database.jpg" alt="Featured image of post Database" /&gt;</description>
         </item>
         
     </channel>

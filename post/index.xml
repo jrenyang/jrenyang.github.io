@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on JR&#39;s Blog</title>
-        <link>https://jrenyang.github.io/post/</link>
+        <link>https://jren.cc/post/</link>
         <description>Recent content in Posts on JR&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jrenyang.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Python-使用python-dotenv建立臨時環境變數</title>
-        <link>https://jrenyang.github.io/p/python-python-dotenv/</link>
+        <link>https://jren.cc/p/python-python-dotenv/</link>
         <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/python-python-dotenv/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/programming/python.jpg" alt="Featured image of post Python-使用python-dotenv建立臨時環境變數" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/python-python-dotenv/</guid>
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-使用python-dotenv建立臨時環境變數" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在開發專案的過程中因為不會把參數寫死，因此會透過使用這輸入或是設定檔案的方式處理，在使用設定檔的時候，難免會有些參數不適合公開出去給其他人使用的，例如自己的 API KEY 或是自己測試使用的參數，此時可以定義在自己的環境變數中，不過設置系統上的環境變數，其實不是這麼方便，在 Python 上可透過 python-dotenv 套件解決此問題。&lt;/p&gt;
 &lt;p&gt;使用 python-dotenv 套件方法如下。&lt;/p&gt;
 &lt;h2 id=&#34;安裝python-dotenv套件&#34;&gt;安裝python-dotenv套件&lt;/h2&gt;
@@ -77,11 +77,11 @@
         </item>
         <item>
         <title>Python-virtualenv虛擬開發環境</title>
-        <link>https://jrenyang.github.io/p/python-virtualenv/</link>
+        <link>https://jren.cc/p/python-virtualenv/</link>
         <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/python-virtualenv/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/programming/python.jpg" alt="Featured image of post Python-virtualenv虛擬開發環境" /&gt;&lt;p&gt;於Python進行專案開發一般會建立虛擬開發環境，其實Python上的虛擬開發環境有點像是Java當中使用Maven或是像是JavaScript使用npm，甚至是PHP使用composer一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此Python專案需要安裝那些套件，不用自行&lt;code&gt;pip install &amp;lt;packages&amp;gt;&lt;/code&gt;安裝依賴套件到專案可以執行為止。&lt;/p&gt;
+        <guid>https://jren.cc/p/python-virtualenv/</guid>
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-virtualenv虛擬開發環境" /&gt;&lt;p&gt;於Python進行專案開發一般會建立虛擬開發環境，其實Python上的虛擬開發環境有點像是Java當中使用Maven或是像是JavaScript使用npm，甚至是PHP使用composer一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此Python專案需要安裝那些套件，不用自行&lt;code&gt;pip install &amp;lt;packages&amp;gt;&lt;/code&gt;安裝依賴套件到專案可以執行為止。&lt;/p&gt;
 &lt;h2 id=&#34;安裝virtualenv套件&#34;&gt;安裝&lt;code&gt;virtualenv&lt;/code&gt;套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -146,11 +146,11 @@
         </item>
         <item>
         <title>Docker-基礎環境安裝</title>
-        <link>https://jrenyang.github.io/p/docker-install/</link>
+        <link>https://jren.cc/p/docker-install/</link>
         <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/docker-install/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/virtualization/docker.jpg" alt="Featured image of post Docker-基礎環境安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/docker-install/</guid>
+        <description>&lt;img src="https://jren.cc/images/virtualization/docker.jpg" alt="Featured image of post Docker-基礎環境安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;JR最近開始複習Docker使用，早期Docker剛出來的時候JR就搶先學習，不過當時的時空背景，很多服務都還是跑在VMware虛擬機上，公司方面也比較守舊，因此JR只能自己下設的伺服器玩，Docker經過多年的雲端運用驗證，許多公司也陸續由傳統虛擬機的使用方式轉換使用Docker，而現在也有不少協同管理Docker的工具平台，因此JR決定將放下許久的Docker重拾起來，第一步就是安裝Docker。&lt;/p&gt;
 &lt;p&gt;JR自己使用的環境為Ubuntu Server，以下以此系統為基礎來安裝Docker。&lt;/p&gt;
 &lt;h2 id=&#34;docker安裝&#34;&gt;Docker安裝&lt;/h2&gt;
@@ -263,11 +263,11 @@
         </item>
         <item>
         <title>Ubuntu Server-架設Samba Server</title>
-        <link>https://jrenyang.github.io/p/ubuntu-server-install-samba-server/</link>
+        <link>https://jren.cc/p/ubuntu-server-install-samba-server/</link>
         <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/ubuntu-server-install-samba-server/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-架設Samba Server" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/ubuntu-server-install-samba-server/</guid>
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-架設Samba Server" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;JR將閒置筆電規劃用途多了些，不過首先想先將它變成一個檔案伺服器，與JR的Windows系統共享檔案，因此來架設個 Samba Server。Samba Server有不同的認證機制，不過JR是自家使用，因此使用Linux本機帳戶認證，一下進行相關步驟紀錄。&lt;/p&gt;
 &lt;h2 id=&#34;安裝-samba&#34;&gt;安裝 Samba&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -329,11 +329,11 @@
         </item>
         <item>
         <title>Ubuntu Server-靜態IP設定</title>
-        <link>https://jrenyang.github.io/p/ubuntu-server-static-ip/</link>
+        <link>https://jren.cc/p/ubuntu-server-static-ip/</link>
         <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/ubuntu-server-static-ip/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-靜態IP設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/ubuntu-server-static-ip/</guid>
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-靜態IP設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;JR第一份工作是網路工程師，當時在公司內部大量使用CentOS建構機房伺服器，當時對CentOS的各項伺服器建置還算挺熟悉的，不過後來工作逐漸轉換成軟體工程師，因此就比較少碰伺服器管理了，最近JR都Work From Home，家裡有閒置的筆電，因此JR想來活用一下它點任務，準備拿它當伺服器使用，順道找回一些記憶。&lt;/p&gt;
 &lt;p&gt;之所以不使用CentOS，其主要原因是Redhat被IBM收購之後改變了產品策略，而CentOS也因受到影響，雖然有替代品，不過 JR 思考之後，決定全面使用 Ubuntu Server 做為 JR 主要的 Linux 伺服器系統。既然要架設伺服器，有個靜態 IP 使很重要的，Ubuntu於 18.04 LTS 開始將原本網路管理方式改由 &lt;a class=&#34;link&#34; href=&#34;https://netplan.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Netplan&lt;/a&gt; 方式，因此 JR 在此進行設定紀錄。&lt;/p&gt;
@@ -449,11 +449,11 @@
         </item>
         <item>
         <title>Ubuntu Server-iptables NAT封包偽裝設定</title>
-        <link>https://jrenyang.github.io/p/ubuntu-server-iptables-nat/</link>
+        <link>https://jren.cc/p/ubuntu-server-iptables-nat/</link>
         <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/ubuntu-server-iptables-nat/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-iptables NAT封包偽裝設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/ubuntu-server-iptables-nat/</guid>
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-iptables NAT封包偽裝設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;JR最早是網路工程師，當時在公司內部網路會使用Linux主機做網路切割，將網路分不同網段供不同用途與部門使用，其實在架設DHCP Server也得使用到iptables的NAT的技巧，今天特別把它拿出來說明一下參數。在此eth0為對外連線的網卡，而eth1為對內部連線的Gateway。&lt;/p&gt;
 &lt;p&gt;下面的方式如果沒有指定來源網域則是全部封包都會由eth0網路介面送出。&lt;/p&gt;
 &lt;h2 id=&#34;開啟linux核心forward功能&#34;&gt;開啟Linux核心Forward功能&lt;/h2&gt;
@@ -493,11 +493,11 @@
         </item>
         <item>
         <title>Ubuntu Server-iptables filter表設定</title>
-        <link>https://jrenyang.github.io/p/ubuntu-server-iptables/</link>
+        <link>https://jren.cc/p/ubuntu-server-iptables/</link>
         <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/ubuntu-server-iptables/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-iptables filter表設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/ubuntu-server-iptables/</guid>
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-iptables filter表設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;iptables是個相當強大的防火牆，可以用來過濾、轉發甚至是竄改封包。iptables總共有5個節點可以處理封包，分別為PREROUTING、POSTROUTING、INPUT、OUTPUT與FORWARD；而依用途不同又可分filter、mangle與 nat 表。以下先示範如何設本機的iptables，JR自己在設本機時，屬於開放派先都ACCEPT之後再說。不過網路滿多都是先DROP掉再來開PORT，使用這種方式最好加入iptables外掛模組的指令，否則用起來可能會卡卡的。以下對本機防護做個範例並說明參數。&lt;/p&gt;
 &lt;h2 id=&#34;範例&#34;&gt;範例&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -606,11 +606,11 @@
         </item>
         <item>
         <title>Java-Apache Velocity Template Engine</title>
-        <link>https://jrenyang.github.io/p/java-apache-velocity/</link>
+        <link>https://jren.cc/p/java-apache-velocity/</link>
         <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/java-apache-velocity/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/programming/java.jpg" alt="Featured image of post Java-Apache Velocity Template Engine" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/java-apache-velocity/</guid>
+        <description>&lt;img src="https://jren.cc/images/programming/java.jpg" alt="Featured image of post Java-Apache Velocity Template Engine" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;JR自己的Side Project其中以協助工作的小工具最多，畢竟先把工作理順了，才真的有心力去做其他事情嘛！JR工作上的主要需求像是自動產Code，例如後端常會產生Spring Data JPA的Repository介面以及Enity類別，前端的話，因為JR前端專案目前都是使用Angular，其實不論是用什麼前端框架，現在大多使用TypeScript進行開發，對型態有嚴格要求就得將Spring Boot回傳給前端的Response物件轉換成TypeScript接的Model物件，更不用說Java內部又有一堆VO、BO、PO、DTO&amp;hellip;等物件轉換，而JR有事以專案性質為主，因此在新的專案上常常一切得重新來過，面對的資料表少則幾十個，多則上百個，假設使用Spring Data JPA做為資料庫的持久化方案，那光基礎的Repository介面以及Enity類別建完專案大概也結束了吧&amp;hellip;因此JR最常使用的方式就是透過&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Apache Velocity&lt;/a&gt;這一套Java-Based Template Engine做為Code Generator的工具套件。&lt;/p&gt;
 &lt;p&gt;事實上Apache Velocity也是許多專案上使用的Template Engine，JR選它的原因是因為它是Apache下的Project，對於Java來說還有許多Template Engine可以用，不過JR覺得這樣的東西學會一套就很夠用了，雖然它是一套Java-Based Template Engine，不過重點是它是套Template Engine，也就是說學會它之後，就可以透過這套Template Engine去產生出各種不同的格式的檔案，差異只在於Template不一樣而已，說明白一點就是可以透過它將資料轉換後產生出如Java、JSP、PHP、Morkdown、HTML&amp;hellip;等文字檔，當中也可包含一些迴圈與邏輯的使用，關於Template的使用 得參閱官方的&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -791,7 +791,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;73
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;io.github.jrenyang.bean&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;cc.jren.bean&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;java.time.LocalDate&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -916,7 +916,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;io.github.jrenyang.bean&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;cc.jren.bean&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;java.util.List&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -1099,7 +1099,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;108
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;io.github.jrenyang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;cc.jren&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;java.io.FileWriter&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;java.io.IOException&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
@@ -1112,8 +1112,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;org.apache.velocity.runtime.RuntimeConstants&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;io.github.jrenyang.bean.Category&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;io.github.jrenyang.bean.CategoryDetail&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;cc.jren.bean.Category&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;cc.jren.bean.CategoryDetail&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;/**
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt; * 主程式
@@ -1224,11 +1224,11 @@
         </item>
         <item>
         <title>Apache Maven-Project指定JDK版本</title>
-        <link>https://jrenyang.github.io/p/apache-maven-set-jdk-version/</link>
+        <link>https://jren.cc/p/apache-maven-set-jdk-version/</link>
         <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/apache-maven-set-jdk-version/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/programming/maven.jpg" alt="Featured image of post Apache Maven-Project指定JDK版本" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/apache-maven-set-jdk-version/</guid>
+        <description>&lt;img src="https://jren.cc/images/programming/maven.jpg" alt="Featured image of post Apache Maven-Project指定JDK版本" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;JR工作上後端程式撰寫都是以Spring Boot為主，不過不免自己做些Side Project，除了興趣之外，再者就是打在些可以方便工作上使用的小工具，針對Java的專案建置大概可以透過&lt;a class=&#34;link&#34; href=&#34;https://maven.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Apache Maven&lt;/a&gt;或者是&lt;a class=&#34;link&#34; href=&#34;https://gradle.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Gradle&lt;/a&gt;&amp;hellip;等工具達成，JR本身在工作上或是自己的Side Project都是使用Apache Maven為主。&lt;/p&gt;
@@ -1293,11 +1293,11 @@
         </item>
         <item>
         <title>Eclipse-程式碼提示設定</title>
-        <link>https://jrenyang.github.io/p/eclipse-auto-activation-triggers-for-java/</link>
+        <link>https://jren.cc/p/eclipse-auto-activation-triggers-for-java/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/eclipse-auto-activation-triggers-for-java/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/ide/eclipse.jpg" alt="Featured image of post Eclipse-程式碼提示設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/eclipse-auto-activation-triggers-for-java/</guid>
+        <description>&lt;img src="https://jren.cc/images/ide/eclipse.jpg" alt="Featured image of post Eclipse-程式碼提示設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;Eclipse本身就具有程式碼提示功能，不過是有條件的觸發，因此要能夠像某些整合開發工具打一個字就出現提示的話得進行額外設定。否則以 JR 這個小腦袋怎麼記得住這麼多東西&amp;hellip;不過挺有趣的是 JR 常在職場上看到一些新人，不太了解 Eclipse 要更好用是需要自己稍加調校才行，所以不免說JR藏私&amp;hellip;好吧，近幾年大家都投入了&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/idea/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;IntelliJ&lt;/a&gt;的懷抱，一切都圓滿了。不過老實說 JR 始終決的蘿蔔白菜各有所愛，針對 IDE 工具只要能夠解決問題，統一專案上的設定就好，畢竟不論什麼年代都會有人不斷推從 Vim 很棒&amp;hellip; 但 JR 就是不會拿來開發 Java 使用，這肯定不是它的不好，是JR太廢了。&lt;/p&gt;
 &lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
@@ -1315,11 +1315,11 @@
         </item>
         <item>
         <title>Hahow-Github免費架站術！輕鬆打造個人品牌</title>
-        <link>https://jrenyang.github.io/p/hahow-github-webite/</link>
+        <link>https://jren.cc/p/hahow-github-webite/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/hahow-github-webite/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/p/hahow-github-webite/hahow-github-webite-img01.png" alt="Featured image of post Hahow-Github免費架站術！輕鬆打造個人品牌" /&gt;&lt;h2 id=&#34;尋找適合自己的部落格&#34;&gt;尋找適合自己的部落格&lt;/h2&gt;
+        <guid>https://jren.cc/p/hahow-github-webite/</guid>
+        <description>&lt;img src="https://jren.cc/p/hahow-github-webite/hahow-github-webite-img01.png" alt="Featured image of post Hahow-Github免費架站術！輕鬆打造個人品牌" /&gt;&lt;h2 id=&#34;尋找適合自己的部落格&#34;&gt;尋找適合自己的部落格&lt;/h2&gt;
 &lt;p&gt;JR寫部落格的時間已經超過十個年頭，從早期的Yahoo!奇摩部落格、無名小站、痞客邦&amp;hellip;等，後來網路時代的變遷出現了Facebook，改變許多人過去寫文章的習慣，使得許多部落格紛紛收掉，面臨過轉移資料的麻煩，許多文章也多不復存在，為了取得資料的擁有權，因此JR開始租賃Linux主機架設自己的網站。&lt;/p&gt;
 &lt;h2 id=&#34;租賃主機的後來&#34;&gt;租賃主機的後來&lt;/h2&gt;
 &lt;p&gt;一般市面上主機大概可分為虛擬主機、VPS雲端主機、實體主機&amp;hellip;等，架站者可以依照自己的用途選用適合自己的主機，不同主機在效能與租賃金額上也有所不同。&lt;/p&gt;
@@ -1354,11 +1354,11 @@
         </item>
         <item>
         <title>四處趴趴走-南港老爺旅行</title>
-        <link>https://jrenyang.github.io/p/travel-hotelroyal/</link>
+        <link>https://jren.cc/p/travel-hotelroyal/</link>
         <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/travel-hotelroyal/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155141.jpg" alt="Featured image of post 四處趴趴走-南港老爺旅行" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/travel-hotelroyal/</guid>
+        <description>&lt;img src="https://jren.cc/p/travel-hotelroyal/IMG_20201211_155141.jpg" alt="Featured image of post 四處趴趴走-南港老爺旅行" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;JR在跑龍套的生活，好不容易挣到一天假期，在台北這幾天都在下雨，因此規劃了一趟都市旅行，網路上看南港老爺旅行最近有優惠，因此就趁著這一次機會到這邊住個一天體驗一下，畢竟工作之餘也得體驗一下生活嘛~&lt;/p&gt;
 &lt;p&gt;JR是先到&lt;a class=&#34;link&#34; href=&#34;https://www.hotelroyal.com.tw/nangang/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;南港老爺行旅網站&lt;/a&gt;進行訂房，在訂房時得先付30%的訂房費用(如果無法入住要退房請自行參考官方退房說明)，在入住時在繳清剩餘費用即可。&lt;/p&gt;
@@ -1367,10 +1367,10 @@
 &lt;p&gt;因為JR是一個人出來，因此訂了最最最陽春的方案，沒有餐卷也沒附早餐什麼的，不過一個人的關係JR是覺得還好，如果是有家人一起入住的話，可以考慮訂有附餐券的方案，不過其實這邊吃得還算方便，這一點也是因人而異。&lt;/p&gt;
 &lt;h2 id=&#34;房間&#34;&gt;房間&lt;/h2&gt;
 &lt;p&gt;JR到了房間之後，感覺這邊房間的設計真的挺溫馨的，是JR非常喜歡的風格。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155141.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155141.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
-	srcset=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155141_hue4d709576234c988c850d384281882bc_331534_480x0_resize_q75_box.jpg 480w, https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155141_hue4d709576234c988c850d384281882bc_331534_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155141_hue4d709576234c988c850d384281882bc_331534_480x0_resize_q75_box.jpg 480w, https://jren.cc/p/travel-hotelroyal/IMG_20201211_155141_hue4d709576234c988c850d384281882bc_331534_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;南港老爺旅行 圖1&#34;
@@ -1381,10 +1381,10 @@
 		data-flex-basis=&#34;320px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155157.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155157.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
-	srcset=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155157_hu19facc8b1dfe7c2140d904686a1619d2_268365_480x0_resize_q75_box.jpg 480w, https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155157_hu19facc8b1dfe7c2140d904686a1619d2_268365_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155157_hu19facc8b1dfe7c2140d904686a1619d2_268365_480x0_resize_q75_box.jpg 480w, https://jren.cc/p/travel-hotelroyal/IMG_20201211_155157_hu19facc8b1dfe7c2140d904686a1619d2_268365_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;南港老爺旅行 圖2&#34;
@@ -1396,10 +1396,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;還提供有小餅乾，感覺就非常好吃。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155212.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155212.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
-	srcset=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155212_hu8d47a2a1f8ae6f699ffd67f1304ff39b_365633_480x0_resize_q75_box.jpg 480w, https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155212_hu8d47a2a1f8ae6f699ffd67f1304ff39b_365633_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155212_hu8d47a2a1f8ae6f699ffd67f1304ff39b_365633_480x0_resize_q75_box.jpg 480w, https://jren.cc/p/travel-hotelroyal/IMG_20201211_155212_hu8d47a2a1f8ae6f699ffd67f1304ff39b_365633_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;南港老爺旅行 圖3&#34;
@@ -1411,10 +1411,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;房間準備的茶具也相當有質感。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_164143.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_164143.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
-	srcset=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_164143_hub1a3eb68e1b51698b2a77a099fda4858_405277_480x0_resize_q75_box.jpg 480w, https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_164143_hub1a3eb68e1b51698b2a77a099fda4858_405277_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_164143_hub1a3eb68e1b51698b2a77a099fda4858_405277_480x0_resize_q75_box.jpg 480w, https://jren.cc/p/travel-hotelroyal/IMG_20201211_164143_hub1a3eb68e1b51698b2a77a099fda4858_405277_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;南港老爺旅行 圖4&#34;
@@ -1426,10 +1426,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;房間內還設有保險箱。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_160426.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_160426.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
-	srcset=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_160426_hub880f8cb97f1aea7ba884f77e5d33f5d_1016643_480x0_resize_q75_box.jpg 480w, https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_160426_hub880f8cb97f1aea7ba884f77e5d33f5d_1016643_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_160426_hub880f8cb97f1aea7ba884f77e5d33f5d_1016643_480x0_resize_q75_box.jpg 480w, https://jren.cc/p/travel-hotelroyal/IMG_20201211_160426_hub880f8cb97f1aea7ba884f77e5d33f5d_1016643_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;南港老爺旅行 圖5&#34;
@@ -1442,10 +1442,10 @@
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;浴室&#34;&gt;浴室&lt;/h2&gt;
 &lt;p&gt;浴室也相當的整潔乾淨，JR一眼看過去就覺得挺舒服的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155506.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155506.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
-	srcset=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155506_hu72c2ecd300c3a20769d56a33e6f02dec_314752_480x0_resize_q75_box.jpg 480w, https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155506_hu72c2ecd300c3a20769d56a33e6f02dec_314752_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155506_hu72c2ecd300c3a20769d56a33e6f02dec_314752_480x0_resize_q75_box.jpg 480w, https://jren.cc/p/travel-hotelroyal/IMG_20201211_155506_hu72c2ecd300c3a20769d56a33e6f02dec_314752_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;南港老爺旅行 圖6&#34;
@@ -1456,10 +1456,10 @@
 		data-flex-basis=&#34;320px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155525.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155525.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
-	srcset=&#34;https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155525_hu9873e2435cc9d25bf25db63262f0ff43_207761_480x0_resize_q75_box.jpg 480w, https://jrenyang.github.io/p/travel-hotelroyal/IMG_20201211_155525_hu9873e2435cc9d25bf25db63262f0ff43_207761_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155525_hu9873e2435cc9d25bf25db63262f0ff43_207761_480x0_resize_q75_box.jpg 480w, https://jren.cc/p/travel-hotelroyal/IMG_20201211_155525_hu9873e2435cc9d25bf25db63262f0ff43_207761_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;南港老爺旅行 圖7&#34;

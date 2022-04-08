@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on JR&#39;s Blog</title>
-        <link>https://jrenyang.github.io/tags/</link>
+        <link>https://jren.cc/tags/</link>
         <description>Recent content in Tags on JR&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jrenyang.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Python</title>
-        <link>https://jrenyang.github.io/tags/python/</link>
+        <link>https://jren.cc/tags/python/</link>
         <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/tags/python/</guid>
+        <guid>https://jren.cc/tags/python/</guid>
         <description></description>
         </item>
         <item>
         <title>Docker</title>
-        <link>https://jrenyang.github.io/tags/docker/</link>
+        <link>https://jren.cc/tags/docker/</link>
         <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/tags/docker/</guid>
+        <guid>https://jren.cc/tags/docker/</guid>
         <description></description>
         </item>
         <item>
         <title>Ubuntu Server</title>
-        <link>https://jrenyang.github.io/tags/ubuntu-server/</link>
+        <link>https://jren.cc/tags/ubuntu-server/</link>
         <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/tags/ubuntu-server/</guid>
+        <guid>https://jren.cc/tags/ubuntu-server/</guid>
         <description></description>
         </item>
         <item>
         <title>Java</title>
-        <link>https://jrenyang.github.io/tags/java/</link>
+        <link>https://jren.cc/tags/java/</link>
         <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/tags/java/</guid>
+        <guid>https://jren.cc/tags/java/</guid>
         <description></description>
         </item>
         <item>
         <title>Apache Maven</title>
-        <link>https://jrenyang.github.io/tags/apache-maven/</link>
+        <link>https://jren.cc/tags/apache-maven/</link>
         <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/tags/apache-maven/</guid>
+        <guid>https://jren.cc/tags/apache-maven/</guid>
         <description></description>
         </item>
         <item>
         <title>Eclipse</title>
-        <link>https://jrenyang.github.io/tags/eclipse/</link>
+        <link>https://jren.cc/tags/eclipse/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/tags/eclipse/</guid>
+        <guid>https://jren.cc/tags/eclipse/</guid>
         <description></description>
         </item>
         <item>
         <title>Learning</title>
-        <link>https://jrenyang.github.io/tags/learning/</link>
+        <link>https://jren.cc/tags/learning/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/tags/learning/</guid>
+        <guid>https://jren.cc/tags/learning/</guid>
         <description></description>
         </item>
         <item>
         <title>Travel</title>
-        <link>https://jrenyang.github.io/tags/travel/</link>
+        <link>https://jren.cc/tags/travel/</link>
         <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/tags/travel/</guid>
+        <guid>https://jren.cc/tags/travel/</guid>
         <description></description>
         </item>
         

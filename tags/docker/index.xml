@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Docker on JR&#39;s Blog</title>
-        <link>https://jrenyang.github.io/tags/docker/</link>
+        <link>https://jren.cc/tags/docker/</link>
         <description>Recent content in Docker on JR&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jrenyang.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/tags/docker/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Docker-基礎環境安裝</title>
-        <link>https://jrenyang.github.io/p/docker-install/</link>
+        <link>https://jren.cc/p/docker-install/</link>
         <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://jrenyang.github.io/p/docker-install/</guid>
-        <description>&lt;img src="https://jrenyang.github.io/images/virtualization/docker.jpg" alt="Featured image of post Docker-基礎環境安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://jren.cc/p/docker-install/</guid>
+        <description>&lt;img src="https://jren.cc/images/virtualization/docker.jpg" alt="Featured image of post Docker-基礎環境安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;JR最近開始複習Docker使用，早期Docker剛出來的時候JR就搶先學習，不過當時的時空背景，很多服務都還是跑在VMware虛擬機上，公司方面也比較守舊，因此JR只能自己下設的伺服器玩，Docker經過多年的雲端運用驗證，許多公司也陸續由傳統虛擬機的使用方式轉換使用Docker，而現在也有不少協同管理Docker的工具平台，因此JR決定將放下許久的Docker重拾起來，第一步就是安裝Docker。&lt;/p&gt;
 &lt;p&gt;JR自己使用的環境為Ubuntu Server，以下以此系統為基礎來安裝Docker。&lt;/p&gt;
 &lt;h2 id=&#34;docker安裝&#34;&gt;Docker安裝&lt;/h2&gt;
