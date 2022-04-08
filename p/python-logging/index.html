@@ -3,14 +3,14 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='我的跑龍套生活'><title>JR&#39;s Blog</title>
 
-<link rel='canonical' href='https://jren.cc/p/python-virtualenv/'>
+<link rel='canonical' href='https://jren.cc/p/python-logging/'>
 
 <link rel="stylesheet" href="/scss/style.min.5417867e02b6407371157183861454b9be63ea824e05e9c82282a4cfc52b24e5.css"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1716269972223374"
      crossorigin="anonymous"></script><meta property='og:title' content='JR&#39;s Blog'>
 <meta property='og:description' content='我的跑龍套生活'>
-<meta property='og:url' content='https://jren.cc/p/python-virtualenv/'>
+<meta property='og:url' content='https://jren.cc/p/python-logging/'>
 <meta property='og:site_name' content='JR&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2021-08-07T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-07T00:00:00&#43;00:00'/><meta property='og:image' content='https://jren.cc/images/programming/python.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2021-08-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-12T00:00:00&#43;00:00'/><meta property='og:image' content='https://jren.cc/images/programming/python.jpg' />
 <meta name="twitter:title" content="JR&#39;s Blog">
 <meta name="twitter:description" content="我的跑龍套生活"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://jren.cc/images/programming/python.jpg' />
@@ -239,9 +239,9 @@ if (!doNotTrack) {
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/python-virtualenv/">
+            <a href="/p/python-logging/">
                 
-                    <img src="/images/programming/python.jpg" alt="Featured image of post Python-virtualenv虛擬開發環境" />
+                    <img src="/images/programming/python.jpg" alt="Featured image of post Python-logging使用" />
                 
             </a>
         </div>
@@ -260,12 +260,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/python-virtualenv/">Python-virtualenv虛擬開發環境</a>
+            <a href="/p/python-logging/">Python-logging使用</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            使用virtualenv虛擬開發環境進行專案開發
+            自定義log記錄器
         </h3>
         
     </div>
@@ -283,7 +283,7 @@ if (!doNotTrack) {
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Aug 07, 2021</time>
+                <time class="article-time--published">Aug 12, 2021</time>
             </div>
         
 
@@ -312,68 +312,81 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <p>於Python進行專案開發一般會建立虛擬開發環境，其實Python上的虛擬開發環境有點像是Java當中使用Maven或是像是JavaScript使用npm，甚至是PHP使用composer一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此Python專案需要安裝那些套件，不用自行<code>pip install &lt;packages&gt;</code>安裝依賴套件到專案可以執行為止。</p>
-<h2 id="安裝virtualenv套件">安裝<code>virtualenv</code>套件</h2>
+    <h2 id="前言">前言</h2>
+<p>一般小程式上可能會比較少寫log記錄程式中發生了什麼事，一般可能會比較多用<code>print()</code>的方式，不過對於大型專案來說寫log是不可少的部分，畢竟大型專案涵蓋的層面廣，程式檔案數量多，甚至需要24小時運行，例如網站系統，因此如果再發生問題時未將訊息記錄下來，這樣會造成問題難以排查。</p>
+<p>在Python中提供了<code>logging</code>模組可以方便定義log的記錄方式，一般記錄於檔案以及顯示到console上，而<code>logging</code>模組也提自定義logger的方式，一般來說除非在專案開始的時候才比較有機會做這個動作，甚至到下個專案之後也會將自定義好的logger直接延續使用，所以要再寫一次的機會就更少了，因此JR將如何自定義logger記錄器的方法記錄下來，以後也方便直接拿範本下來改。</p>
+<h2 id="python-程式loggerpy">Python 程式：logger.py</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> pip install virtualenv
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Python - logging 使用</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">datetime</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_logger</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 定義 log 格式</span>
+</span></span><span class="line"><span class="cl">    <span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%(asctime)s</span><span class="s1">  </span><span class="si">%(levelname)s</span><span class="s1"> </span><span class="si">{:&lt;5}</span><span class="s1"> --- </span><span class="si">{}</span><span class="s1">: </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getpid</span><span class="p">(),</span> <span class="n">name</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 定義檔案路徑</span>
+</span></span><span class="line"><span class="cl">    <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;logs&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y%m</span><span class="si">%d</span><span class="s2">&#34;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;_project_name.log&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 定義 FileHandler(記錄於檔案用)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">file_handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">FileHandler</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">file_path</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">file_handler</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">file_handler</span><span class="o">.</span><span class="n">setFormatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 定義 StreamHandler(顯示於 console 用)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">stream_handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">stream_handler</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">stream_handler</span><span class="o">.</span><span class="n">setFormatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 取得 Logger</span>
+</span></span><span class="line"><span class="cl">    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 加入 Handler</span>
+</span></span><span class="line"><span class="cl">    <span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">file_handler</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">stream_handler</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">logger</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>安裝完成後於專案目錄下執行以下指令建立虛擬開發環境。</p>
-<h2 id="建立虛擬環境">建立虛擬環境</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> virtualenv venv
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>執行完成之後建立虛擬開發環境之後還需啟用，將目前的執行的環境轉換為虛擬開發環境。</p>
-<h2 id="啟用虛擬開發環境">啟用虛擬開發環境</h2>
-<p><strong>Windows</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> .<span class="se">\v</span>env<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Linux</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ source ./venv/bin/activate
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>執行成功後命令列前端會出現<code>(venv)</code>字符。</p>
-<p>之後專案所需要的套件都在虛擬開發環境進行安裝，不會影響到原本機Python環境。</p>
-<p>每當安裝新套件後，別忘了同時導出requirements.txt檔案，此檔案是用來管理Python專案使用的必要套件。</p>
-<h2 id="導出requirementstxt檔案">導出requirements.txt檔案</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> pip freeze &gt; requirements.txt
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>其他人拿到使用此專案時只需使用以下指令即可將所需套件安裝完成並使用了。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> pip install -r .<span class="se">\r</span>equirements.txt
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+</div><p>以上需要注意的是每個Handler都可以有自己的log Level需個別設定，包含logger本身也有預設的層級，因此在自定義時記得將它重新設置，更多的詳細logging使用可參考<a class="link" href="https://docs.python.org/3/howto/logging.html"  target="_blank" rel="noopener"
+    >官方網站-Logging HOWTO</a>。</p>
+
 </section>
 
 
@@ -433,18 +446,18 @@ if (!doNotTrack) {
             
                 
 <article class="has-image">
-    <a href="/p/python-logging/">
+    <a href="/p/python-virtualenv/">
         
         
             <div class="article-image">
                 
-                    <img src="/images/programming/python.jpg" data-key="python-logging" data-hash="/images/programming/python.jpg"/>
+                    <img src="/images/programming/python.jpg" data-key="python-virtualenv" data-hash="/images/programming/python.jpg"/>
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-logging使用</h2>
+            <h2 class="article-title">Python-virtualenv虛擬開發環境</h2>
         </div>
     </a>
 </article>
@@ -649,10 +662,8 @@ if (!doNotTrack) {
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#安裝virtualenv套件">安裝<code>virtualenv</code>套件</a></li>
-    <li><a href="#建立虛擬環境">建立虛擬環境</a></li>
-    <li><a href="#啟用虛擬開發環境">啟用虛擬開發環境</a></li>
-    <li><a href="#導出requirementstxt檔案">導出requirements.txt檔案</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#python-程式loggerpy">Python 程式：logger.py</a></li>
   </ol>
 </nav>
         </div>
