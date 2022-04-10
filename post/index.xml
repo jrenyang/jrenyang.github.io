@@ -6,7 +6,36 @@
         <description>Recent content in Posts on JR&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Spring Boot透過Spring Initializr初始化專案</title>
+        <link>https://jren.cc/p/spring-boot-spring-initializr/</link>
+        <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://jren.cc/p/spring-boot-spring-initializr/</guid>
+        <description>&lt;img src="https://jren.cc/images/programming/spring-boot.jpeg" alt="Featured image of post Spring Boot透過Spring Initializr初始化專案" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Spring Framework是Java中的主流框架之一，近年來因資訊科技的進步，Spring也發起了許多的專案做為因應的解決方案。使用過的開發者對於框架的配置大概不陌生，但如果一個專案內需使用不同框架的配合，光設定就十分繁雜，因此Spring提供了Spring Boot做為框架配置的解決方案，讓開發者可以快速的建置一個基於Spring Framework的應用程式。&lt;/p&gt;
+&lt;p&gt;Spring專案中包含了Spring Framework、Spring Data、Spring Mobile&amp;hellip;等眾多解決方案，如果用到一兩種的情況下自行配置尚可接受，但如果用到四種、五種的話複雜程度其實挺驚人的，維護也會相當繁瑣，因此發展出了Spring Boot用於快速建置Spring應用程式可以自動處理套件間的倚賴關係。&lt;/p&gt;
+&lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
+&lt;p&gt;建立Spring Boot專案方法有很多，其中一種方式就是使用Spring Boot官方網站提供的&lt;a class=&#34;link&#34; href=&#34;https://start.spring.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SPRING INITIALIZR&lt;/a&gt;平台直接進行相關配置選項後直接下載，之後再將下載回來的檔案匯入開發工具專案即可進行開發。因使用方式十分簡單，因此直接於網站輸入相關資訊，並在Dependencies輸入專案所需的依賴項目，並進行Generate Project按鈕即可完成專案建置。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jren.cc/p/spring-boot-spring-initializr/spring-initializr.png&#34;
+	width=&#34;1919&#34;
+	height=&#34;1023&#34;
+	srcset=&#34;https://jren.cc/p/spring-boot-spring-initializr/spring-initializr_hu51ab9c20ec49812fd907e53cd21b1c87_76466_480x0_resize_box_3.png 480w, https://jren.cc/p/spring-boot-spring-initializr/spring-initializr_hu51ab9c20ec49812fd907e53cd21b1c87_76466_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Spring Initializr&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;187&#34;
+		data-flex-basis=&#34;450px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Spring有為各大主流IDE整合開發工具提供Spring Tool Suite外掛套件，供開發者可以直接於開發工具上快速透過Spring Boot組織專案，基於這一點JR更為喜歡透過這樣的方式建構Spring專案。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Python-multithreading與multiprocessing使用</title>
         <link>https://jren.cc/p/python-multithreading-and-multiprocessing/</link>
         <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
