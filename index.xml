@@ -808,13 +808,13 @@
 </description>
         </item>
         <item>
-        <title>Ubuntu Server - iptables filter表設定</title>
+        <title>Ubuntu Server - iptables filter 表設定</title>
         <link>https://jren.cc/p/ubuntu-server-iptables/</link>
         <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/ubuntu-server-iptables/</guid>
-        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server - iptables filter表設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;iptables 是個相當強大的防火牆，可以用來過濾、轉發甚至是竄改封包。iptables 總共有 5 個節點可以處理封包，分別為 PREROUTING、POSTROUTING、INPUT、OUTPUT與FORWARD；而依用途不同又可分 filter、mangle與 nat 表。以下先示範如何設本機的 iptables，JR 自己在設本機時，屬於開放派先都 ACCEPT 之後再說。不過網路滿多都是先 DROP 掉再來開 PORT，使用這種方式最好加入 iptables 外掛模組的指令，否則用起來可能會卡卡的。以下對本機防護做個範例並說明參數。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server - iptables filter 表設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;iptables 是個相當強大的防火牆，可以用來過濾、轉發甚至是竄改封包。iptables 總共有 5 個節點可以處理封包，分別為 PREROUTING、POSTROUTING、INPUT、OUTPUT 與 FORWARD；而依用途不同又可分 filter、mangle與 nat 表。以下先示範如何設本機的 iptables，JR 自己在設本機時，屬於開放派先都 ACCEPT 之後再說。不過網路滿多都是先 DROP 掉再來開 PORT，使用這種方式最好加入 iptables 外掛模組的指令，否則用起來可能會卡卡的。以下對本機防護做個範例並說明參數。&lt;/p&gt;
 &lt;h2 id=&#34;範例&#34;&gt;範例&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
