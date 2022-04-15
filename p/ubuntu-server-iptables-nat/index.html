@@ -241,7 +241,7 @@ if (!doNotTrack) {
         <div class="article-image">
             <a href="/p/ubuntu-server-iptables-nat/">
                 
-                    <img src="/images/linux/ubuntu.jpg" loading="lazy" alt="Featured image of post Ubuntu Server-iptables NAT封包偽裝設定" />
+                    <img src="/images/linux/ubuntu.jpg" loading="lazy" alt="Featured image of post Ubuntu Server - iptables NAT 封包偽裝設定" />
                 
             </a>
         </div>
@@ -260,12 +260,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/ubuntu-server-iptables-nat/">Ubuntu Server-iptables NAT封包偽裝設定</a>
+            <a href="/p/ubuntu-server-iptables-nat/">Ubuntu Server - iptables NAT 封包偽裝設定</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Ubuntu Server網路位址轉換
+            Ubuntu Server 網路位址轉換
         </h3>
         
     </div>
@@ -313,9 +313,9 @@ if (!doNotTrack) {
     
     
     <h2 id="前言">前言</h2>
-<p>JR最早是網路工程師，當時在公司內部網路會使用Linux主機做網路切割，將網路分不同網段供不同用途與部門使用，其實在架設DHCP Server也得使用到iptables的NAT的技巧，今天特別把它拿出來說明一下參數。在此eth0為對外連線的網卡，而eth1為對內部連線的Gateway。</p>
-<p>下面的方式如果沒有指定來源網域則是全部封包都會由eth0網路介面送出。</p>
-<h2 id="開啟linux核心forward功能">開啟Linux核心Forward功能</h2>
+<p>JR 最早是網路工程師，當時在公司內部網路會使用 Linux 主機做網路切割，將網路分不同網段供不同用途與部門使用，其實在架設 DHCP Server 也得使用到 iptables 的 NAT 的技巧，今天特別把它拿出來說明一下參數。在此 eth0 為對外連線的網卡，而 eth1 為對內部連線的 Gateway。</p>
+<p>下面的方式如果沒有指定來源網域則是全部封包都會由 eth0 網路介面送出。</p>
+<h2 id="開啟-linux-核心-forward-功能">開啟 Linux 核心 Forward 功能</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -324,8 +324,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">sudo su -c  &#34;echo 1 &gt; /proc/sys/net/ipv4/ip_forward&#34;
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="nat語法">nat語法</h2>
-<p>多NAT環境都要由eth0介面出去的話，這樣寫最省事。</p>
+</div><h2 id="nat-語法">nat 語法</h2>
+<p>多 NAT 環境都要由 eth0 介面出去的話，這樣寫最省事。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -343,10 +343,10 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -o eth0 -j MASQUERADE
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>-t 指定使用iptables的表，在此為nat表。</p>
-<p>-A POSTROUTING：POSTROUTING 為即將離開eth1網路介面的封包。</p>
+</div><p>-t 指定使用iptables的表，在此為 nat 表。</p>
+<p>-A POSTROUTING：POSTROUTING 為即將離開 eth1 網路介面的封包。</p>
 <p>-s 10.0.0.0/24：指定來源的網域。</p>
-<p>-o eth0：由網卡eth0介面輸出的封包。</p>
+<p>-o eth0：由網卡 eth0 介面輸出的封包。</p>
 <p>-j MASQUERADE：將封包偽裝。</p>
 
 </section>
@@ -401,7 +401,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-架設Samba Server</h2>
+            <h2 class="article-title">Ubuntu Server - 架設 Samba Server</h2>
         </div>
     </a>
 </article>
@@ -419,7 +419,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-靜態IP設定</h2>
+            <h2 class="article-title">Ubuntu Server - 靜態 IP 設定</h2>
         </div>
     </a>
 </article>
@@ -437,7 +437,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-iptables filter表設定</h2>
+            <h2 class="article-title">Ubuntu Server - iptables filter表設定</h2>
         </div>
     </a>
 </article>
@@ -607,8 +607,8 @@ if (!doNotTrack) {
             <nav id="TableOfContents">
   <ol>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#開啟linux核心forward功能">開啟Linux核心Forward功能</a></li>
-    <li><a href="#nat語法">nat語法</a></li>
+    <li><a href="#開啟-linux-核心-forward-功能">開啟 Linux 核心 Forward 功能</a></li>
+    <li><a href="#nat-語法">nat 語法</a></li>
   </ol>
 </nav>
         </div>

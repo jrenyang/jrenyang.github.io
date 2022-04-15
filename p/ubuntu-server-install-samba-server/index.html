@@ -241,7 +241,7 @@ if (!doNotTrack) {
         <div class="article-image">
             <a href="/p/ubuntu-server-install-samba-server/">
                 
-                    <img src="/images/linux/ubuntu.jpg" loading="lazy" alt="Featured image of post Ubuntu Server-架設Samba Server" />
+                    <img src="/images/linux/ubuntu.jpg" loading="lazy" alt="Featured image of post Ubuntu Server - 架設 Samba Server" />
                 
             </a>
         </div>
@@ -260,12 +260,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/ubuntu-server-install-samba-server/">Ubuntu Server-架設Samba Server</a>
+            <a href="/p/ubuntu-server-install-samba-server/">Ubuntu Server - 架設 Samba Server</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Ubuntu Server做為Windows的「網路上的芳鄰」
+            Ubuntu Server 做為 Windows 的「網路上的芳鄰」
         </h3>
         
     </div>
@@ -313,7 +313,7 @@ if (!doNotTrack) {
     
     
     <h2 id="前言">前言</h2>
-<p>JR將閒置筆電規劃用途多了些，不過首先想先將它變成一個檔案伺服器，與JR的Windows系統共享檔案，因此來架設個 Samba Server。Samba Server有不同的認證機制，不過JR是自家使用，因此使用Linux本機帳戶認證，一下進行相關步驟紀錄。</p>
+<p>JR 將閒置筆電規劃用途多了些，不過首先想先將它變成一個檔案伺服器，與 JR 的 Windows 系統共享檔案，因此來架設個 Samba Server。Samba Server 有不同的認證機制，不過 JR 是自家使用，因此使用 Linux 本機帳戶認證，一下進行相關步驟紀錄。</p>
 <h2 id="安裝-samba">安裝 Samba</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -332,7 +332,7 @@ if (!doNotTrack) {
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo smbpasswd -a allen
+<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo smbpasswd -a jr
 </span></span><span class="line"><span class="cl"><span class="go">New SMB password:
 </span></span></span><span class="line"><span class="cl"><span class="go">Retype new SMB password:
 </span></span></span><span class="line"><span class="cl"><span class="go">Added user allen.
@@ -359,17 +359,17 @@ if (!doNotTrack) {
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[allen]
-</span></span><span class="line"><span class="cl">    comment = allen
-</span></span><span class="line"><span class="cl">    path= /home/allen
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[jr]
+</span></span><span class="line"><span class="cl">    comment = jr
+</span></span><span class="line"><span class="cl">    path= /home/jr
 </span></span><span class="line"><span class="cl">    guest ok = no
 </span></span><span class="line"><span class="cl">    browseable = no
 </span></span><span class="line"><span class="cl">    read only = no
 </span></span><span class="line"><span class="cl">    valid users = allen
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>JR在此簡單進行紀錄Samba Server架設過程，詳細參數可至<a class="link" href="https://ubuntu.com/server/docs/samba-introduction"  target="_blank" rel="noopener"
-    >Ubuntu Server Docs</a>查找。</p>
+</div><p>JR 在此簡單進行紀錄 Samba Server 架設過程，詳細參數可至 <a class="link" href="https://ubuntu.com/server/docs/samba-introduction"  target="_blank" rel="noopener"
+    >Ubuntu Server Docs</a> 查找。</p>
 
 </section>
 
@@ -423,7 +423,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-靜態IP設定</h2>
+            <h2 class="article-title">Ubuntu Server - 靜態 IP 設定</h2>
         </div>
     </a>
 </article>
@@ -441,7 +441,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-iptables NAT封包偽裝設定</h2>
+            <h2 class="article-title">Ubuntu Server - iptables NAT 封包偽裝設定</h2>
         </div>
     </a>
 </article>
@@ -459,7 +459,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-iptables filter表設定</h2>
+            <h2 class="article-title">Ubuntu Server - iptables filter表設定</h2>
         </div>
     </a>
 </article>

@@ -7,17 +7,17 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/categories/programming/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Spring Boot透過Spring Initializr初始化專案</title>
+        <title>Spring Boot 透過 Spring Initializr 初始化專案</title>
         <link>https://jren.cc/p/spring-boot-spring-initializr/</link>
         <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/spring-boot-spring-initializr/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/spring-boot.jpeg" alt="Featured image of post Spring Boot透過Spring Initializr初始化專案" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;Spring Framework是Java中的主流框架之一，近年來因資訊科技的進步，Spring也發起了許多的專案做為因應的解決方案。使用過的開發者對於框架的配置大概不陌生，但如果一個專案內需使用不同框架的配合，光設定就十分繁雜，因此Spring提供了Spring Boot做為框架配置的解決方案，讓開發者可以快速的建置一個基於Spring Framework的應用程式。&lt;/p&gt;
-&lt;p&gt;Spring專案中包含了Spring Framework、Spring Data、Spring Mobile&amp;hellip;等眾多解決方案，如果用到一兩種的情況下自行配置尚可接受，但如果用到四種、五種的話複雜程度其實挺驚人的，維護也會相當繁瑣，因此發展出了Spring Boot用於快速建置Spring應用程式可以自動處理套件間的倚賴關係。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/spring-boot.jpeg" alt="Featured image of post Spring Boot 透過 Spring Initializr 初始化專案" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Spring Framework 是 Java 中的主流框架之一，近年來因資訊科技的進步，Spring 也發起了許多的專案做為因應的解決方案。使用過的開發者對於框架的配置大概不陌生，但如果一個專案內需使用不同框架的配合，光設定就十分繁雜，因此 Spring 提供了 Spring Boot 做為框架配置的解決方案，讓開發者可以快速的建置一個基於 Spring Framework 的應用程式。&lt;/p&gt;
+&lt;p&gt;Spring 專案中包含了 Spring Framework、Spring Data、Spring Mobile&amp;hellip;等眾多解決方案，如果用到一兩種的情況下自行配置尚可接受，但如果用到四種、五種的話複雜程度其實挺驚人的，維護也會相當繁瑣，因此發展出了 Spring Boot 用於快速建置 Spring 應用程式可以自動處理套件間的倚賴關係。&lt;/p&gt;
 &lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
-&lt;p&gt;建立Spring Boot專案方法有很多，其中一種方式就是使用Spring Boot官方網站提供的&lt;a class=&#34;link&#34; href=&#34;https://start.spring.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;SPRING INITIALIZR&lt;/a&gt;平台直接進行相關配置選項後直接下載，之後再將下載回來的檔案匯入開發工具專案即可進行開發。因使用方式十分簡單，因此直接於網站輸入相關資訊，並在Dependencies輸入專案所需的依賴項目，並進行Generate Project按鈕即可完成專案建置。&lt;/p&gt;
+&lt;p&gt;建立 Spring Boot 專案方法有很多，其中一種方式就是使用 Spring Boot 官方網站提供的 &lt;a class=&#34;link&#34; href=&#34;https://start.spring.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SPRING INITIALIZR&lt;/a&gt; 平台直接進行相關配置選項後直接下載，之後再將下載回來的檔案匯入開發工具專案即可進行開發。因使用方式十分簡單，因此直接於網站輸入相關資訊，並在 Dependencies 輸入專案所需的依賴項目，並進行 Generate Project 按鈕即可完成專案建置。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jren.cc/p/spring-boot-spring-initializr/spring-initializr.png&#34;
 	width=&#34;1919&#34;
 	height=&#34;1023&#34;
@@ -32,22 +32,22 @@
 		data-flex-basis=&#34;450px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;Spring有為各大主流IDE整合開發工具提供Spring Tool Suite外掛套件，供開發者可以直接於開發工具上快速透過Spring Boot組織專案，基於這一點JR更為喜歡透過這樣的方式建構Spring專案。&lt;/p&gt;
+&lt;p&gt;Spring 有為各大主流IDE整合開發工具提供 Spring Tool Suite 外掛套件，供開發者可以直接於開發工具上快速透過 Spring Boot 組織專案，基於這一點 JR 更為喜歡透過這樣的方式建構 Spring 專案。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python-multithreading與multiprocessing使用</title>
+        <title>Python-multithreading 與 multiprocessing 使用</title>
         <link>https://jren.cc/p/python-multithreading-and-multiprocessing/</link>
         <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-multithreading-and-multiprocessing/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-multithreading與multiprocessing使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;一支Python程式在運行的時候如果沒加入multithreading或multiprocessing的設計，程式只會一行一行執行無法發揮CPU性能，multithreading或multiprocessing都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立process，而一個process內又運行著thread用來運行程式，因此若不使用multithreading或multiprocessing方式進行程式開發，程式就只能在一個process裡的thread執行了。&lt;/p&gt;
-&lt;p&gt;Python的解釋器在每一個process內都設了一個GIL(Global Interpreter Lock)，用來避免資源死鎖，這是Python語言獨有的設計，GIL確保Python應用程式一次這會有一個Thread在運行，這也就是Python在這方面令許多人垢病的地方，關於GIL的歷史淵源，在此不加以探究，學習如何減少GIL對程式帶來的影響才是重點。&lt;/p&gt;
-&lt;p&gt;至於要使用multithreading還是multiprocessing，這得取決於程式考量，multithreading是存在於process，因此較為輕量，但會受到GIL的限制，用於IO-bound較為適合，而multiprocessing適合用於CPU-bound，主要在於IO-bound的情境CPU大部分時間都在等待IO操作完成，因此任務越多CPU使用率也越高，而CPU-bound因CPU較為忙碌，若使用multithreading的方式，需花在任務切換的時間就越多，如此一來CPU執行效率就越低。&lt;/p&gt;
-&lt;p&gt;說了這麼多JR將multithreading與multiprocessing記錄下來，使用時機對了，可讓程式效能增進不少。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-multithreading 與 multiprocessing 使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一支 Python 程式在運行的時候如果沒加入 multithreading 或 multiprocessing 的設計，程式只會一行一行執行無法發揮 CPU 性能，multithreading 或 multiprocessing 都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立 process，而一個 process 內又運行著 thread 用來運行程式，因此若不使用 multithreading 或 multiprocessing 方式進行程式開發，程式就只能在一個 process 裡的 thread 執行了。&lt;/p&gt;
+&lt;p&gt;Python 的解釋器在每一個 process 內都設了一個 GIL(Global Interpreter Lock)，用來避免資源死鎖，這是 Python 語言獨有的設計，GIL 確保 Python 應用程式一次這會有一個 Thread 在運行，這也就是 Python 在這方面令許多人垢病的地方，關於 GIL 的歷史淵源，在此不加以探究，學習如何減少 GIL 對程式帶來的影響才是重點。&lt;/p&gt;
+&lt;p&gt;至於要使用 multithreading 還是 multiprocessing，這得取決於程式考量，multithreading 是存在於 process，因此較為輕量，但會受到 GIL 的限制，用於 IO-bound 較為適合，而 multiprocessing 適合用於CPU-bound，主要在於 IO-bound 的情境 CPU 大部分時間都在等待 IO 操作完成，因此任務越多 CPU 使用率也越高，而 CPU-bound 因 CPU 較為忙碌，若使用 multithreading 的方式，需花在任務切換的時間就越多，如此一來 CPU 執行效率就越低。&lt;/p&gt;
+&lt;p&gt;說了這麼多 JR 將 multithreading 與 multiprocessing 記錄下來，使用時機對了，可讓程式效能增進不少。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式multithreading_demopy&#34;&gt;Python程式：multithreading_demo.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式multithreading_demopy&#34;&gt;Python 程式：multithreading_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -102,7 +102,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;python程式multiprocessing_demopy&#34;&gt;Python程式：multiprocessing_demo.py&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;python-程式multiprocessing_demopy&#34;&gt;Python 程式：multiprocessing_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -160,15 +160,15 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Python-使用python-dotenv建立臨時環境變數</title>
+        <title>Python - 使用 python-dotenv 建立臨時環境變數</title>
         <link>https://jren.cc/p/python-python-dotenv/</link>
         <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-python-dotenv/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-使用python-dotenv建立臨時環境變數" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - 使用 python-dotenv 建立臨時環境變數" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在開發專案的過程中因為不會把參數寫死，因此會透過使用這輸入或是設定檔案的方式處理，在使用設定檔的時候，難免會有些參數不適合公開出去給其他人使用的，例如自己的 API KEY 或是自己測試使用的參數，此時可以定義在自己的環境變數中，不過設置系統上的環境變數，其實不是這麼方便，在 Python 上可透過 python-dotenv 套件解決此問題。&lt;/p&gt;
 &lt;p&gt;使用 python-dotenv 套件方法如下。&lt;/p&gt;
-&lt;h2 id=&#34;安裝python-dotenv套件&#34;&gt;安裝python-dotenv套件&lt;/h2&gt;
+&lt;h2 id=&#34;安裝-python-dotenv-套件&#34;&gt;安裝 python-dotenv 套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -177,7 +177,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;&amp;gt;&lt;/span&gt; pip install python-dotenv
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;建立env檔案於目錄下並寫入參數內容&#34;&gt;建立.env檔案於目錄下並寫入參數內容&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;建立-env-檔案於目錄下並寫入參數內容&#34;&gt;建立 .env 檔案於目錄下並寫入參數內容&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -193,9 +193,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;* 注意Key與Value的等號中間不要有空格。&lt;/p&gt;
-&lt;p&gt;再來就可以透過&lt;code&gt;load_dotenv()&lt;/code&gt;將.env檔案設定中的值讀取成環境變數了。&lt;/p&gt;
+&lt;p&gt;再來就可以透過 &lt;code&gt;load_dotenv()&lt;/code&gt; 將.env檔案設定中的值讀取成環境變數了。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式env_demopy&#34;&gt;Python程式：env_demo.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式env_demopy&#34;&gt;Python 程式：env_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -209,14 +209,12 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Python - 使用 python-dotenv 建立臨時環境變數&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;dotenv&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -226,18 +224,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;getenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;PARAM_4&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;透過python-dotenv建立的臨時環境變數，去的方式其實跟取系統環境變數的方式是完全一樣的，JR在專案中會使用python-dotenv搭配設定檔，判定如果環境變數有值則優先使用環境變數的值，以上分享。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;透過 python-dotenv 建立的臨時環境變數，去的方式其實跟取系統環境變數的方式是完全一樣的，JR 在專案中會使用 python-dotenv 搭配設定檔，判定如果環境變數有值則優先使用環境變數的值，以上分享。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python-logging使用</title>
+        <title>Python - logging 使用</title>
         <link>https://jren.cc/p/python-logging/</link>
         <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-logging/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-logging使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;一般小程式上可能會比較少寫log記錄程式中發生了什麼事，一般可能會比較多用&lt;code&gt;print()&lt;/code&gt;的方式，不過對於大型專案來說寫log是不可少的部分，畢竟大型專案涵蓋的層面廣，程式檔案數量多，甚至需要24小時運行，例如網站系統，因此如果再發生問題時未將訊息記錄下來，這樣會造成問題難以排查。&lt;/p&gt;
-&lt;p&gt;在Python中提供了&lt;code&gt;logging&lt;/code&gt;模組可以方便定義log的記錄方式，一般記錄於檔案以及顯示到console上，而&lt;code&gt;logging&lt;/code&gt;模組也提自定義logger的方式，一般來說除非在專案開始的時候才比較有機會做這個動作，甚至到下個專案之後也會將自定義好的logger直接延續使用，所以要再寫一次的機會就更少了，因此JR將如何自定義logger記錄器的方法記錄下來，以後也方便直接拿範本下來改。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - logging 使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一般小程式上可能會比較少寫 log 記錄程式中發生了什麼事，一般可能會比較多用 &lt;code&gt;print()&lt;/code&gt; 的方式，不過對於大型專案來說寫 log 是不可少的部分，畢竟大型專案涵蓋的層面廣，程式檔案數量多，甚至需要 24 小時運行，例如網站系統，因此如果再發生問題時未將訊息記錄下來，這樣會造成問題難以排查。&lt;/p&gt;
+&lt;p&gt;在Python中提供了 &lt;code&gt;logging&lt;/code&gt; 模組可以方便定義log的記錄方式，一般記錄於檔案以及顯示到 console上，而 &lt;code&gt;logging&lt;/code&gt; 模組也提自定義 logger 的方式，一般來說除非在專案開始的時候才比較有機會做這個動作，甚至到下個專案之後也會將自定義好的 logger 直接延續使用，所以要再寫一次的機會就更少了，因此 JR 將如何自定義 logger 記錄器的方法記錄下來，以後也方便直接拿範本下來改。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
 &lt;h3 id=&#34;python-程式loggerpy&#34;&gt;Python 程式：logger.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -308,18 +306,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;logger&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;以上需要注意的是每個Handler都可以有自己的log Level需個別設定，包含logger本身也有預設的層級，因此在自定義時記得將它重新設置，更多的詳細logging使用可參考&lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/howto/logging.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/div&gt;&lt;p&gt;以上需要注意的是每個 Handler 都可以有自己的 log Level 需個別設定，包含 logger 本身也有預設的層級，因此在自定義時記得將它重新設置，更多的詳細 logging 使用可參考 &lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/howto/logging.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方網站-Logging HOWTO&lt;/a&gt;。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python-virtualenv虛擬開發環境</title>
+        <title>Python - virtualenv 虛擬開發環境</title>
         <link>https://jren.cc/p/python-virtualenv/</link>
         <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-virtualenv/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-virtualenv虛擬開發環境" /&gt;&lt;p&gt;於Python進行專案開發一般會建立虛擬開發環境，其實Python上的虛擬開發環境有點像是Java當中使用Maven或是像是JavaScript使用npm，甚至是PHP使用composer一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此Python專案需要安裝那些套件，不用自行&lt;code&gt;pip install &amp;lt;packages&amp;gt;&lt;/code&gt;安裝依賴套件到專案可以執行為止。&lt;/p&gt;
-&lt;h2 id=&#34;安裝virtualenv套件&#34;&gt;安裝&lt;code&gt;virtualenv&lt;/code&gt;套件&lt;/h2&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - virtualenv 虛擬開發環境" /&gt;&lt;p&gt;於 Python 進行專案開發一般會建立虛擬開發環境，其實 Python 上的虛擬開發環境有點像是 Java 當中使用 Maven 或是像是 JavaScript 使用 npm，甚至是 PHP 使用 composer 一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此 Python 專案需要安裝那些套件，不用自行 &lt;code&gt;pip install &amp;lt;packages&amp;gt;&lt;/code&gt; 安裝依賴套件到專案可以執行為止。&lt;/p&gt;
+&lt;h2 id=&#34;安裝-virtualenv-套件&#34;&gt;安裝 &lt;code&gt;virtualenv&lt;/code&gt; 套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -358,10 +356,10 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ source ./venv/bin/activate
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;執行成功後命令列前端會出現&lt;code&gt;(venv)&lt;/code&gt;字符。&lt;/p&gt;
-&lt;p&gt;之後專案所需要的套件都在虛擬開發環境進行安裝，不會影響到原本機Python環境。&lt;/p&gt;
-&lt;p&gt;每當安裝新套件後，別忘了同時導出requirements.txt檔案，此檔案是用來管理Python專案使用的必要套件。&lt;/p&gt;
-&lt;h2 id=&#34;導出requirementstxt檔案&#34;&gt;導出requirements.txt檔案&lt;/h2&gt;
+&lt;/div&gt;&lt;p&gt;執行成功後命令列前端會出現 &lt;code&gt;(venv)&lt;/code&gt; 字符。&lt;/p&gt;
+&lt;p&gt;之後專案所需要的套件都在虛擬開發環境進行安裝，不會影響到原本機 Python 環境。&lt;/p&gt;
+&lt;p&gt;每當安裝新套件後，別忘了同時導出 requirements.txt 檔案，此檔案是用來管理 Python 專案使用的必要套件。&lt;/p&gt;
+&lt;h2 id=&#34;導出-requirementstxt-檔案&#34;&gt;導出 requirements.txt 檔案&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -382,16 +380,16 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Python-取得執行檔案當前路徑</title>
+        <title>Python - 取得執行檔案當前路徑</title>
         <link>https://jren.cc/p/python-get-file-current-path/</link>
         <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-get-file-current-path/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-取得執行檔案當前路徑" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;在進行資料處理的時候，難免使用需要知道目前執行檔案的路徑，在JR的開發經驗當中並非所有情況都可以使用相對路徑，有時需要取得目前執行檔案的路徑後再搭配相對路徑使用，要取得目前執行檔案的路徑可以透過&lt;code&gt;os&lt;/code&gt;以及&lt;code&gt;pathlib&lt;/code&gt;兩個套件取得。&lt;/p&gt;
-&lt;p&gt;首先展示&lt;code&gt;os&lt;/code&gt;套件使用。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - 取得執行檔案當前路徑" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在進行資料處理的時候，難免使用需要知道目前執行檔案的路徑，在JR的開發經驗當中並非所有情況都可以使用相對路徑，有時需要取得目前執行檔案的路徑後再搭配相對路徑使用，要取得目前執行檔案的路徑可以透過 &lt;code&gt;os&lt;/code&gt; 以及 &lt;code&gt;pathlib&lt;/code&gt; 兩個套件取得。&lt;/p&gt;
+&lt;p&gt;首先展示 &lt;code&gt;os&lt;/code&gt; 套件使用。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式os_get_current_pathpy&#34;&gt;Python程式：os_get_current_path.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式os_get_current_pathpy&#34;&gt;Python 程式：os_get_current_path.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -419,7 +417,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;接下來展示&lt;code&gt;pathlib&lt;/code&gt;套件使用。&lt;/p&gt;
-&lt;h3 id=&#34;python程式pathlib_get_current_pathpy&#34;&gt;Python程式：pathlib_get_current_path.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式pathlib_get_current_pathpy&#34;&gt;Python 程式：pathlib_get_current_path.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -444,25 +442,25 @@
 </description>
         </item>
         <item>
-        <title>Java-Apache Velocity Template Engine</title>
+        <title>Java - Apache Velocity Template Engine</title>
         <link>https://jren.cc/p/java-apache-velocity/</link>
         <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/java-apache-velocity/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/java.jpg" alt="Featured image of post Java-Apache Velocity Template Engine" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR自己的Side Project其中以協助工作的小工具最多，畢竟先把工作理順了，才真的有心力去做其他事情嘛！JR工作上的主要需求像是自動產Code，例如後端常會產生Spring Data JPA的Repository介面以及Enity類別，前端的話，因為JR前端專案目前都是使用Angular，其實不論是用什麼前端框架，現在大多使用TypeScript進行開發，對型態有嚴格要求就得將Spring Boot回傳給前端的Response物件轉換成TypeScript接的Model物件，更不用說Java內部又有一堆VO、BO、PO、DTO&amp;hellip;等物件轉換，而JR有事以專案性質為主，因此在新的專案上常常一切得重新來過，面對的資料表少則幾十個，多則上百個，假設使用Spring Data JPA做為資料庫的持久化方案，那光基礎的Repository介面以及Enity類別建完專案大概也結束了吧&amp;hellip;因此JR最常使用的方式就是透過&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache Velocity&lt;/a&gt;這一套Java-Based Template Engine做為Code Generator的工具套件。&lt;/p&gt;
-&lt;p&gt;事實上Apache Velocity也是許多專案上使用的Template Engine，JR選它的原因是因為它是Apache下的Project，對於Java來說還有許多Template Engine可以用，不過JR覺得這樣的東西學會一套就很夠用了，雖然它是一套Java-Based Template Engine，不過重點是它是套Template Engine，也就是說學會它之後，就可以透過這套Template Engine去產生出各種不同的格式的檔案，差異只在於Template不一樣而已，說明白一點就是可以透過它將資料轉換後產生出如Java、JSP、PHP、Morkdown、HTML&amp;hellip;等文字檔，當中也可包含一些迴圈與邏輯的使用，關於Template的使用 得參閱官方的&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Velocity Engine&lt;/a&gt;單元的&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/user-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;User Guide&lt;/a&gt;，如果要看 Java 開發的話就得看&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/devel/developer-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Developer Guide&lt;/a&gt;，又或者想把Apache Velocity當成如Web Project的前端頁面模板使用就得看&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/tools/devel/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Velocity Tools&lt;/a&gt;不過因為現在專案都是以RESTful開發，前端也轉用如&lt;a class=&#34;link&#34; href=&#34;https://angular.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://jren.cc/images/programming/java.jpg" alt="Featured image of post Java - Apache Velocity Template Engine" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 自己的 Side Project 其中以協助工作的小工具最多，畢竟先把工作理順了，才真的有心力去做其他事情嘛！JR 工作上的主要需求像是自動產 Code，例如後端常會產生 Spring Data JPA 的 Repository 介面以及 Enity 類別，前端的話，因為JR前端專案目前都是使用 Angular，其實不論是用什麼前端框架，現在大多使用 TypeScript 進行開發，對型態有嚴格要求就得將 Spring Boot 回傳給前端的 Response 物件轉換成 TypeScript 接的 Model 物件，更不用說 Java 內部又有一堆 VO、BO、PO、DTO&amp;hellip;等物件轉換，而 JR 從事的工作以專案性質為主，因此在新的專案上常常一切得重新來過，面對的資料表少則幾十個，多則上百個，假設使用 Spring Data JPA 做為資料庫的持久化方案，那光基礎的 Repository 介面以及 Enity 類別建完專案大概也結束了吧&amp;hellip;因此JR最常使用的方式就是透過 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Apache Velocity&lt;/a&gt; 這一套 Java-Based Template Engine 做為 Code Generator 的工具套件。&lt;/p&gt;
+&lt;p&gt;事實上 Apache Velocity 也是許多專案上使用的 Template Engine，JR 選它的原因是因為它是 Apache 下的 Project，對於 Java 來說還有許多 Template Engine 可以用，不過 JR 覺得這樣的東西學會一套就很夠用了，雖然它是一套 Java-Based Template Engine，不過重點是它是套 Template Engine，也就是說學會它之後，就可以透過這套 Template Engine 去產生出各種不同的格式的檔案，差異只在於 Template 不一樣而已，說明白一點就是可以透過它將資料轉換後產生出如 Java、JSP、PHP、Morkdown、HTML&amp;hellip;等文字檔，當中也可包含一些迴圈與邏輯的使用，關於 Template 的使用 得參閱官方的 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Velocity Engine&lt;/a&gt; 單元的 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/user-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;User Guide&lt;/a&gt;，如果要看 Java 開發的話就得看 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/devel/developer-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Developer Guide&lt;/a&gt;，又或者想把 Apache Velocity 當成如 Web Project 的前端頁面模板使用就得看 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/tools/devel/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Velocity Tools&lt;/a&gt; 不過因為現在專案都是以 RESTful 開發，前端也轉用如 &lt;a class=&#34;link&#34; href=&#34;https://angular.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Angular&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://reactjs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;React&lt;/a&gt;或者是&lt;a class=&#34;link&#34; href=&#34;https://vuejs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Vue.js&lt;/a&gt;等前端框架進行開發，因此過往JR研究果許多Web使用的Template Engine大概都荒廢掉了&amp;hellip;&lt;/p&gt;
-&lt;p&gt;這篇文章的目的其實是JR用來記錄自己對於Apache Velocity的常用作法，方便自己回頭觀看回憶，藉此也分享給各位，一般對Java開發者來說，想取得資源大概分為從Resource取得(專案內或Jar內)或是從外部路徑取得，Apache Velocity對這兩項做法的寫法上有小小的差異，因此JR做個簡單的例子一個使用Resource取得Template檔案，另一個則使用實際路徑取得，並設計兩個Template分別產出Markdown的.md檔以及網頁的.html檔案。&lt;/p&gt;
-&lt;p&gt;首先先於專案的Maven設定檔引如Apache Velocity依賴。&lt;/p&gt;
-&lt;h2 id=&#34;maven設定檔pomxml&#34;&gt;Maven設定檔：pom.xml&lt;/h2&gt;
+    &gt;React&lt;/a&gt; 或者是 &lt;a class=&#34;link&#34; href=&#34;https://vuejs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vue.js&lt;/a&gt; 等前端框架進行開發，因此過往JR研究果許多Web使用的 Template Engine 大概都荒廢掉了&amp;hellip;&lt;/p&gt;
+&lt;p&gt;這篇文章的目的其實是JR用來記錄自己對於 Apache Velocity 的常用作法，方便自己回頭觀看回憶，藉此也分享給各位，一般對 Java 開發者來說，想取得資源大概分為從 Resource 取得(專案內或 Jar 內)或是從外部路徑取得，Apache Velocity 對這兩項做法的寫法上有小小的差異，因此JR做個簡單的例子一個使用 Resource 取得 Template 檔案，另一個則使用實際路徑取得，並設計兩個 Template 分別產出 Markdown 的 &lt;code&gt;.md&lt;/code&gt; 檔以及網頁的 &lt;code&gt;.html&lt;/code&gt; 檔案。&lt;/p&gt;
+&lt;p&gt;首先先於專案的 Maven 設定檔引如 Apache Velocity 依賴。&lt;/p&gt;
+&lt;h2 id=&#34;maven-設定檔pomxml&#34;&gt;Maven 設定檔：pom.xml&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -485,8 +483,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/dependencies&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;接著設計兩個副檔名為.vm的Apache Velocity Template，並都放置於專案的resource/teamplates目錄底下。&lt;/p&gt;
-&lt;h2 id=&#34;編寫template&#34;&gt;編寫Template&lt;/h2&gt;
+&lt;/div&gt;&lt;p&gt;接著設計兩個副檔名為 &lt;code&gt;.vm&lt;/code&gt; 的 Apache Velocity Template，並都放置於專案的 &lt;code&gt;resource/teamplates&lt;/code&gt; 目錄底下。&lt;/p&gt;
+&lt;h2 id=&#34;編寫-template&#34;&gt;編寫 Template&lt;/h2&gt;
 &lt;h3 id=&#34;apache-velocity-templateallen-html-templatevm&#34;&gt;Apache Velocity Template：allen-html-template.vm&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -552,7 +550,7 @@
 &lt;/div&gt;&lt;p&gt;* 具經驗要產出來的 Template 好看需要把 Apache Velocity 處理邏輯的部分全部靠右對齊，這一點 JR 是比較龜毛一點啦😅。&lt;/p&gt;
 &lt;p&gt;接著回到 Java 端撰寫兩個 Java Bean，到時候用來做資料使用的，也會比較符合真實使用狀況。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;java程式categorydetailjava&#34;&gt;Java程式：CategoryDetail.java&lt;/h3&gt;
+&lt;h3 id=&#34;java-程式categorydetailjava&#34;&gt;Java 程式：CategoryDetail.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -705,7 +703,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;java程式categoryjava&#34;&gt;Java程式：Category.java&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;java-程式categoryjava&#34;&gt;Java 程式：Category.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -802,8 +800,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;接著就撰寫主程式，從Resource取得(專案內或Jar檔內)或是從外部路徑取得最主要的差異在於以下兩個片段。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Resource 取得Template方法&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;接著就撰寫主程式，從 Resource 取得(專案內或 Jar 檔內)或是從外部路徑取得最主要的差異在於以下兩個片段。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resource 取得 Template 方法&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -814,7 +812,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;classpath.resource.loader.class&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ClasspathResourceLoader&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;從外部路徑取得Template方法&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;從外部路徑取得 Template 方法&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -825,7 +823,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RuntimeConstants&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;FILE_RESOURCE_LOADER_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;filePath&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getParent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;toString&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;java程式applicationjava&#34;&gt;Java程式：Application.java&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;java-程式applicationjava&#34;&gt;Java 程式：Application.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;  1
@@ -1048,8 +1046,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在target目錄底下會產生兩個檔案分別為JR-html-template.html與JR-md-template.md。&lt;/p&gt;
-&lt;p&gt;比較需要注意的是JR特別將最後一筆資料&lt;code&gt;enabled&lt;/code&gt;設為&lt;code&gt;false&lt;/code&gt;，因此模板頁面寫了&lt;code&gt;#if($categoryDetail.enabled)&lt;/code&gt;判斷式不會顯示。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;在 target 目錄底下會產生兩個檔案分別為 JR-html-template.html 與 JR-md-template.md。&lt;/p&gt;
+&lt;p&gt;比較需要注意的是JR特別將最後一筆資料 &lt;code&gt;enabled&lt;/code&gt; 設為 &lt;code&gt;false&lt;/code&gt;，因此模板頁面寫了 &lt;code&gt;#if($categoryDetail.enabled)&lt;/code&gt; 判斷式不會顯示。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1062,20 +1060,20 @@
 </description>
         </item>
         <item>
-        <title>Apache Maven-Project指定JDK版本</title>
+        <title>Apache Maven - Project 指定 JDK 版本</title>
         <link>https://jren.cc/p/apache-maven-set-jdk-version/</link>
         <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/apache-maven-set-jdk-version/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/maven.jpg" alt="Featured image of post Apache Maven-Project指定JDK版本" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR工作上後端程式撰寫都是以Spring Boot為主，不過不免自己做些Side Project，除了興趣之外，再者就是打在些可以方便工作上使用的小工具，針對Java的專案建置大概可以透過&lt;a class=&#34;link&#34; href=&#34;https://maven.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache Maven&lt;/a&gt;或者是&lt;a class=&#34;link&#34; href=&#34;https://gradle.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Gradle&lt;/a&gt;&amp;hellip;等工具達成，JR本身在工作上或是自己的Side Project都是使用Apache Maven為主。&lt;/p&gt;
-&lt;p&gt;平時JR開發工具主要是使用&lt;a class=&#34;link&#34; href=&#34;https://www.eclipse.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Eclipse&lt;/a&gt;為主，不過因為專案上都是使用Spring Boot懶得自己去裝STS的Plugin，所以後來就直接使用&lt;a class=&#34;link&#34; href=&#34;https://spring.io/tools&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Spring Tools 4 for Eclipse&lt;/a&gt;了，不過雖然工作都使用Spring Boot，但是使不使用框架JR是認為得看Project的規模來決定，JR自己的Side Project大多以工具類為主，因此大多未使用到框架居多。&lt;/p&gt;
-&lt;p&gt;Eclipse預設建立Apache Maven Project，會建立出JDK 1.5版本的專案，網路上有分享如何修改成指定版本，但JR覺得其中有一種直接設定在Apache Maven設定檔&lt;code&gt;settings.xml&lt;/code&gt;裡面，雖說對自己是一勞永逸，但是如果是多人專案這樣的方式就很不推薦，因此JR還是建議設定在專案本身的&lt;code&gt;pom.xml&lt;/code&gt;裡面，這樣即便是與人共享專案，只要一眼就知道這個專案使用什麼JDK版本了。&lt;/p&gt;
-&lt;p&gt;以下JR整理兩種方式可以來設定Apache Maven Project所使用的JDK版本。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/maven.jpg" alt="Featured image of post Apache Maven - Project 指定 JDK 版本" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 工作上後端程式撰寫都是以 Spring Boot 為主，不過不免自己做些 Side Project，除了興趣之外，再者就是打在些可以方便工作上使用的小工具，針對Java的專案建置大概可以透過 &lt;a class=&#34;link&#34; href=&#34;https://maven.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Apache Maven&lt;/a&gt; 或者是 &lt;a class=&#34;link&#34; href=&#34;https://gradle.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gradle&lt;/a&gt;&amp;hellip;等工具達成，JR 本身在工作上或是自己的 Side Project 都是使用 Apache Maven 為主。&lt;/p&gt;
+&lt;p&gt;平時JR開發工具主要是使用 &lt;a class=&#34;link&#34; href=&#34;https://www.eclipse.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Eclipse&lt;/a&gt; 為主，不過因為專案上都是使用 Spring Boot 懶得自己去裝 STS 的 Plugin，所以後來就直接使用 &lt;a class=&#34;link&#34; href=&#34;https://spring.io/tools&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Spring Tools 4 for Eclipse&lt;/a&gt; 了，不過雖然工作都使用 Spring Boot，但是使不使用框架 JR 是認為得看 Project 的規模來決定，JR 自己的 Side Project 大多以工具類為主，因此大多未使用到框架居多。&lt;/p&gt;
+&lt;p&gt;Eclipse 預設建立 Apache Maven Project，會建立出 JDK 1.5 版本的專案，網路上有分享如何修改成指定版本，但JR覺得其中有一種直接設定在 Apache Maven 設定檔 &lt;code&gt;settings.xml&lt;/code&gt; 裡面，雖說對自己是一勞永逸，但是如果是多人專案這樣的方式就很不推薦，因此 JR 還是建議設定在專案本身的 &lt;code&gt;pom.xml&lt;/code&gt; 裡面，這樣即便是與人共享專案，只要一眼就知道這個專案使用什麼 JDK 版本了。&lt;/p&gt;
+&lt;p&gt;以下 JR 整理兩種方式可以來設定 Apache Maven Project 所使用的 JDK 版本。&lt;/p&gt;
 &lt;h2 id=&#34;方法一&#34;&gt;方法一&lt;/h2&gt;
 &lt;p&gt;這個方法比較繁雜，但如果擺到後面就不會有人看了&amp;hellip;🤣。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1113,7 +1111,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;方法二&#34;&gt;方法二&lt;/h2&gt;
-&lt;p&gt;再來是個簡潔的方法，JR一般都使用這個。&lt;/p&gt;
+&lt;p&gt;再來是個簡潔的方法，JR 一般都使用這個。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

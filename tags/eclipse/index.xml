@@ -7,16 +7,16 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Fri, 04 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/tags/eclipse/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Eclipse-程式碼提示設定</title>
+        <title>Eclipse - 程式碼提示設定</title>
         <link>https://jren.cc/p/eclipse-auto-activation-triggers-for-java/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/eclipse-auto-activation-triggers-for-java/</guid>
-        <description>&lt;img src="https://jren.cc/images/ide/eclipse.jpg" alt="Featured image of post Eclipse-程式碼提示設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;Eclipse本身就具有程式碼提示功能，不過是有條件的觸發，因此要能夠像某些整合開發工具打一個字就出現提示的話得進行額外設定。否則以 JR 這個小腦袋怎麼記得住這麼多東西&amp;hellip;不過挺有趣的是 JR 常在職場上看到一些新人，不太了解 Eclipse 要更好用是需要自己稍加調校才行，所以不免說JR藏私&amp;hellip;好吧，近幾年大家都投入了&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/idea/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://jren.cc/images/ide/eclipse.jpg" alt="Featured image of post Eclipse - 程式碼提示設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Eclipse 本身就具有程式碼提示功能，不過是有條件的觸發，因此要能夠像某些整合開發工具打一個字就出現提示的話得進行額外設定。否則以 JR 這個小腦袋怎麼記得住這麼多東西&amp;hellip;不過挺有趣的是 JR 常在職場上看到一些新人，不太了解 Eclipse 要更好用是需要自己稍加調校才行，所以不免說 JR 藏私&amp;hellip;好吧，近幾年大家都投入了 &lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/idea/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;IntelliJ&lt;/a&gt;的懷抱，一切都圓滿了。不過老實說 JR 始終決的蘿蔔白菜各有所愛，針對 IDE 工具只要能夠解決問題，統一專案上的設定就好，畢竟不論什麼年代都會有人不斷推從 Vim 很棒&amp;hellip; 但 JR 就是不會拿來開發 Java 使用，這肯定不是它的不好，是JR太廢了。&lt;/p&gt;
 &lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
-&lt;p&gt;其實在Eclipse程式碼提示方式相當簡單，可以在各語言底下的Editor下方找到Content Assist項目，找到Auto activation triggers for java等類似項目加入trigger條件即可，以Java為例的話，預設觸發條件只有一個“.”，使用這樣子的預設，有時候不知道完整指令時，就得去找找才知道要打什麼緊接著打“.”才會有進一步的提示，因此JR加入以下觸發條件。&lt;/p&gt;
+&lt;p&gt;其實在 Eclipse 程式碼提示方式相當簡單，可以在各語言底下的 Editor 下方找到 Content Assist 項目，找到 Auto activation triggers for java 等類似項目加入 trigger 條件即可，以 Java 為例的話，預設觸發條件只有一個“.”，使用這樣子的預設，有時候不知道完整指令時，就得去找找才知道要打什麼緊接著打“.”才會有進一步的提示，因此JR加入以下觸發條件。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

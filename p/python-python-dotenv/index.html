@@ -241,7 +241,7 @@ if (!doNotTrack) {
         <div class="article-image">
             <a href="/p/python-python-dotenv/">
                 
-                    <img src="/images/programming/python.jpg" loading="lazy" alt="Featured image of post Python-使用python-dotenv建立臨時環境變數" />
+                    <img src="/images/programming/python.jpg" loading="lazy" alt="Featured image of post Python - 使用 python-dotenv 建立臨時環境變數" />
                 
             </a>
         </div>
@@ -260,7 +260,7 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/python-python-dotenv/">Python-使用python-dotenv建立臨時環境變數</a>
+            <a href="/p/python-python-dotenv/">Python - 使用 python-dotenv 建立臨時環境變數</a>
         </h2>
     
         
@@ -315,7 +315,7 @@ if (!doNotTrack) {
     <h2 id="前言">前言</h2>
 <p>在開發專案的過程中因為不會把參數寫死，因此會透過使用這輸入或是設定檔案的方式處理，在使用設定檔的時候，難免會有些參數不適合公開出去給其他人使用的，例如自己的 API KEY 或是自己測試使用的參數，此時可以定義在自己的環境變數中，不過設置系統上的環境變數，其實不是這麼方便，在 Python 上可透過 python-dotenv 套件解決此問題。</p>
 <p>使用 python-dotenv 套件方法如下。</p>
-<h2 id="安裝python-dotenv套件">安裝python-dotenv套件</h2>
+<h2 id="安裝-python-dotenv-套件">安裝 python-dotenv 套件</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -324,7 +324,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">&gt;</span> pip install python-dotenv
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="建立env檔案於目錄下並寫入參數內容">建立.env檔案於目錄下並寫入參數內容</h2>
+</div><h2 id="建立-env-檔案於目錄下並寫入參數內容">建立 .env 檔案於目錄下並寫入參數內容</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -340,9 +340,9 @@ if (!doNotTrack) {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>* 注意Key與Value的等號中間不要有空格。</p>
-<p>再來就可以透過<code>load_dotenv()</code>將.env檔案設定中的值讀取成環境變數了。</p>
+<p>再來就可以透過 <code>load_dotenv()</code> 將.env檔案設定中的值讀取成環境變數了。</p>
 <h2 id="程式實作">程式實作</h2>
-<h3 id="python程式env_demopy">Python程式：env_demo.py</h3>
+<h3 id="python-程式env_demopy">Python 程式：env_demo.py</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -356,14 +356,12 @@ if (!doNotTrack) {
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
-</span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Python - 使用 python-dotenv 建立臨時環境變數</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
@@ -373,7 +371,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PARAM_4&#39;</span><span class="p">))</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>透過python-dotenv建立的臨時環境變數，去的方式其實跟取系統環境變數的方式是完全一樣的，JR在專案中會使用python-dotenv搭配設定檔，判定如果環境變數有值則優先使用環境變數的值，以上分享。</p>
+</div><p>透過 python-dotenv 建立的臨時環境變數，去的方式其實跟取系統環境變數的方式是完全一樣的，JR 在專案中會使用 python-dotenv 搭配設定檔，判定如果環境變數有值則優先使用環境變數的值，以上分享。</p>
 
 </section>
 
@@ -427,7 +425,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-multithreading與multiprocessing使用</h2>
+            <h2 class="article-title">Python-multithreading 與 multiprocessing 使用</h2>
         </div>
     </a>
 </article>
@@ -445,7 +443,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-logging使用</h2>
+            <h2 class="article-title">Python - logging 使用</h2>
         </div>
     </a>
 </article>
@@ -463,7 +461,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-virtualenv虛擬開發環境</h2>
+            <h2 class="article-title">Python - virtualenv 虛擬開發環境</h2>
         </div>
     </a>
 </article>
@@ -481,7 +479,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-取得執行檔案當前路徑</h2>
+            <h2 class="article-title">Python - 取得執行檔案當前路徑</h2>
         </div>
     </a>
 </article>
@@ -499,7 +497,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Spring Boot透過Spring Initializr初始化專案</h2>
+            <h2 class="article-title">Spring Boot 透過 Spring Initializr 初始化專案</h2>
         </div>
     </a>
 </article>
@@ -669,11 +667,11 @@ if (!doNotTrack) {
             <nav id="TableOfContents">
   <ol>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#安裝python-dotenv套件">安裝python-dotenv套件</a></li>
-    <li><a href="#建立env檔案於目錄下並寫入參數內容">建立.env檔案於目錄下並寫入參數內容</a></li>
+    <li><a href="#安裝-python-dotenv-套件">安裝 python-dotenv 套件</a></li>
+    <li><a href="#建立-env-檔案於目錄下並寫入參數內容">建立 .env 檔案於目錄下並寫入參數內容</a></li>
     <li><a href="#程式實作">程式實作</a>
       <ol>
-        <li><a href="#python程式env_demopy">Python程式：env_demo.py</a></li>
+        <li><a href="#python-程式env_demopy">Python 程式：env_demo.py</a></li>
       </ol>
     </li>
   </ol>

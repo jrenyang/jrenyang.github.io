@@ -241,7 +241,7 @@ if (!doNotTrack) {
         <div class="article-image">
             <a href="/p/python-multithreading-and-multiprocessing/">
                 
-                    <img src="/images/programming/python.jpg" loading="lazy" alt="Featured image of post Python-multithreading與multiprocessing使用" />
+                    <img src="/images/programming/python.jpg" loading="lazy" alt="Featured image of post Python-multithreading 與 multiprocessing 使用" />
                 
             </a>
         </div>
@@ -260,12 +260,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/python-multithreading-and-multiprocessing/">Python-multithreading與multiprocessing使用</a>
+            <a href="/p/python-multithreading-and-multiprocessing/">Python-multithreading 與 multiprocessing 使用</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            multithreading與multiprocessing使用
+            multithreading 與 multiprocessing 使用
         </h3>
         
     </div>
@@ -298,7 +298,7 @@ if (!doNotTrack) {
 
 
                 <time class="article-time--reading">
-                    閱讀時間: 1 分鐘
+                    閱讀時間: 2 分鐘
                 </time>
             </div>
         
@@ -313,12 +313,12 @@ if (!doNotTrack) {
     
     
     <h2 id="前言">前言</h2>
-<p>一支Python程式在運行的時候如果沒加入multithreading或multiprocessing的設計，程式只會一行一行執行無法發揮CPU性能，multithreading或multiprocessing都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立process，而一個process內又運行著thread用來運行程式，因此若不使用multithreading或multiprocessing方式進行程式開發，程式就只能在一個process裡的thread執行了。</p>
-<p>Python的解釋器在每一個process內都設了一個GIL(Global Interpreter Lock)，用來避免資源死鎖，這是Python語言獨有的設計，GIL確保Python應用程式一次這會有一個Thread在運行，這也就是Python在這方面令許多人垢病的地方，關於GIL的歷史淵源，在此不加以探究，學習如何減少GIL對程式帶來的影響才是重點。</p>
-<p>至於要使用multithreading還是multiprocessing，這得取決於程式考量，multithreading是存在於process，因此較為輕量，但會受到GIL的限制，用於IO-bound較為適合，而multiprocessing適合用於CPU-bound，主要在於IO-bound的情境CPU大部分時間都在等待IO操作完成，因此任務越多CPU使用率也越高，而CPU-bound因CPU較為忙碌，若使用multithreading的方式，需花在任務切換的時間就越多，如此一來CPU執行效率就越低。</p>
-<p>說了這麼多JR將multithreading與multiprocessing記錄下來，使用時機對了，可讓程式效能增進不少。</p>
+<p>一支 Python 程式在運行的時候如果沒加入 multithreading 或 multiprocessing 的設計，程式只會一行一行執行無法發揮 CPU 性能，multithreading 或 multiprocessing 都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立 process，而一個 process 內又運行著 thread 用來運行程式，因此若不使用 multithreading 或 multiprocessing 方式進行程式開發，程式就只能在一個 process 裡的 thread 執行了。</p>
+<p>Python 的解釋器在每一個 process 內都設了一個 GIL(Global Interpreter Lock)，用來避免資源死鎖，這是 Python 語言獨有的設計，GIL 確保 Python 應用程式一次這會有一個 Thread 在運行，這也就是 Python 在這方面令許多人垢病的地方，關於 GIL 的歷史淵源，在此不加以探究，學習如何減少 GIL 對程式帶來的影響才是重點。</p>
+<p>至於要使用 multithreading 還是 multiprocessing，這得取決於程式考量，multithreading 是存在於 process，因此較為輕量，但會受到 GIL 的限制，用於 IO-bound 較為適合，而 multiprocessing 適合用於CPU-bound，主要在於 IO-bound 的情境 CPU 大部分時間都在等待 IO 操作完成，因此任務越多 CPU 使用率也越高，而 CPU-bound 因 CPU 較為忙碌，若使用 multithreading 的方式，需花在任務切換的時間就越多，如此一來 CPU 執行效率就越低。</p>
+<p>說了這麼多 JR 將 multithreading 與 multiprocessing 記錄下來，使用時機對了，可讓程式效能增進不少。</p>
 <h2 id="程式實作">程式實作</h2>
-<h3 id="python程式multithreading_demopy">Python程式：multithreading_demo.py</h3>
+<h3 id="python-程式multithreading_demopy">Python 程式：multithreading_demo.py</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -373,7 +373,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="python程式multiprocessing_demopy">Python程式：multiprocessing_demo.py</h3>
+</div><h3 id="python-程式multiprocessing_demopy">Python 程式：multiprocessing_demo.py</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -481,7 +481,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-使用python-dotenv建立臨時環境變數</h2>
+            <h2 class="article-title">Python - 使用 python-dotenv 建立臨時環境變數</h2>
         </div>
     </a>
 </article>
@@ -499,7 +499,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-logging使用</h2>
+            <h2 class="article-title">Python - logging 使用</h2>
         </div>
     </a>
 </article>
@@ -517,7 +517,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-virtualenv虛擬開發環境</h2>
+            <h2 class="article-title">Python - virtualenv 虛擬開發環境</h2>
         </div>
     </a>
 </article>
@@ -535,7 +535,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Python-取得執行檔案當前路徑</h2>
+            <h2 class="article-title">Python - 取得執行檔案當前路徑</h2>
         </div>
     </a>
 </article>
@@ -553,7 +553,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Spring Boot透過Spring Initializr初始化專案</h2>
+            <h2 class="article-title">Spring Boot 透過 Spring Initializr 初始化專案</h2>
         </div>
     </a>
 </article>
@@ -725,8 +725,8 @@ if (!doNotTrack) {
     <li><a href="#前言">前言</a></li>
     <li><a href="#程式實作">程式實作</a>
       <ol>
-        <li><a href="#python程式multithreading_demopy">Python程式：multithreading_demo.py</a></li>
-        <li><a href="#python程式multiprocessing_demopy">Python程式：multiprocessing_demo.py</a></li>
+        <li><a href="#python-程式multithreading_demopy">Python 程式：multithreading_demo.py</a></li>
+        <li><a href="#python-程式multiprocessing_demopy">Python 程式：multiprocessing_demo.py</a></li>
       </ol>
     </li>
   </ol>

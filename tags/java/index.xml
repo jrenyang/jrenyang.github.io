@@ -7,25 +7,25 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Mon, 07 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Java-Apache Velocity Template Engine</title>
+        <title>Java - Apache Velocity Template Engine</title>
         <link>https://jren.cc/p/java-apache-velocity/</link>
         <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/java-apache-velocity/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/java.jpg" alt="Featured image of post Java-Apache Velocity Template Engine" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR自己的Side Project其中以協助工作的小工具最多，畢竟先把工作理順了，才真的有心力去做其他事情嘛！JR工作上的主要需求像是自動產Code，例如後端常會產生Spring Data JPA的Repository介面以及Enity類別，前端的話，因為JR前端專案目前都是使用Angular，其實不論是用什麼前端框架，現在大多使用TypeScript進行開發，對型態有嚴格要求就得將Spring Boot回傳給前端的Response物件轉換成TypeScript接的Model物件，更不用說Java內部又有一堆VO、BO、PO、DTO&amp;hellip;等物件轉換，而JR有事以專案性質為主，因此在新的專案上常常一切得重新來過，面對的資料表少則幾十個，多則上百個，假設使用Spring Data JPA做為資料庫的持久化方案，那光基礎的Repository介面以及Enity類別建完專案大概也結束了吧&amp;hellip;因此JR最常使用的方式就是透過&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache Velocity&lt;/a&gt;這一套Java-Based Template Engine做為Code Generator的工具套件。&lt;/p&gt;
-&lt;p&gt;事實上Apache Velocity也是許多專案上使用的Template Engine，JR選它的原因是因為它是Apache下的Project，對於Java來說還有許多Template Engine可以用，不過JR覺得這樣的東西學會一套就很夠用了，雖然它是一套Java-Based Template Engine，不過重點是它是套Template Engine，也就是說學會它之後，就可以透過這套Template Engine去產生出各種不同的格式的檔案，差異只在於Template不一樣而已，說明白一點就是可以透過它將資料轉換後產生出如Java、JSP、PHP、Morkdown、HTML&amp;hellip;等文字檔，當中也可包含一些迴圈與邏輯的使用，關於Template的使用 得參閱官方的&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Velocity Engine&lt;/a&gt;單元的&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/user-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;User Guide&lt;/a&gt;，如果要看 Java 開發的話就得看&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/devel/developer-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Developer Guide&lt;/a&gt;，又或者想把Apache Velocity當成如Web Project的前端頁面模板使用就得看&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/tools/devel/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Velocity Tools&lt;/a&gt;不過因為現在專案都是以RESTful開發，前端也轉用如&lt;a class=&#34;link&#34; href=&#34;https://angular.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://jren.cc/images/programming/java.jpg" alt="Featured image of post Java - Apache Velocity Template Engine" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 自己的 Side Project 其中以協助工作的小工具最多，畢竟先把工作理順了，才真的有心力去做其他事情嘛！JR 工作上的主要需求像是自動產 Code，例如後端常會產生 Spring Data JPA 的 Repository 介面以及 Enity 類別，前端的話，因為JR前端專案目前都是使用 Angular，其實不論是用什麼前端框架，現在大多使用 TypeScript 進行開發，對型態有嚴格要求就得將 Spring Boot 回傳給前端的 Response 物件轉換成 TypeScript 接的 Model 物件，更不用說 Java 內部又有一堆 VO、BO、PO、DTO&amp;hellip;等物件轉換，而 JR 從事的工作以專案性質為主，因此在新的專案上常常一切得重新來過，面對的資料表少則幾十個，多則上百個，假設使用 Spring Data JPA 做為資料庫的持久化方案，那光基礎的 Repository 介面以及 Enity 類別建完專案大概也結束了吧&amp;hellip;因此JR最常使用的方式就是透過 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Apache Velocity&lt;/a&gt; 這一套 Java-Based Template Engine 做為 Code Generator 的工具套件。&lt;/p&gt;
+&lt;p&gt;事實上 Apache Velocity 也是許多專案上使用的 Template Engine，JR 選它的原因是因為它是 Apache 下的 Project，對於 Java 來說還有許多 Template Engine 可以用，不過 JR 覺得這樣的東西學會一套就很夠用了，雖然它是一套 Java-Based Template Engine，不過重點是它是套 Template Engine，也就是說學會它之後，就可以透過這套 Template Engine 去產生出各種不同的格式的檔案，差異只在於 Template 不一樣而已，說明白一點就是可以透過它將資料轉換後產生出如 Java、JSP、PHP、Morkdown、HTML&amp;hellip;等文字檔，當中也可包含一些迴圈與邏輯的使用，關於 Template 的使用 得參閱官方的 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Velocity Engine&lt;/a&gt; 單元的 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/user-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;User Guide&lt;/a&gt;，如果要看 Java 開發的話就得看 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/devel/developer-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Developer Guide&lt;/a&gt;，又或者想把 Apache Velocity 當成如 Web Project 的前端頁面模板使用就得看 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/tools/devel/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Velocity Tools&lt;/a&gt; 不過因為現在專案都是以 RESTful 開發，前端也轉用如 &lt;a class=&#34;link&#34; href=&#34;https://angular.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Angular&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://reactjs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;React&lt;/a&gt;或者是&lt;a class=&#34;link&#34; href=&#34;https://vuejs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Vue.js&lt;/a&gt;等前端框架進行開發，因此過往JR研究果許多Web使用的Template Engine大概都荒廢掉了&amp;hellip;&lt;/p&gt;
-&lt;p&gt;這篇文章的目的其實是JR用來記錄自己對於Apache Velocity的常用作法，方便自己回頭觀看回憶，藉此也分享給各位，一般對Java開發者來說，想取得資源大概分為從Resource取得(專案內或Jar內)或是從外部路徑取得，Apache Velocity對這兩項做法的寫法上有小小的差異，因此JR做個簡單的例子一個使用Resource取得Template檔案，另一個則使用實際路徑取得，並設計兩個Template分別產出Markdown的.md檔以及網頁的.html檔案。&lt;/p&gt;
-&lt;p&gt;首先先於專案的Maven設定檔引如Apache Velocity依賴。&lt;/p&gt;
-&lt;h2 id=&#34;maven設定檔pomxml&#34;&gt;Maven設定檔：pom.xml&lt;/h2&gt;
+    &gt;React&lt;/a&gt; 或者是 &lt;a class=&#34;link&#34; href=&#34;https://vuejs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vue.js&lt;/a&gt; 等前端框架進行開發，因此過往JR研究果許多Web使用的 Template Engine 大概都荒廢掉了&amp;hellip;&lt;/p&gt;
+&lt;p&gt;這篇文章的目的其實是JR用來記錄自己對於 Apache Velocity 的常用作法，方便自己回頭觀看回憶，藉此也分享給各位，一般對 Java 開發者來說，想取得資源大概分為從 Resource 取得(專案內或 Jar 內)或是從外部路徑取得，Apache Velocity 對這兩項做法的寫法上有小小的差異，因此JR做個簡單的例子一個使用 Resource 取得 Template 檔案，另一個則使用實際路徑取得，並設計兩個 Template 分別產出 Markdown 的 &lt;code&gt;.md&lt;/code&gt; 檔以及網頁的 &lt;code&gt;.html&lt;/code&gt; 檔案。&lt;/p&gt;
+&lt;p&gt;首先先於專案的 Maven 設定檔引如 Apache Velocity 依賴。&lt;/p&gt;
+&lt;h2 id=&#34;maven-設定檔pomxml&#34;&gt;Maven 設定檔：pom.xml&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -48,8 +48,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/dependencies&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;接著設計兩個副檔名為.vm的Apache Velocity Template，並都放置於專案的resource/teamplates目錄底下。&lt;/p&gt;
-&lt;h2 id=&#34;編寫template&#34;&gt;編寫Template&lt;/h2&gt;
+&lt;/div&gt;&lt;p&gt;接著設計兩個副檔名為 &lt;code&gt;.vm&lt;/code&gt; 的 Apache Velocity Template，並都放置於專案的 &lt;code&gt;resource/teamplates&lt;/code&gt; 目錄底下。&lt;/p&gt;
+&lt;h2 id=&#34;編寫-template&#34;&gt;編寫 Template&lt;/h2&gt;
 &lt;h3 id=&#34;apache-velocity-templateallen-html-templatevm&#34;&gt;Apache Velocity Template：allen-html-template.vm&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -115,7 +115,7 @@
 &lt;/div&gt;&lt;p&gt;* 具經驗要產出來的 Template 好看需要把 Apache Velocity 處理邏輯的部分全部靠右對齊，這一點 JR 是比較龜毛一點啦😅。&lt;/p&gt;
 &lt;p&gt;接著回到 Java 端撰寫兩個 Java Bean，到時候用來做資料使用的，也會比較符合真實使用狀況。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;java程式categorydetailjava&#34;&gt;Java程式：CategoryDetail.java&lt;/h3&gt;
+&lt;h3 id=&#34;java-程式categorydetailjava&#34;&gt;Java 程式：CategoryDetail.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -268,7 +268,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;java程式categoryjava&#34;&gt;Java程式：Category.java&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;java-程式categoryjava&#34;&gt;Java 程式：Category.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -365,8 +365,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;接著就撰寫主程式，從Resource取得(專案內或Jar檔內)或是從外部路徑取得最主要的差異在於以下兩個片段。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Resource 取得Template方法&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;接著就撰寫主程式，從 Resource 取得(專案內或 Jar 檔內)或是從外部路徑取得最主要的差異在於以下兩個片段。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resource 取得 Template 方法&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -377,7 +377,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;classpath.resource.loader.class&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ClasspathResourceLoader&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;從外部路徑取得Template方法&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;從外部路徑取得 Template 方法&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -388,7 +388,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RuntimeConstants&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;FILE_RESOURCE_LOADER_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;filePath&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getParent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;toString&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;java程式applicationjava&#34;&gt;Java程式：Application.java&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;java-程式applicationjava&#34;&gt;Java 程式：Application.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;  1
@@ -611,8 +611,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在target目錄底下會產生兩個檔案分別為JR-html-template.html與JR-md-template.md。&lt;/p&gt;
-&lt;p&gt;比較需要注意的是JR特別將最後一筆資料&lt;code&gt;enabled&lt;/code&gt;設為&lt;code&gt;false&lt;/code&gt;，因此模板頁面寫了&lt;code&gt;#if($categoryDetail.enabled)&lt;/code&gt;判斷式不會顯示。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;在 target 目錄底下會產生兩個檔案分別為 JR-html-template.html 與 JR-md-template.md。&lt;/p&gt;
+&lt;p&gt;比較需要注意的是JR特別將最後一筆資料 &lt;code&gt;enabled&lt;/code&gt; 設為 &lt;code&gt;false&lt;/code&gt;，因此模板頁面寫了 &lt;code&gt;#if($categoryDetail.enabled)&lt;/code&gt; 判斷式不會顯示。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

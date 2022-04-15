@@ -241,7 +241,7 @@ if (!doNotTrack) {
         <div class="article-image">
             <a href="/p/ubuntu-server-static-ip/">
                 
-                    <img src="/images/linux/ubuntu.jpg" loading="lazy" alt="Featured image of post Ubuntu Server-靜態IP設定" />
+                    <img src="/images/linux/ubuntu.jpg" loading="lazy" alt="Featured image of post Ubuntu Server - 靜態 IP 設定" />
                 
             </a>
         </div>
@@ -260,12 +260,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/ubuntu-server-static-ip/">Ubuntu Server-靜態IP設定</a>
+            <a href="/p/ubuntu-server-static-ip/">Ubuntu Server - 靜態 IP 設定</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            為Ubuntu Server設定一個靜態IP
+            為 Ubuntu Server 設定一個靜態 IP
         </h3>
         
     </div>
@@ -298,7 +298,7 @@ if (!doNotTrack) {
 
 
                 <time class="article-time--reading">
-                    閱讀時間: 1 分鐘
+                    閱讀時間: 2 分鐘
                 </time>
             </div>
         
@@ -313,8 +313,8 @@ if (!doNotTrack) {
     
     
     <h2 id="前言">前言</h2>
-<p>JR第一份工作是網路工程師，當時在公司內部大量使用CentOS建構機房伺服器，當時對CentOS的各項伺服器建置還算挺熟悉的，不過後來工作逐漸轉換成軟體工程師，因此就比較少碰伺服器管理了，最近JR都Work From Home，家裡有閒置的筆電，因此JR想來活用一下它點任務，準備拿它當伺服器使用，順道找回一些記憶。</p>
-<p>之所以不使用CentOS，其主要原因是Redhat被IBM收購之後改變了產品策略，而CentOS也因受到影響，雖然有替代品，不過 JR 思考之後，決定全面使用 Ubuntu Server 做為 JR 主要的 Linux 伺服器系統。既然要架設伺服器，有個靜態 IP 使很重要的，Ubuntu於 18.04 LTS 開始將原本網路管理方式改由 <a class="link" href="https://netplan.io/"  target="_blank" rel="noopener"
+<p>JR 第一份工作是網路工程師，當時在公司內部大量使用 CentOS 建構機房伺服器，當時對 CentOS 的各項伺服器建置還算挺熟悉的，不過後來工作逐漸轉換成軟體工程師，因此就比較少碰伺服器管理了，最近 JR 都 Work From Home，家裡有閒置的筆電，因此 JR 想來活用一下它點任務，準備拿它當伺服器使用，順道找回一些記憶。</p>
+<p>之所以不使用 CentOS，其主要原因是 Redhat 被 IBM 收購之後改變了產品策略，而 CentOS 也因受到影響，雖然有替代品，不過 JR 思考之後，決定全面使用 Ubuntu Server 做為 JR 主要的 Linux 伺服器系統。既然要架設伺服器，有個靜態 IP 使很重要的，Ubuntu於 18.04 LTS 開始將原本網路管理方式改由 <a class="link" href="https://netplan.io/"  target="_blank" rel="noopener"
     >Netplan</a> 方式，因此 JR 在此進行設定紀錄。</p>
 <h2 id="編輯-netplan-設定檔">編輯 netplan 設定檔</h2>
 <div class="highlight"><div class="chroma">
@@ -390,7 +390,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ sudo netplan apply
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="確認ip修正">確認IP修正</h2>
+</div><h2 id="確認-ip-修正">確認 IP 修正</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -423,7 +423,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">       valid_lft forever preferred_lft forever
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>看到enp0s3網卡inet資訊已於設定檔一樣就完成了。</p>
+</div><p>看到 enp0s3 網卡 inet 資訊已於設定檔一樣就完成了。</p>
 
 </section>
 
@@ -477,7 +477,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-架設Samba Server</h2>
+            <h2 class="article-title">Ubuntu Server - 架設 Samba Server</h2>
         </div>
     </a>
 </article>
@@ -495,7 +495,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-iptables NAT封包偽裝設定</h2>
+            <h2 class="article-title">Ubuntu Server - iptables NAT 封包偽裝設定</h2>
         </div>
     </a>
 </article>
@@ -513,7 +513,7 @@ if (!doNotTrack) {
         
 
         <div class="article-details">
-            <h2 class="article-title">Ubuntu Server-iptables filter表設定</h2>
+            <h2 class="article-title">Ubuntu Server - iptables filter表設定</h2>
         </div>
     </a>
 </article>
@@ -684,7 +684,7 @@ if (!doNotTrack) {
   <ol>
     <li><a href="#前言">前言</a></li>
     <li><a href="#編輯-netplan-設定檔">編輯 netplan 設定檔</a></li>
-    <li><a href="#確認ip修正">確認IP修正</a></li>
+    <li><a href="#確認-ip-修正">確認 IP 修正</a></li>
   </ol>
 </nav>
         </div>

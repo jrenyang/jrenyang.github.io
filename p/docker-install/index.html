@@ -241,7 +241,7 @@ if (!doNotTrack) {
         <div class="article-image">
             <a href="/p/docker-install/">
                 
-                    <img src="/images/virtualization/docker.jpg" loading="lazy" alt="Featured image of post Docker-基礎環境安裝" />
+                    <img src="/images/virtualization/docker.jpg" loading="lazy" alt="Featured image of post Docker - 基礎環境安裝" />
                 
             </a>
         </div>
@@ -260,12 +260,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/docker-install/">Docker-基礎環境安裝</a>
+            <a href="/p/docker-install/">Docker - 基礎環境安裝</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Docker起手式
+            Docker 起手式
         </h3>
         
     </div>
@@ -313,9 +313,9 @@ if (!doNotTrack) {
     
     
     <h2 id="前言">前言</h2>
-<p>JR最近開始複習Docker使用，早期Docker剛出來的時候JR就搶先學習，不過當時的時空背景，很多服務都還是跑在VMware虛擬機上，公司方面也比較守舊，因此JR只能自己下設的伺服器玩，Docker經過多年的雲端運用驗證，許多公司也陸續由傳統虛擬機的使用方式轉換使用Docker，而現在也有不少協同管理Docker的工具平台，因此JR決定將放下許久的Docker重拾起來，第一步就是安裝Docker。</p>
-<p>JR自己使用的環境為Ubuntu Server，以下以此系統為基礎來安裝Docker。</p>
-<h2 id="docker安裝">Docker安裝</h2>
+<p>JR 最近開始複習 Docker 使用，早期 Docker 剛出來的時候 JR 就搶先學習，不過當時的時空背景，很多服務都還是跑在 VMware 虛擬機上，公司方面也比較守舊，因此JR只能自己下設的伺服器玩，Docker 經過多年的雲端運用驗證，許多公司也陸續由傳統虛擬機的使用方式轉換使用 Docker，而現在也有不少協同管理 Docker 的工具平台，因此 JR 決定將放下許久的 Docker 重拾起來，第一步就是安裝 Docker。</p>
+<p>JR 自己使用的環境為 Ubuntu Server，以下以此系統為基礎來安裝 Docker。</p>
+<h2 id="docker-安裝">Docker 安裝</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -324,7 +324,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo apt-get install docker.io -y
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="查看docker版本">查看Docker版本</h2>
+</div><h2 id="查看-docker-版本">查看 Docker 版本</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -335,7 +335,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="go">Docker version 20.10.2, build 20.10.2-0ubuntu1~20.04.2
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="開啟docker服務">開啟Docker服務</h2>
+</div><h2 id="開啟-docker-服務">開啟 Docker 服務</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -347,7 +347,7 @@ if (!doNotTrack) {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="測試">測試</h2>
-<p>先來載個image做測試。</p>
+<p>先來載個 image 做測試。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -356,7 +356,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo docker pull hello-world
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>查看images。</p>
+</div><p>查看 images。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -369,7 +369,7 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">hello-world   latest    d1165f221234   3 months ago   13.3kB
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>執行image。</p>
+</div><p>執行 image。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -617,9 +617,9 @@ if (!doNotTrack) {
             <nav id="TableOfContents">
   <ol>
     <li><a href="#前言">前言</a></li>
-    <li><a href="#docker安裝">Docker安裝</a></li>
-    <li><a href="#查看docker版本">查看Docker版本</a></li>
-    <li><a href="#開啟docker服務">開啟Docker服務</a></li>
+    <li><a href="#docker-安裝">Docker 安裝</a></li>
+    <li><a href="#查看-docker-版本">查看 Docker 版本</a></li>
+    <li><a href="#開啟-docker-服務">開啟 Docker 服務</a></li>
     <li><a href="#測試">測試</a></li>
   </ol>
 </nav>

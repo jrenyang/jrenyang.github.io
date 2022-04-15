@@ -7,17 +7,17 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Spring Boot透過Spring Initializr初始化專案</title>
+        <title>Spring Boot 透過 Spring Initializr 初始化專案</title>
         <link>https://jren.cc/p/spring-boot-spring-initializr/</link>
         <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/spring-boot-spring-initializr/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/spring-boot.jpeg" alt="Featured image of post Spring Boot透過Spring Initializr初始化專案" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;Spring Framework是Java中的主流框架之一，近年來因資訊科技的進步，Spring也發起了許多的專案做為因應的解決方案。使用過的開發者對於框架的配置大概不陌生，但如果一個專案內需使用不同框架的配合，光設定就十分繁雜，因此Spring提供了Spring Boot做為框架配置的解決方案，讓開發者可以快速的建置一個基於Spring Framework的應用程式。&lt;/p&gt;
-&lt;p&gt;Spring專案中包含了Spring Framework、Spring Data、Spring Mobile&amp;hellip;等眾多解決方案，如果用到一兩種的情況下自行配置尚可接受，但如果用到四種、五種的話複雜程度其實挺驚人的，維護也會相當繁瑣，因此發展出了Spring Boot用於快速建置Spring應用程式可以自動處理套件間的倚賴關係。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/spring-boot.jpeg" alt="Featured image of post Spring Boot 透過 Spring Initializr 初始化專案" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Spring Framework 是 Java 中的主流框架之一，近年來因資訊科技的進步，Spring 也發起了許多的專案做為因應的解決方案。使用過的開發者對於框架的配置大概不陌生，但如果一個專案內需使用不同框架的配合，光設定就十分繁雜，因此 Spring 提供了 Spring Boot 做為框架配置的解決方案，讓開發者可以快速的建置一個基於 Spring Framework 的應用程式。&lt;/p&gt;
+&lt;p&gt;Spring 專案中包含了 Spring Framework、Spring Data、Spring Mobile&amp;hellip;等眾多解決方案，如果用到一兩種的情況下自行配置尚可接受，但如果用到四種、五種的話複雜程度其實挺驚人的，維護也會相當繁瑣，因此發展出了 Spring Boot 用於快速建置 Spring 應用程式可以自動處理套件間的倚賴關係。&lt;/p&gt;
 &lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
-&lt;p&gt;建立Spring Boot專案方法有很多，其中一種方式就是使用Spring Boot官方網站提供的&lt;a class=&#34;link&#34; href=&#34;https://start.spring.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;SPRING INITIALIZR&lt;/a&gt;平台直接進行相關配置選項後直接下載，之後再將下載回來的檔案匯入開發工具專案即可進行開發。因使用方式十分簡單，因此直接於網站輸入相關資訊，並在Dependencies輸入專案所需的依賴項目，並進行Generate Project按鈕即可完成專案建置。&lt;/p&gt;
+&lt;p&gt;建立 Spring Boot 專案方法有很多，其中一種方式就是使用 Spring Boot 官方網站提供的 &lt;a class=&#34;link&#34; href=&#34;https://start.spring.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SPRING INITIALIZR&lt;/a&gt; 平台直接進行相關配置選項後直接下載，之後再將下載回來的檔案匯入開發工具專案即可進行開發。因使用方式十分簡單，因此直接於網站輸入相關資訊，並在 Dependencies 輸入專案所需的依賴項目，並進行 Generate Project 按鈕即可完成專案建置。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jren.cc/p/spring-boot-spring-initializr/spring-initializr.png&#34;
 	width=&#34;1919&#34;
 	height=&#34;1023&#34;
@@ -32,22 +32,22 @@
 		data-flex-basis=&#34;450px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;Spring有為各大主流IDE整合開發工具提供Spring Tool Suite外掛套件，供開發者可以直接於開發工具上快速透過Spring Boot組織專案，基於這一點JR更為喜歡透過這樣的方式建構Spring專案。&lt;/p&gt;
+&lt;p&gt;Spring 有為各大主流IDE整合開發工具提供 Spring Tool Suite 外掛套件，供開發者可以直接於開發工具上快速透過 Spring Boot 組織專案，基於這一點 JR 更為喜歡透過這樣的方式建構 Spring 專案。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python-multithreading與multiprocessing使用</title>
+        <title>Python-multithreading 與 multiprocessing 使用</title>
         <link>https://jren.cc/p/python-multithreading-and-multiprocessing/</link>
         <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-multithreading-and-multiprocessing/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-multithreading與multiprocessing使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;一支Python程式在運行的時候如果沒加入multithreading或multiprocessing的設計，程式只會一行一行執行無法發揮CPU性能，multithreading或multiprocessing都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立process，而一個process內又運行著thread用來運行程式，因此若不使用multithreading或multiprocessing方式進行程式開發，程式就只能在一個process裡的thread執行了。&lt;/p&gt;
-&lt;p&gt;Python的解釋器在每一個process內都設了一個GIL(Global Interpreter Lock)，用來避免資源死鎖，這是Python語言獨有的設計，GIL確保Python應用程式一次這會有一個Thread在運行，這也就是Python在這方面令許多人垢病的地方，關於GIL的歷史淵源，在此不加以探究，學習如何減少GIL對程式帶來的影響才是重點。&lt;/p&gt;
-&lt;p&gt;至於要使用multithreading還是multiprocessing，這得取決於程式考量，multithreading是存在於process，因此較為輕量，但會受到GIL的限制，用於IO-bound較為適合，而multiprocessing適合用於CPU-bound，主要在於IO-bound的情境CPU大部分時間都在等待IO操作完成，因此任務越多CPU使用率也越高，而CPU-bound因CPU較為忙碌，若使用multithreading的方式，需花在任務切換的時間就越多，如此一來CPU執行效率就越低。&lt;/p&gt;
-&lt;p&gt;說了這麼多JR將multithreading與multiprocessing記錄下來，使用時機對了，可讓程式效能增進不少。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-multithreading 與 multiprocessing 使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一支 Python 程式在運行的時候如果沒加入 multithreading 或 multiprocessing 的設計，程式只會一行一行執行無法發揮 CPU 性能，multithreading 或 multiprocessing 都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立 process，而一個 process 內又運行著 thread 用來運行程式，因此若不使用 multithreading 或 multiprocessing 方式進行程式開發，程式就只能在一個 process 裡的 thread 執行了。&lt;/p&gt;
+&lt;p&gt;Python 的解釋器在每一個 process 內都設了一個 GIL(Global Interpreter Lock)，用來避免資源死鎖，這是 Python 語言獨有的設計，GIL 確保 Python 應用程式一次這會有一個 Thread 在運行，這也就是 Python 在這方面令許多人垢病的地方，關於 GIL 的歷史淵源，在此不加以探究，學習如何減少 GIL 對程式帶來的影響才是重點。&lt;/p&gt;
+&lt;p&gt;至於要使用 multithreading 還是 multiprocessing，這得取決於程式考量，multithreading 是存在於 process，因此較為輕量，但會受到 GIL 的限制，用於 IO-bound 較為適合，而 multiprocessing 適合用於CPU-bound，主要在於 IO-bound 的情境 CPU 大部分時間都在等待 IO 操作完成，因此任務越多 CPU 使用率也越高，而 CPU-bound 因 CPU 較為忙碌，若使用 multithreading 的方式，需花在任務切換的時間就越多，如此一來 CPU 執行效率就越低。&lt;/p&gt;
+&lt;p&gt;說了這麼多 JR 將 multithreading 與 multiprocessing 記錄下來，使用時機對了，可讓程式效能增進不少。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式multithreading_demopy&#34;&gt;Python程式：multithreading_demo.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式multithreading_demopy&#34;&gt;Python 程式：multithreading_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -102,7 +102,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;python程式multiprocessing_demopy&#34;&gt;Python程式：multiprocessing_demo.py&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;python-程式multiprocessing_demopy&#34;&gt;Python 程式：multiprocessing_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -160,15 +160,15 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Python-使用python-dotenv建立臨時環境變數</title>
+        <title>Python - 使用 python-dotenv 建立臨時環境變數</title>
         <link>https://jren.cc/p/python-python-dotenv/</link>
         <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-python-dotenv/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-使用python-dotenv建立臨時環境變數" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - 使用 python-dotenv 建立臨時環境變數" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在開發專案的過程中因為不會把參數寫死，因此會透過使用這輸入或是設定檔案的方式處理，在使用設定檔的時候，難免會有些參數不適合公開出去給其他人使用的，例如自己的 API KEY 或是自己測試使用的參數，此時可以定義在自己的環境變數中，不過設置系統上的環境變數，其實不是這麼方便，在 Python 上可透過 python-dotenv 套件解決此問題。&lt;/p&gt;
 &lt;p&gt;使用 python-dotenv 套件方法如下。&lt;/p&gt;
-&lt;h2 id=&#34;安裝python-dotenv套件&#34;&gt;安裝python-dotenv套件&lt;/h2&gt;
+&lt;h2 id=&#34;安裝-python-dotenv-套件&#34;&gt;安裝 python-dotenv 套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -177,7 +177,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;&amp;gt;&lt;/span&gt; pip install python-dotenv
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;建立env檔案於目錄下並寫入參數內容&#34;&gt;建立.env檔案於目錄下並寫入參數內容&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;建立-env-檔案於目錄下並寫入參數內容&#34;&gt;建立 .env 檔案於目錄下並寫入參數內容&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -193,9 +193,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;* 注意Key與Value的等號中間不要有空格。&lt;/p&gt;
-&lt;p&gt;再來就可以透過&lt;code&gt;load_dotenv()&lt;/code&gt;將.env檔案設定中的值讀取成環境變數了。&lt;/p&gt;
+&lt;p&gt;再來就可以透過 &lt;code&gt;load_dotenv()&lt;/code&gt; 將.env檔案設定中的值讀取成環境變數了。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式env_demopy&#34;&gt;Python程式：env_demo.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式env_demopy&#34;&gt;Python 程式：env_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -209,14 +209,12 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Python - 使用 python-dotenv 建立臨時環境變數&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;dotenv&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -226,18 +224,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;getenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;PARAM_4&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;透過python-dotenv建立的臨時環境變數，去的方式其實跟取系統環境變數的方式是完全一樣的，JR在專案中會使用python-dotenv搭配設定檔，判定如果環境變數有值則優先使用環境變數的值，以上分享。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;透過 python-dotenv 建立的臨時環境變數，去的方式其實跟取系統環境變數的方式是完全一樣的，JR 在專案中會使用 python-dotenv 搭配設定檔，判定如果環境變數有值則優先使用環境變數的值，以上分享。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python-logging使用</title>
+        <title>Python - logging 使用</title>
         <link>https://jren.cc/p/python-logging/</link>
         <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-logging/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-logging使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;一般小程式上可能會比較少寫log記錄程式中發生了什麼事，一般可能會比較多用&lt;code&gt;print()&lt;/code&gt;的方式，不過對於大型專案來說寫log是不可少的部分，畢竟大型專案涵蓋的層面廣，程式檔案數量多，甚至需要24小時運行，例如網站系統，因此如果再發生問題時未將訊息記錄下來，這樣會造成問題難以排查。&lt;/p&gt;
-&lt;p&gt;在Python中提供了&lt;code&gt;logging&lt;/code&gt;模組可以方便定義log的記錄方式，一般記錄於檔案以及顯示到console上，而&lt;code&gt;logging&lt;/code&gt;模組也提自定義logger的方式，一般來說除非在專案開始的時候才比較有機會做這個動作，甚至到下個專案之後也會將自定義好的logger直接延續使用，所以要再寫一次的機會就更少了，因此JR將如何自定義logger記錄器的方法記錄下來，以後也方便直接拿範本下來改。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - logging 使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一般小程式上可能會比較少寫 log 記錄程式中發生了什麼事，一般可能會比較多用 &lt;code&gt;print()&lt;/code&gt; 的方式，不過對於大型專案來說寫 log 是不可少的部分，畢竟大型專案涵蓋的層面廣，程式檔案數量多，甚至需要 24 小時運行，例如網站系統，因此如果再發生問題時未將訊息記錄下來，這樣會造成問題難以排查。&lt;/p&gt;
+&lt;p&gt;在Python中提供了 &lt;code&gt;logging&lt;/code&gt; 模組可以方便定義log的記錄方式，一般記錄於檔案以及顯示到 console上，而 &lt;code&gt;logging&lt;/code&gt; 模組也提自定義 logger 的方式，一般來說除非在專案開始的時候才比較有機會做這個動作，甚至到下個專案之後也會將自定義好的 logger 直接延續使用，所以要再寫一次的機會就更少了，因此 JR 將如何自定義 logger 記錄器的方法記錄下來，以後也方便直接拿範本下來改。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
 &lt;h3 id=&#34;python-程式loggerpy&#34;&gt;Python 程式：logger.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -308,18 +306,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;logger&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;以上需要注意的是每個Handler都可以有自己的log Level需個別設定，包含logger本身也有預設的層級，因此在自定義時記得將它重新設置，更多的詳細logging使用可參考&lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/howto/logging.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/div&gt;&lt;p&gt;以上需要注意的是每個 Handler 都可以有自己的 log Level 需個別設定，包含 logger 本身也有預設的層級，因此在自定義時記得將它重新設置，更多的詳細 logging 使用可參考 &lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/howto/logging.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方網站-Logging HOWTO&lt;/a&gt;。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python-virtualenv虛擬開發環境</title>
+        <title>Python - virtualenv 虛擬開發環境</title>
         <link>https://jren.cc/p/python-virtualenv/</link>
         <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-virtualenv/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-virtualenv虛擬開發環境" /&gt;&lt;p&gt;於Python進行專案開發一般會建立虛擬開發環境，其實Python上的虛擬開發環境有點像是Java當中使用Maven或是像是JavaScript使用npm，甚至是PHP使用composer一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此Python專案需要安裝那些套件，不用自行&lt;code&gt;pip install &amp;lt;packages&amp;gt;&lt;/code&gt;安裝依賴套件到專案可以執行為止。&lt;/p&gt;
-&lt;h2 id=&#34;安裝virtualenv套件&#34;&gt;安裝&lt;code&gt;virtualenv&lt;/code&gt;套件&lt;/h2&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - virtualenv 虛擬開發環境" /&gt;&lt;p&gt;於 Python 進行專案開發一般會建立虛擬開發環境，其實 Python 上的虛擬開發環境有點像是 Java 當中使用 Maven 或是像是 JavaScript 使用 npm，甚至是 PHP 使用 composer 一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此 Python 專案需要安裝那些套件，不用自行 &lt;code&gt;pip install &amp;lt;packages&amp;gt;&lt;/code&gt; 安裝依賴套件到專案可以執行為止。&lt;/p&gt;
+&lt;h2 id=&#34;安裝-virtualenv-套件&#34;&gt;安裝 &lt;code&gt;virtualenv&lt;/code&gt; 套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -358,10 +356,10 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ source ./venv/bin/activate
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;執行成功後命令列前端會出現&lt;code&gt;(venv)&lt;/code&gt;字符。&lt;/p&gt;
-&lt;p&gt;之後專案所需要的套件都在虛擬開發環境進行安裝，不會影響到原本機Python環境。&lt;/p&gt;
-&lt;p&gt;每當安裝新套件後，別忘了同時導出requirements.txt檔案，此檔案是用來管理Python專案使用的必要套件。&lt;/p&gt;
-&lt;h2 id=&#34;導出requirementstxt檔案&#34;&gt;導出requirements.txt檔案&lt;/h2&gt;
+&lt;/div&gt;&lt;p&gt;執行成功後命令列前端會出現 &lt;code&gt;(venv)&lt;/code&gt; 字符。&lt;/p&gt;
+&lt;p&gt;之後專案所需要的套件都在虛擬開發環境進行安裝，不會影響到原本機 Python 環境。&lt;/p&gt;
+&lt;p&gt;每當安裝新套件後，別忘了同時導出 requirements.txt 檔案，此檔案是用來管理 Python 專案使用的必要套件。&lt;/p&gt;
+&lt;h2 id=&#34;導出-requirementstxt-檔案&#34;&gt;導出 requirements.txt 檔案&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -382,16 +380,16 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Python-取得執行檔案當前路徑</title>
+        <title>Python - 取得執行檔案當前路徑</title>
         <link>https://jren.cc/p/python-get-file-current-path/</link>
         <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-get-file-current-path/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-取得執行檔案當前路徑" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;在進行資料處理的時候，難免使用需要知道目前執行檔案的路徑，在JR的開發經驗當中並非所有情況都可以使用相對路徑，有時需要取得目前執行檔案的路徑後再搭配相對路徑使用，要取得目前執行檔案的路徑可以透過&lt;code&gt;os&lt;/code&gt;以及&lt;code&gt;pathlib&lt;/code&gt;兩個套件取得。&lt;/p&gt;
-&lt;p&gt;首先展示&lt;code&gt;os&lt;/code&gt;套件使用。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - 取得執行檔案當前路徑" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在進行資料處理的時候，難免使用需要知道目前執行檔案的路徑，在JR的開發經驗當中並非所有情況都可以使用相對路徑，有時需要取得目前執行檔案的路徑後再搭配相對路徑使用，要取得目前執行檔案的路徑可以透過 &lt;code&gt;os&lt;/code&gt; 以及 &lt;code&gt;pathlib&lt;/code&gt; 兩個套件取得。&lt;/p&gt;
+&lt;p&gt;首先展示 &lt;code&gt;os&lt;/code&gt; 套件使用。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式os_get_current_pathpy&#34;&gt;Python程式：os_get_current_path.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式os_get_current_pathpy&#34;&gt;Python 程式：os_get_current_path.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -419,7 +417,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;接下來展示&lt;code&gt;pathlib&lt;/code&gt;套件使用。&lt;/p&gt;
-&lt;h3 id=&#34;python程式pathlib_get_current_pathpy&#34;&gt;Python程式：pathlib_get_current_path.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式pathlib_get_current_pathpy&#34;&gt;Python 程式：pathlib_get_current_path.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -444,13 +442,13 @@
 </description>
         </item>
         <item>
-        <title>SQLite-刪除大量資料後瘦身</title>
+        <title>SQLite - 刪除大量資料後瘦身</title>
         <link>https://jren.cc/p/sqlite-vaccum/</link>
         <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/sqlite-vaccum/</guid>
-        <description>&lt;img src="https://jren.cc/images/database/sqlite.png" alt="Featured image of post SQLite-刪除大量資料後瘦身" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR近期在開發Site Project，一方面使用最近學的Python語言爬取資料，並使用SQLite做為後端資料庫，最近刪除大量資料，準備要重新寫入，不過刪除資料後SQLite的檔案大小並未縮小，此時只要一個單詞指令即可達到SQLite瘦身。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/database/sqlite.png" alt="Featured image of post SQLite - 刪除大量資料後瘦身" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 近期在開發 Site Project，一方面使用最近學的 Python 語言爬取資料，並使用 SQLite 做為後端資料庫，最近刪除大量資料，準備要重新寫入，不過刪除資料後 SQLite 的檔案大小並未縮小，此時只要一個單詞指令即可達到 SQLite 瘦身。&lt;/p&gt;
 &lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -463,15 +461,15 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Docker-基礎環境安裝</title>
+        <title>Docker - 基礎環境安裝</title>
         <link>https://jren.cc/p/docker-install/</link>
         <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/docker-install/</guid>
-        <description>&lt;img src="https://jren.cc/images/virtualization/docker.jpg" alt="Featured image of post Docker-基礎環境安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR最近開始複習Docker使用，早期Docker剛出來的時候JR就搶先學習，不過當時的時空背景，很多服務都還是跑在VMware虛擬機上，公司方面也比較守舊，因此JR只能自己下設的伺服器玩，Docker經過多年的雲端運用驗證，許多公司也陸續由傳統虛擬機的使用方式轉換使用Docker，而現在也有不少協同管理Docker的工具平台，因此JR決定將放下許久的Docker重拾起來，第一步就是安裝Docker。&lt;/p&gt;
-&lt;p&gt;JR自己使用的環境為Ubuntu Server，以下以此系統為基礎來安裝Docker。&lt;/p&gt;
-&lt;h2 id=&#34;docker安裝&#34;&gt;Docker安裝&lt;/h2&gt;
+        <description>&lt;img src="https://jren.cc/images/virtualization/docker.jpg" alt="Featured image of post Docker - 基礎環境安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 最近開始複習 Docker 使用，早期 Docker 剛出來的時候 JR 就搶先學習，不過當時的時空背景，很多服務都還是跑在 VMware 虛擬機上，公司方面也比較守舊，因此JR只能自己下設的伺服器玩，Docker 經過多年的雲端運用驗證，許多公司也陸續由傳統虛擬機的使用方式轉換使用 Docker，而現在也有不少協同管理 Docker 的工具平台，因此 JR 決定將放下許久的 Docker 重拾起來，第一步就是安裝 Docker。&lt;/p&gt;
+&lt;p&gt;JR 自己使用的環境為 Ubuntu Server，以下以此系統為基礎來安裝 Docker。&lt;/p&gt;
+&lt;h2 id=&#34;docker-安裝&#34;&gt;Docker 安裝&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -480,7 +478,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; sudo apt-get install docker.io -y
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;查看docker版本&#34;&gt;查看Docker版本&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;查看-docker-版本&#34;&gt;查看 Docker 版本&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -491,7 +489,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;Docker version 20.10.2, build 20.10.2-0ubuntu1~20.04.2
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;開啟docker服務&#34;&gt;開啟Docker服務&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;開啟-docker-服務&#34;&gt;開啟 Docker 服務&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -503,7 +501,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;測試&#34;&gt;測試&lt;/h2&gt;
-&lt;p&gt;先來載個image做測試。&lt;/p&gt;
+&lt;p&gt;先來載個 image 做測試。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -512,7 +510,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; sudo docker pull hello-world
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;查看images。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;查看 images。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -525,7 +523,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;hello-world   latest    d1165f221234   3 months ago   13.3kB
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;執行image。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;執行 image。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -580,13 +578,13 @@
 </description>
         </item>
         <item>
-        <title>Ubuntu Server-架設Samba Server</title>
+        <title>Ubuntu Server - 架設 Samba Server</title>
         <link>https://jren.cc/p/ubuntu-server-install-samba-server/</link>
         <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/ubuntu-server-install-samba-server/</guid>
-        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-架設Samba Server" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR將閒置筆電規劃用途多了些，不過首先想先將它變成一個檔案伺服器，與JR的Windows系統共享檔案，因此來架設個 Samba Server。Samba Server有不同的認證機制，不過JR是自家使用，因此使用Linux本機帳戶認證，一下進行相關步驟紀錄。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server - 架設 Samba Server" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 將閒置筆電規劃用途多了些，不過首先想先將它變成一個檔案伺服器，與 JR 的 Windows 系統共享檔案，因此來架設個 Samba Server。Samba Server 有不同的認證機制，不過 JR 是自家使用，因此使用 Linux 本機帳戶認證，一下進行相關步驟紀錄。&lt;/p&gt;
 &lt;h2 id=&#34;安裝-samba&#34;&gt;安裝 Samba&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -605,7 +603,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; sudo smbpasswd -a allen
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; sudo smbpasswd -a jr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;New SMB password:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;Retype new SMB password:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;Added user allen.
@@ -632,28 +630,28 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[allen]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    comment = allen
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    path= /home/allen
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[jr]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    comment = jr
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    path= /home/jr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    guest ok = no
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    browseable = no
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    read only = no
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    valid users = allen
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;JR在此簡單進行紀錄Samba Server架設過程，詳細參數可至&lt;a class=&#34;link&#34; href=&#34;https://ubuntu.com/server/docs/samba-introduction&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Ubuntu Server Docs&lt;/a&gt;查找。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;JR 在此簡單進行紀錄 Samba Server 架設過程，詳細參數可至 &lt;a class=&#34;link&#34; href=&#34;https://ubuntu.com/server/docs/samba-introduction&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu Server Docs&lt;/a&gt; 查找。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Ubuntu Server-靜態IP設定</title>
+        <title>Ubuntu Server - 靜態 IP 設定</title>
         <link>https://jren.cc/p/ubuntu-server-static-ip/</link>
         <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/ubuntu-server-static-ip/</guid>
-        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-靜態IP設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR第一份工作是網路工程師，當時在公司內部大量使用CentOS建構機房伺服器，當時對CentOS的各項伺服器建置還算挺熟悉的，不過後來工作逐漸轉換成軟體工程師，因此就比較少碰伺服器管理了，最近JR都Work From Home，家裡有閒置的筆電，因此JR想來活用一下它點任務，準備拿它當伺服器使用，順道找回一些記憶。&lt;/p&gt;
-&lt;p&gt;之所以不使用CentOS，其主要原因是Redhat被IBM收購之後改變了產品策略，而CentOS也因受到影響，雖然有替代品，不過 JR 思考之後，決定全面使用 Ubuntu Server 做為 JR 主要的 Linux 伺服器系統。既然要架設伺服器，有個靜態 IP 使很重要的，Ubuntu於 18.04 LTS 開始將原本網路管理方式改由 &lt;a class=&#34;link&#34; href=&#34;https://netplan.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server - 靜態 IP 設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 第一份工作是網路工程師，當時在公司內部大量使用 CentOS 建構機房伺服器，當時對 CentOS 的各項伺服器建置還算挺熟悉的，不過後來工作逐漸轉換成軟體工程師，因此就比較少碰伺服器管理了，最近 JR 都 Work From Home，家裡有閒置的筆電，因此 JR 想來活用一下它點任務，準備拿它當伺服器使用，順道找回一些記憶。&lt;/p&gt;
+&lt;p&gt;之所以不使用 CentOS，其主要原因是 Redhat 被 IBM 收購之後改變了產品策略，而 CentOS 也因受到影響，雖然有替代品，不過 JR 思考之後，決定全面使用 Ubuntu Server 做為 JR 主要的 Linux 伺服器系統。既然要架設伺服器，有個靜態 IP 使很重要的，Ubuntu於 18.04 LTS 開始將原本網路管理方式改由 &lt;a class=&#34;link&#34; href=&#34;https://netplan.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Netplan&lt;/a&gt; 方式，因此 JR 在此進行設定紀錄。&lt;/p&gt;
 &lt;h2 id=&#34;編輯-netplan-設定檔&#34;&gt;編輯 netplan 設定檔&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -729,7 +727,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo netplan apply
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;確認ip修正&#34;&gt;確認IP修正&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;確認-ip-修正&#34;&gt;確認 IP 修正&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -762,19 +760,19 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       valid_lft forever preferred_lft forever
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;看到enp0s3網卡inet資訊已於設定檔一樣就完成了。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;看到 enp0s3 網卡 inet 資訊已於設定檔一樣就完成了。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Ubuntu Server-iptables NAT封包偽裝設定</title>
+        <title>Ubuntu Server - iptables NAT 封包偽裝設定</title>
         <link>https://jren.cc/p/ubuntu-server-iptables-nat/</link>
         <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/ubuntu-server-iptables-nat/</guid>
-        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-iptables NAT封包偽裝設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR最早是網路工程師，當時在公司內部網路會使用Linux主機做網路切割，將網路分不同網段供不同用途與部門使用，其實在架設DHCP Server也得使用到iptables的NAT的技巧，今天特別把它拿出來說明一下參數。在此eth0為對外連線的網卡，而eth1為對內部連線的Gateway。&lt;/p&gt;
-&lt;p&gt;下面的方式如果沒有指定來源網域則是全部封包都會由eth0網路介面送出。&lt;/p&gt;
-&lt;h2 id=&#34;開啟linux核心forward功能&#34;&gt;開啟Linux核心Forward功能&lt;/h2&gt;
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server - iptables NAT 封包偽裝設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 最早是網路工程師，當時在公司內部網路會使用 Linux 主機做網路切割，將網路分不同網段供不同用途與部門使用，其實在架設 DHCP Server 也得使用到 iptables 的 NAT 的技巧，今天特別把它拿出來說明一下參數。在此 eth0 為對外連線的網卡，而 eth1 為對內部連線的 Gateway。&lt;/p&gt;
+&lt;p&gt;下面的方式如果沒有指定來源網域則是全部封包都會由 eth0 網路介面送出。&lt;/p&gt;
+&lt;h2 id=&#34;開啟-linux-核心-forward-功能&#34;&gt;開啟 Linux 核心 Forward 功能&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -783,8 +781,8 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;sudo su -c  &amp;#34;echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;nat語法&#34;&gt;nat語法&lt;/h2&gt;
-&lt;p&gt;多NAT環境都要由eth0介面出去的話，這樣寫最省事。&lt;/p&gt;
+&lt;/div&gt;&lt;h2 id=&#34;nat-語法&#34;&gt;nat 語法&lt;/h2&gt;
+&lt;p&gt;多 NAT 環境都要由 eth0 介面出去的話，這樣寫最省事。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -802,21 +800,21 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -o eth0 -j MASQUERADE
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;-t 指定使用iptables的表，在此為nat表。&lt;/p&gt;
-&lt;p&gt;-A POSTROUTING：POSTROUTING 為即將離開eth1網路介面的封包。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;-t 指定使用iptables的表，在此為 nat 表。&lt;/p&gt;
+&lt;p&gt;-A POSTROUTING：POSTROUTING 為即將離開 eth1 網路介面的封包。&lt;/p&gt;
 &lt;p&gt;-s 10.0.0.0/24：指定來源的網域。&lt;/p&gt;
-&lt;p&gt;-o eth0：由網卡eth0介面輸出的封包。&lt;/p&gt;
+&lt;p&gt;-o eth0：由網卡 eth0 介面輸出的封包。&lt;/p&gt;
 &lt;p&gt;-j MASQUERADE：將封包偽裝。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Ubuntu Server-iptables filter表設定</title>
+        <title>Ubuntu Server - iptables filter表設定</title>
         <link>https://jren.cc/p/ubuntu-server-iptables/</link>
         <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/ubuntu-server-iptables/</guid>
-        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server-iptables filter表設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;iptables是個相當強大的防火牆，可以用來過濾、轉發甚至是竄改封包。iptables總共有5個節點可以處理封包，分別為PREROUTING、POSTROUTING、INPUT、OUTPUT與FORWARD；而依用途不同又可分filter、mangle與 nat 表。以下先示範如何設本機的iptables，JR自己在設本機時，屬於開放派先都ACCEPT之後再說。不過網路滿多都是先DROP掉再來開PORT，使用這種方式最好加入iptables外掛模組的指令，否則用起來可能會卡卡的。以下對本機防護做個範例並說明參數。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/linux/ubuntu.jpg" alt="Featured image of post Ubuntu Server - iptables filter表設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;iptables 是個相當強大的防火牆，可以用來過濾、轉發甚至是竄改封包。iptables 總共有 5 個節點可以處理封包，分別為 PREROUTING、POSTROUTING、INPUT、OUTPUT與FORWARD；而依用途不同又可分 filter、mangle與 nat 表。以下先示範如何設本機的 iptables，JR 自己在設本機時，屬於開放派先都 ACCEPT 之後再說。不過網路滿多都是先 DROP 掉再來開 PORT，使用這種方式最好加入 iptables 外掛模組的指令，否則用起來可能會卡卡的。以下對本機防護做個範例並說明參數。&lt;/p&gt;
 &lt;h2 id=&#34;範例&#34;&gt;範例&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -919,25 +917,25 @@
 &lt;li&gt;NEW        ：想要新建立連線的封包狀態。&lt;/li&gt;
 &lt;li&gt;RELATED    ：表示這個封包是與我們主機發送出去的封包。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;--mac-source ：來源主機的MAC。&lt;/p&gt;
+&lt;p&gt;--mac-source：來源主機的MAC。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>入手Onyx Boox Note Air 10.3吋電子書閱讀器</title>
+        <title>入手 Onyx Boox Note Air 10.3吋電子書閱讀器</title>
         <link>https://jren.cc/p/onyx-boox-note-air/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/onyx-boox-note-air/</guid>
-        <description>&lt;img src="https://jren.cc/p/onyx-boox-note-air/PXL_20210611_140832813.jpg" alt="Featured image of post 入手Onyx Boox Note Air 10.3吋電子書閱讀器" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR本身書籍很多，又因為因為兩年多前北上至台北工作，租的地方並不大，一直都有閱讀習慣的JR，在這兩年多來相繼入手不少書籍，現在書籍已經多到讓 JR 租屋處的窗戶都漸漸地打不開了。&lt;/p&gt;
-&lt;p&gt;其實JR以前也覺得有平板電腦就好了，那為什麼要買電子書閱讀器，後來JR在Work From Home之前在搭車的時候看人家拿著電子書閱讀器在看書，看起來眼睛真的舒服不少，後來才細細去研究一番，一方面想嘗試改變JR的閱讀習慣，一方面尋找了自己覺得可入手的規格，最終買入了JR人生的第一台&lt;a class=&#34;link&#34; href=&#34;https://www.boox.com/noteair/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://jren.cc/p/onyx-boox-note-air/PXL_20210611_140832813.jpg" alt="Featured image of post 入手 Onyx Boox Note Air 10.3吋電子書閱讀器" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 本身書籍很多，又因為因為兩年多前北上至台北工作，租的地方並不大，一直都有閱讀習慣的 JR，在這兩年多來相繼入手不少書籍，現在書籍已經多到讓 JR 租屋處的窗戶都漸漸地打不開了。&lt;/p&gt;
+&lt;p&gt;其實 JR 以前也覺得有平板電腦就好了，那為什麼要買電子書閱讀器，後來 JR 在 Work From Home 之前在搭車的時候看人家拿著電子書閱讀器在看書，看起來眼睛真的舒服不少，後來才細細去研究一番，一方面想嘗試改變JR的閱讀習慣，一方面尋找了自己覺得可入手的規格，最終買入了 JR 人生的第一台 &lt;a class=&#34;link&#34; href=&#34;https://www.boox.com/noteair/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Onyx Boox Note Air 10.3吋 電子書閱讀器&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;電子書閱讀器與平板電腦最大的差異應該就是螢幕使用的技術不同，電子書閱讀器所使用的螢幕，是採用電泳式電子墨水的電子紙顯示器，也就是常聽到的電子墨水顯示，電子墨水技術呈現的方式類似印刷，即便在陽光下也可以清楚看得清楚，加上因為使用電子墨水呈現，不會有像是平板或手機有藍光問題，看久了眼睛容易受刺激，對眼睛也是有相當的保護。&lt;/p&gt;
 &lt;h2 id=&#34;入手考量&#34;&gt;入手考量&lt;/h2&gt;
-&lt;p&gt;JR選擇電子書閱讀器的時候對幾個廠牌稍微有研究過，有不少廠牌使用了自家系統，主要是為了能夠與自己的電子書平台綁訂在一起，不過因為JR先前使用平板或是手機已經有陸續買了幾本不同平台的電子書，加上JR本身不喜歡封閉的東西，因此 Android 系統為電子書閱讀器內部系統就成為了 JR 的首選，再者就是搭載的 Android 系統版本，很多的 App 會因為不斷的更新慢慢汰換掉舊版本的Android系統，因此搭載越高版本的Android系統JR也就會優先列入考量。&lt;/p&gt;
-&lt;p&gt;電子書閱讀器的的硬體配備大概與平板電腦等級差不多，不過因為是為閱讀電子書而設計，螢幕使用電子墨水顯示，也不會在上頭搭載過多的預安裝APP，因此相較平板電腦來說較為省電，而挑選10.3吋主要是這個尺寸比較符合一班書籍的大小，JR 覺得這樣的大小看起書來比較習慣，實際上JR在網路上訂購的Onyx Boox Note Air 10.3吋電子書閱讀器，昨天才到貨，JR 已經設定的差不多了，目前使用起來非常滿意，接下來就來幾張簡單的開箱圖吧。&lt;/p&gt;
+&lt;p&gt;JR 選擇電子書閱讀器的時候對幾個廠牌稍微有研究過，有不少廠牌使用了自家系統，主要是為了能夠與自己的電子書平台綁訂在一起，不過因為 JR 先前使用平板或是手機已經有陸續買了幾本不同平台的電子書，加上 JR 本身不喜歡封閉的東西，因此 Android 系統為電子書閱讀器內部系統就成為了 JR 的首選，再者就是搭載的 Android 系統版本，很多的 App 會因為不斷的更新慢慢汰換掉舊版本的 Android 系統，因此搭載越高版本的 Android 系統 JR 也就會優先列入考量。&lt;/p&gt;
+&lt;p&gt;電子書閱讀器的的硬體配備大概與平板電腦等級差不多，不過因為是為閱讀電子書而設計，螢幕使用電子墨水顯示，也不會在上頭搭載過多的預安裝 APP，因此相較平板電腦來說較為省電，而挑選10.3吋主要是這個尺寸比較符合一班書籍的大小，JR 覺得這樣的大小看起書來比較習慣，實際上JR在網路上訂購的 Onyx Boox Note Air 10.3吋電子書閱讀器，昨天才到貨，JR 已經設定的差不多了，目前使用起來非常滿意，接下來就來幾張簡單的開箱圖吧。&lt;/p&gt;
 &lt;h2 id=&#34;產品開箱&#34;&gt;產品開箱&lt;/h2&gt;
-&lt;p&gt;剛收到貨，內容物包含了 Onyx Boox Note Air 10.3吋 電子書閱讀器，並搭載官方贈送的變壓器和皮套，上頭還有一本激活 Google Play 的說明書，相關 Google Play 的設定問題看那本最對了，JR 就不在此說明囉。&lt;/p&gt;
+&lt;p&gt;剛收到貨，內容物包含了 Onyx Boox Note Air 10.3吋電子書閱讀器，並搭載官方贈送的變壓器和皮套，上頭還有一本激活 Google Play 的說明書，相關 Google Play 的設定問題看那本最對了，JR 就不在此說明囉。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jren.cc/p/onyx-boox-note-air/PXL_20210611_140832813.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;3024&#34;
@@ -952,7 +950,7 @@
 		data-flex-basis=&#34;320px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;打開包裝盒後的 Onyx Boox Note Air 10.3吋 電子書閱讀器主機以及皮套。&lt;/p&gt;
+&lt;p&gt;打開包裝盒後的 Onyx Boox Note Air 10.3吋電子書閱讀器主機以及皮套。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jren.cc/p/onyx-boox-note-air/PXL_20210611_141135877.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;3024&#34;
@@ -967,14 +965,14 @@
 		data-flex-basis=&#34;320px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;接著繼續打開 Onyx Boox Note Air 10.3吋 電子書閱讀器的盒子裡面包含了說明書、觸控筆還有電源線。&lt;/p&gt;
+&lt;p&gt;接著繼續打開 Onyx Boox Note Air 10.3吋電子書閱讀器的盒子裡面包含了說明書、觸控筆還有電源線。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jren.cc/p/onyx-boox-note-air/PXL_20210611_141410217.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;3024&#34;
 	srcset=&#34;https://jren.cc/p/onyx-boox-note-air/PXL_20210611_141410217_hufb14ad453f9918edc2ebe53a68540c2f_2177934_480x0_resize_q75_box.jpg 480w, https://jren.cc/p/onyx-boox-note-air/PXL_20210611_141410217_hufb14ad453f9918edc2ebe53a68540c2f_2177934_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Onyx Boox Note Air 10.3吋 電子書閱讀器 圖3&#34;
+		alt=&#34;Onyx Boox Note Air 10.3吋電子書閱讀器 圖3&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
@@ -998,7 +996,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;設定完後得先進行一些系統更新， 畢竟 JR 是個跑龍套的工程師，對於有任何的系統都希望能夠盡快處裡，再者 JR 稍微摸索了一些功能其中筆記功能也相當好用，甚至可以拿來畫圖，這一點 JR 相當喜歡，下一個目標就是把 JR 的窗台書籍進行整理，盡可能清空，除了經典書籍，不然往後盡可能買電子書，畢竟有了電子書閱讀器了得好好地善用😉。&lt;/p&gt;
-&lt;p&gt;最後分享一下Onyx Boox Note Air 10.3吋電子書閱讀器 的介紹影片，讓心動的人也可以快點行動唷。&lt;/p&gt;
+&lt;p&gt;最後分享一下 Onyx Boox Note Air 10.3吋電子書閱讀器 的介紹影片，讓心動的人也可以快點行動唷。&lt;/p&gt;
 &lt;div class=&#34;video-wrapper&#34;&gt;
     &lt;iframe loading=&#34;lazy&#34; 
             src=&#34;https://www.youtube.com/embed/bI9XC0aw3UM&#34; 
@@ -1011,25 +1009,25 @@
 </description>
         </item>
         <item>
-        <title>Java-Apache Velocity Template Engine</title>
+        <title>Java - Apache Velocity Template Engine</title>
         <link>https://jren.cc/p/java-apache-velocity/</link>
         <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/java-apache-velocity/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/java.jpg" alt="Featured image of post Java-Apache Velocity Template Engine" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR自己的Side Project其中以協助工作的小工具最多，畢竟先把工作理順了，才真的有心力去做其他事情嘛！JR工作上的主要需求像是自動產Code，例如後端常會產生Spring Data JPA的Repository介面以及Enity類別，前端的話，因為JR前端專案目前都是使用Angular，其實不論是用什麼前端框架，現在大多使用TypeScript進行開發，對型態有嚴格要求就得將Spring Boot回傳給前端的Response物件轉換成TypeScript接的Model物件，更不用說Java內部又有一堆VO、BO、PO、DTO&amp;hellip;等物件轉換，而JR有事以專案性質為主，因此在新的專案上常常一切得重新來過，面對的資料表少則幾十個，多則上百個，假設使用Spring Data JPA做為資料庫的持久化方案，那光基礎的Repository介面以及Enity類別建完專案大概也結束了吧&amp;hellip;因此JR最常使用的方式就是透過&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache Velocity&lt;/a&gt;這一套Java-Based Template Engine做為Code Generator的工具套件。&lt;/p&gt;
-&lt;p&gt;事實上Apache Velocity也是許多專案上使用的Template Engine，JR選它的原因是因為它是Apache下的Project，對於Java來說還有許多Template Engine可以用，不過JR覺得這樣的東西學會一套就很夠用了，雖然它是一套Java-Based Template Engine，不過重點是它是套Template Engine，也就是說學會它之後，就可以透過這套Template Engine去產生出各種不同的格式的檔案，差異只在於Template不一樣而已，說明白一點就是可以透過它將資料轉換後產生出如Java、JSP、PHP、Morkdown、HTML&amp;hellip;等文字檔，當中也可包含一些迴圈與邏輯的使用，關於Template的使用 得參閱官方的&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Velocity Engine&lt;/a&gt;單元的&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/user-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;User Guide&lt;/a&gt;，如果要看 Java 開發的話就得看&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/devel/developer-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Developer Guide&lt;/a&gt;，又或者想把Apache Velocity當成如Web Project的前端頁面模板使用就得看&lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/tools/devel/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Velocity Tools&lt;/a&gt;不過因為現在專案都是以RESTful開發，前端也轉用如&lt;a class=&#34;link&#34; href=&#34;https://angular.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://jren.cc/images/programming/java.jpg" alt="Featured image of post Java - Apache Velocity Template Engine" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 自己的 Side Project 其中以協助工作的小工具最多，畢竟先把工作理順了，才真的有心力去做其他事情嘛！JR 工作上的主要需求像是自動產 Code，例如後端常會產生 Spring Data JPA 的 Repository 介面以及 Enity 類別，前端的話，因為JR前端專案目前都是使用 Angular，其實不論是用什麼前端框架，現在大多使用 TypeScript 進行開發，對型態有嚴格要求就得將 Spring Boot 回傳給前端的 Response 物件轉換成 TypeScript 接的 Model 物件，更不用說 Java 內部又有一堆 VO、BO、PO、DTO&amp;hellip;等物件轉換，而 JR 從事的工作以專案性質為主，因此在新的專案上常常一切得重新來過，面對的資料表少則幾十個，多則上百個，假設使用 Spring Data JPA 做為資料庫的持久化方案，那光基礎的 Repository 介面以及 Enity 類別建完專案大概也結束了吧&amp;hellip;因此JR最常使用的方式就是透過 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Apache Velocity&lt;/a&gt; 這一套 Java-Based Template Engine 做為 Code Generator 的工具套件。&lt;/p&gt;
+&lt;p&gt;事實上 Apache Velocity 也是許多專案上使用的 Template Engine，JR 選它的原因是因為它是 Apache 下的 Project，對於 Java 來說還有許多 Template Engine 可以用，不過 JR 覺得這樣的東西學會一套就很夠用了，雖然它是一套 Java-Based Template Engine，不過重點是它是套 Template Engine，也就是說學會它之後，就可以透過這套 Template Engine 去產生出各種不同的格式的檔案，差異只在於 Template 不一樣而已，說明白一點就是可以透過它將資料轉換後產生出如 Java、JSP、PHP、Morkdown、HTML&amp;hellip;等文字檔，當中也可包含一些迴圈與邏輯的使用，關於 Template 的使用 得參閱官方的 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Velocity Engine&lt;/a&gt; 單元的 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/2.3/user-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;User Guide&lt;/a&gt;，如果要看 Java 開發的話就得看 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/engine/devel/developer-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Developer Guide&lt;/a&gt;，又或者想把 Apache Velocity 當成如 Web Project 的前端頁面模板使用就得看 &lt;a class=&#34;link&#34; href=&#34;http://velocity.apache.org/tools/devel/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Velocity Tools&lt;/a&gt; 不過因為現在專案都是以 RESTful 開發，前端也轉用如 &lt;a class=&#34;link&#34; href=&#34;https://angular.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Angular&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://reactjs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;React&lt;/a&gt;或者是&lt;a class=&#34;link&#34; href=&#34;https://vuejs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Vue.js&lt;/a&gt;等前端框架進行開發，因此過往JR研究果許多Web使用的Template Engine大概都荒廢掉了&amp;hellip;&lt;/p&gt;
-&lt;p&gt;這篇文章的目的其實是JR用來記錄自己對於Apache Velocity的常用作法，方便自己回頭觀看回憶，藉此也分享給各位，一般對Java開發者來說，想取得資源大概分為從Resource取得(專案內或Jar內)或是從外部路徑取得，Apache Velocity對這兩項做法的寫法上有小小的差異，因此JR做個簡單的例子一個使用Resource取得Template檔案，另一個則使用實際路徑取得，並設計兩個Template分別產出Markdown的.md檔以及網頁的.html檔案。&lt;/p&gt;
-&lt;p&gt;首先先於專案的Maven設定檔引如Apache Velocity依賴。&lt;/p&gt;
-&lt;h2 id=&#34;maven設定檔pomxml&#34;&gt;Maven設定檔：pom.xml&lt;/h2&gt;
+    &gt;React&lt;/a&gt; 或者是 &lt;a class=&#34;link&#34; href=&#34;https://vuejs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vue.js&lt;/a&gt; 等前端框架進行開發，因此過往JR研究果許多Web使用的 Template Engine 大概都荒廢掉了&amp;hellip;&lt;/p&gt;
+&lt;p&gt;這篇文章的目的其實是JR用來記錄自己對於 Apache Velocity 的常用作法，方便自己回頭觀看回憶，藉此也分享給各位，一般對 Java 開發者來說，想取得資源大概分為從 Resource 取得(專案內或 Jar 內)或是從外部路徑取得，Apache Velocity 對這兩項做法的寫法上有小小的差異，因此JR做個簡單的例子一個使用 Resource 取得 Template 檔案，另一個則使用實際路徑取得，並設計兩個 Template 分別產出 Markdown 的 &lt;code&gt;.md&lt;/code&gt; 檔以及網頁的 &lt;code&gt;.html&lt;/code&gt; 檔案。&lt;/p&gt;
+&lt;p&gt;首先先於專案的 Maven 設定檔引如 Apache Velocity 依賴。&lt;/p&gt;
+&lt;h2 id=&#34;maven-設定檔pomxml&#34;&gt;Maven 設定檔：pom.xml&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1052,8 +1050,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/dependencies&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;接著設計兩個副檔名為.vm的Apache Velocity Template，並都放置於專案的resource/teamplates目錄底下。&lt;/p&gt;
-&lt;h2 id=&#34;編寫template&#34;&gt;編寫Template&lt;/h2&gt;
+&lt;/div&gt;&lt;p&gt;接著設計兩個副檔名為 &lt;code&gt;.vm&lt;/code&gt; 的 Apache Velocity Template，並都放置於專案的 &lt;code&gt;resource/teamplates&lt;/code&gt; 目錄底下。&lt;/p&gt;
+&lt;h2 id=&#34;編寫-template&#34;&gt;編寫 Template&lt;/h2&gt;
 &lt;h3 id=&#34;apache-velocity-templateallen-html-templatevm&#34;&gt;Apache Velocity Template：allen-html-template.vm&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1119,7 +1117,7 @@
 &lt;/div&gt;&lt;p&gt;* 具經驗要產出來的 Template 好看需要把 Apache Velocity 處理邏輯的部分全部靠右對齊，這一點 JR 是比較龜毛一點啦😅。&lt;/p&gt;
 &lt;p&gt;接著回到 Java 端撰寫兩個 Java Bean，到時候用來做資料使用的，也會比較符合真實使用狀況。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;java程式categorydetailjava&#34;&gt;Java程式：CategoryDetail.java&lt;/h3&gt;
+&lt;h3 id=&#34;java-程式categorydetailjava&#34;&gt;Java 程式：CategoryDetail.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1272,7 +1270,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;java程式categoryjava&#34;&gt;Java程式：Category.java&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;java-程式categoryjava&#34;&gt;Java 程式：Category.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1369,8 +1367,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;接著就撰寫主程式，從Resource取得(專案內或Jar檔內)或是從外部路徑取得最主要的差異在於以下兩個片段。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Resource 取得Template方法&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;接著就撰寫主程式，從 Resource 取得(專案內或 Jar 檔內)或是從外部路徑取得最主要的差異在於以下兩個片段。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resource 取得 Template 方法&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1381,7 +1379,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;classpath.resource.loader.class&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ClasspathResourceLoader&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;從外部路徑取得Template方法&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;從外部路徑取得 Template 方法&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1392,7 +1390,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ve&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RuntimeConstants&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;FILE_RESOURCE_LOADER_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;filePath&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getParent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;toString&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;java程式applicationjava&#34;&gt;Java程式：Application.java&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;java-程式applicationjava&#34;&gt;Java 程式：Application.java&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;  1
@@ -1615,8 +1613,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在target目錄底下會產生兩個檔案分別為JR-html-template.html與JR-md-template.md。&lt;/p&gt;
-&lt;p&gt;比較需要注意的是JR特別將最後一筆資料&lt;code&gt;enabled&lt;/code&gt;設為&lt;code&gt;false&lt;/code&gt;，因此模板頁面寫了&lt;code&gt;#if($categoryDetail.enabled)&lt;/code&gt;判斷式不會顯示。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;在 target 目錄底下會產生兩個檔案分別為 JR-html-template.html 與 JR-md-template.md。&lt;/p&gt;
+&lt;p&gt;比較需要注意的是JR特別將最後一筆資料 &lt;code&gt;enabled&lt;/code&gt; 設為 &lt;code&gt;false&lt;/code&gt;，因此模板頁面寫了 &lt;code&gt;#if($categoryDetail.enabled)&lt;/code&gt; 判斷式不會顯示。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1629,20 +1627,20 @@
 </description>
         </item>
         <item>
-        <title>Apache Maven-Project指定JDK版本</title>
+        <title>Apache Maven - Project 指定 JDK 版本</title>
         <link>https://jren.cc/p/apache-maven-set-jdk-version/</link>
         <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/apache-maven-set-jdk-version/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/maven.jpg" alt="Featured image of post Apache Maven-Project指定JDK版本" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR工作上後端程式撰寫都是以Spring Boot為主，不過不免自己做些Side Project，除了興趣之外，再者就是打在些可以方便工作上使用的小工具，針對Java的專案建置大概可以透過&lt;a class=&#34;link&#34; href=&#34;https://maven.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache Maven&lt;/a&gt;或者是&lt;a class=&#34;link&#34; href=&#34;https://gradle.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Gradle&lt;/a&gt;&amp;hellip;等工具達成，JR本身在工作上或是自己的Side Project都是使用Apache Maven為主。&lt;/p&gt;
-&lt;p&gt;平時JR開發工具主要是使用&lt;a class=&#34;link&#34; href=&#34;https://www.eclipse.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Eclipse&lt;/a&gt;為主，不過因為專案上都是使用Spring Boot懶得自己去裝STS的Plugin，所以後來就直接使用&lt;a class=&#34;link&#34; href=&#34;https://spring.io/tools&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Spring Tools 4 for Eclipse&lt;/a&gt;了，不過雖然工作都使用Spring Boot，但是使不使用框架JR是認為得看Project的規模來決定，JR自己的Side Project大多以工具類為主，因此大多未使用到框架居多。&lt;/p&gt;
-&lt;p&gt;Eclipse預設建立Apache Maven Project，會建立出JDK 1.5版本的專案，網路上有分享如何修改成指定版本，但JR覺得其中有一種直接設定在Apache Maven設定檔&lt;code&gt;settings.xml&lt;/code&gt;裡面，雖說對自己是一勞永逸，但是如果是多人專案這樣的方式就很不推薦，因此JR還是建議設定在專案本身的&lt;code&gt;pom.xml&lt;/code&gt;裡面，這樣即便是與人共享專案，只要一眼就知道這個專案使用什麼JDK版本了。&lt;/p&gt;
-&lt;p&gt;以下JR整理兩種方式可以來設定Apache Maven Project所使用的JDK版本。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/maven.jpg" alt="Featured image of post Apache Maven - Project 指定 JDK 版本" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 工作上後端程式撰寫都是以 Spring Boot 為主，不過不免自己做些 Side Project，除了興趣之外，再者就是打在些可以方便工作上使用的小工具，針對Java的專案建置大概可以透過 &lt;a class=&#34;link&#34; href=&#34;https://maven.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Apache Maven&lt;/a&gt; 或者是 &lt;a class=&#34;link&#34; href=&#34;https://gradle.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gradle&lt;/a&gt;&amp;hellip;等工具達成，JR 本身在工作上或是自己的 Side Project 都是使用 Apache Maven 為主。&lt;/p&gt;
+&lt;p&gt;平時JR開發工具主要是使用 &lt;a class=&#34;link&#34; href=&#34;https://www.eclipse.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Eclipse&lt;/a&gt; 為主，不過因為專案上都是使用 Spring Boot 懶得自己去裝 STS 的 Plugin，所以後來就直接使用 &lt;a class=&#34;link&#34; href=&#34;https://spring.io/tools&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Spring Tools 4 for Eclipse&lt;/a&gt; 了，不過雖然工作都使用 Spring Boot，但是使不使用框架 JR 是認為得看 Project 的規模來決定，JR 自己的 Side Project 大多以工具類為主，因此大多未使用到框架居多。&lt;/p&gt;
+&lt;p&gt;Eclipse 預設建立 Apache Maven Project，會建立出 JDK 1.5 版本的專案，網路上有分享如何修改成指定版本，但JR覺得其中有一種直接設定在 Apache Maven 設定檔 &lt;code&gt;settings.xml&lt;/code&gt; 裡面，雖說對自己是一勞永逸，但是如果是多人專案這樣的方式就很不推薦，因此 JR 還是建議設定在專案本身的 &lt;code&gt;pom.xml&lt;/code&gt; 裡面，這樣即便是與人共享專案，只要一眼就知道這個專案使用什麼 JDK 版本了。&lt;/p&gt;
+&lt;p&gt;以下 JR 整理兩種方式可以來設定 Apache Maven Project 所使用的 JDK 版本。&lt;/p&gt;
 &lt;h2 id=&#34;方法一&#34;&gt;方法一&lt;/h2&gt;
 &lt;p&gt;這個方法比較繁雜，但如果擺到後面就不會有人看了&amp;hellip;🤣。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1680,7 +1678,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;方法二&#34;&gt;方法二&lt;/h2&gt;
-&lt;p&gt;再來是個簡潔的方法，JR一般都使用這個。&lt;/p&gt;
+&lt;p&gt;再來是個簡潔的方法，JR 一般都使用這個。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1698,16 +1696,16 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Eclipse-程式碼提示設定</title>
+        <title>Eclipse - 程式碼提示設定</title>
         <link>https://jren.cc/p/eclipse-auto-activation-triggers-for-java/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/eclipse-auto-activation-triggers-for-java/</guid>
-        <description>&lt;img src="https://jren.cc/images/ide/eclipse.jpg" alt="Featured image of post Eclipse-程式碼提示設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;Eclipse本身就具有程式碼提示功能，不過是有條件的觸發，因此要能夠像某些整合開發工具打一個字就出現提示的話得進行額外設定。否則以 JR 這個小腦袋怎麼記得住這麼多東西&amp;hellip;不過挺有趣的是 JR 常在職場上看到一些新人，不太了解 Eclipse 要更好用是需要自己稍加調校才行，所以不免說JR藏私&amp;hellip;好吧，近幾年大家都投入了&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/idea/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://jren.cc/images/ide/eclipse.jpg" alt="Featured image of post Eclipse - 程式碼提示設定" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Eclipse 本身就具有程式碼提示功能，不過是有條件的觸發，因此要能夠像某些整合開發工具打一個字就出現提示的話得進行額外設定。否則以 JR 這個小腦袋怎麼記得住這麼多東西&amp;hellip;不過挺有趣的是 JR 常在職場上看到一些新人，不太了解 Eclipse 要更好用是需要自己稍加調校才行，所以不免說 JR 藏私&amp;hellip;好吧，近幾年大家都投入了 &lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/idea/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;IntelliJ&lt;/a&gt;的懷抱，一切都圓滿了。不過老實說 JR 始終決的蘿蔔白菜各有所愛，針對 IDE 工具只要能夠解決問題，統一專案上的設定就好，畢竟不論什麼年代都會有人不斷推從 Vim 很棒&amp;hellip; 但 JR 就是不會拿來開發 Java 使用，這肯定不是它的不好，是JR太廢了。&lt;/p&gt;
 &lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
-&lt;p&gt;其實在Eclipse程式碼提示方式相當簡單，可以在各語言底下的Editor下方找到Content Assist項目，找到Auto activation triggers for java等類似項目加入trigger條件即可，以Java為例的話，預設觸發條件只有一個“.”，使用這樣子的預設，有時候不知道完整指令時，就得去找找才知道要打什麼緊接著打“.”才會有進一步的提示，因此JR加入以下觸發條件。&lt;/p&gt;
+&lt;p&gt;其實在 Eclipse 程式碼提示方式相當簡單，可以在各語言底下的 Editor 下方找到 Content Assist 項目，找到 Auto activation triggers for java 等類似項目加入 trigger 條件即可，以 Java 為例的話，預設觸發條件只有一個“.”，使用這樣子的預設，有時候不知道完整指令時，就得去找找才知道要打什麼緊接著打“.”才會有進一步的提示，因此JR加入以下觸發條件。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1720,33 +1718,33 @@
 </description>
         </item>
         <item>
-        <title>Hahow-Github免費架站術！輕鬆打造個人品牌</title>
+        <title>Hahow-Github 免費架站術！輕鬆打造個人品牌</title>
         <link>https://jren.cc/p/hahow-github-webite/</link>
         <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/hahow-github-webite/</guid>
-        <description>&lt;img src="https://jren.cc/p/hahow-github-webite/hahow-github-webite-img01.png" alt="Featured image of post Hahow-Github免費架站術！輕鬆打造個人品牌" /&gt;&lt;h2 id=&#34;尋找適合自己的部落格&#34;&gt;尋找適合自己的部落格&lt;/h2&gt;
-&lt;p&gt;JR寫部落格的時間已經超過十個年頭，從早期的Yahoo!奇摩部落格、無名小站、痞客邦&amp;hellip;等，後來網路時代的變遷出現了Facebook，改變許多人過去寫文章的習慣，使得許多部落格紛紛收掉，面臨過轉移資料的麻煩，許多文章也多不復存在，為了取得資料的擁有權，因此JR開始租賃Linux主機架設自己的網站。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/p/hahow-github-webite/hahow-github-webite-img01.png" alt="Featured image of post Hahow-Github 免費架站術！輕鬆打造個人品牌" /&gt;&lt;h2 id=&#34;尋找適合自己的部落格&#34;&gt;尋找適合自己的部落格&lt;/h2&gt;
+&lt;p&gt;JR 寫部落格的時間已經超過十個年頭，從早期的 Yahoo!奇摩部落格、無名小站、痞客邦&amp;hellip;等，後來網路時代的變遷出現了 Facebook，改變許多人過去寫文章的習慣，使得許多部落格紛紛收掉，面臨過轉移資料的麻煩，許多文章也多不復存在，為了取得資料的擁有權，因此 JR 開始租賃 Linux 主機架設自己的網站。&lt;/p&gt;
 &lt;h2 id=&#34;租賃主機的後來&#34;&gt;租賃主機的後來&lt;/h2&gt;
 &lt;p&gt;一般市面上主機大概可分為虛擬主機、VPS雲端主機、實體主機&amp;hellip;等，架站者可以依照自己的用途選用適合自己的主機，不同主機在效能與租賃金額上也有所不同。&lt;/p&gt;
 &lt;h3 id=&#34;主機的差異&#34;&gt;主機的差異&lt;/h3&gt;
 &lt;h4 id=&#34;實體主機&#34;&gt;實體主機&lt;/h4&gt;
 &lt;p&gt;實體主機就是擁有一台自己的主機，無須與人共享硬體配置，因此擁有最好的效能，可自行決定作業系統、安裝的軟體、防火牆設定&amp;hellip;等，擁有最大的設定自由度，過去的實體主機多為自己購買，並自行處理各項設定，現在也可以透過租賃的方式取得，價格相對昂貴。&lt;/p&gt;
 &lt;h4 id=&#34;虛擬主機&#34;&gt;虛擬主機&lt;/h4&gt;
-&lt;p&gt;虛擬主機一般多為Linux主機搭配PHP以及MySQL資料庫，租賃廠商會提供管理介面以及FTP連線讓架站者可以方便的管理以及上傳檔案，因為使用Linux+PHP+MySQL開源軟體的搭配，相較之下有價格上的優勢。&lt;/p&gt;
-&lt;h4 id=&#34;vps雲端主機&#34;&gt;VPS雲端主機&lt;/h4&gt;
-&lt;p&gt;VPS雲端主機介於實體主機與虛擬主機之間，有這自行配置系統與軟體彈性，不過是以虛擬機的方式運行，因此能夠自行管理實體主機，對於VPS的管理也可以簡單上手。&lt;/p&gt;
+&lt;p&gt;虛擬主機一般多為 Linux 主機搭配 PHP 以及 MySQL 資料庫，租賃廠商會提供管理介面以及 FTP 連線讓架站者可以方便的管理以及上傳檔案，因為使用 Linux + PHP + MySQL 開源軟體的搭配，相較之下有價格上的優勢。&lt;/p&gt;
+&lt;h4 id=&#34;vps-雲端主機&#34;&gt;VPS 雲端主機&lt;/h4&gt;
+&lt;p&gt;VPS 雲端主機介於實體主機與虛擬主機之間，有這自行配置系統與軟體彈性，不過是以虛擬機的方式運行，因此能夠自行管理實體主機，對於 VPS 的管理也可以簡單上手。&lt;/p&gt;
 &lt;h3 id=&#34;虛擬主機的使用&#34;&gt;虛擬主機的使用&lt;/h3&gt;
-&lt;p&gt;JR租賃主要以虛擬主機為主，在主機架設WordPress撰寫部落格，一開始覺得滿意，但是後來WordPress經歷改版之後，JR現在寫部落格早已習慣使用Markdown語法撰寫，找不到順手的Morkdown Plugin也就繼續勉強用了好幾年。&lt;/p&gt;
-&lt;p&gt;由於JR是個軟體工程師，因此租賃虛擬主機除了架設部落格之外，還會做些Side Project，因此租賃虛擬主機提供了我許多方便，甚至資料庫都是直接連上虛擬主機的MySQL直接使用，因此即便沒用虛擬主機提供的自動安裝WordPress以及其他的站軟體也不會浪費。&lt;/p&gt;
+&lt;p&gt;JR 租賃主要以虛擬主機為主，在主機架設 WordPress 撰寫部落格，一開始覺得滿意，但是後來 WordPress 經歷改版之後，JR現在寫部落格早已習慣使用 Markdown 語法撰寫，找不到順手的 Morkdown Plugin 也就繼續勉強用了好幾年。&lt;/p&gt;
+&lt;p&gt;由於 JR 是個軟體工程師，因此租賃虛擬主機除了架設部落格之外，還會做些 Side Project，因此租賃虛擬主機提供了我許多方便，甚至資料庫都是直接連上虛擬主機的 MySQL 直接使用，因此即便沒用虛擬主機提供的自動安裝 WordPress 以及其他的站軟體也不會浪費。&lt;/p&gt;
 &lt;h2 id=&#34;課程的發現&#34;&gt;課程的發現&lt;/h2&gt;
-&lt;p&gt;前天查看Hahow看到&lt;a class=&#34;link&#34; href=&#34;https://hahow.in/@pk74323jacky&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;前天查看 Hahow 看到&lt;a class=&#34;link&#34; href=&#34;https://hahow.in/@pk74323jacky&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;古君葳&lt;/a&gt;老師開設的「&lt;a class=&#34;link&#34; href=&#34;https://hahow.in/courses/5de8fec16117240026540b9c/discussions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Github免費架站術！輕鬆打造個人品牌&lt;/a&gt;」內容主要是使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub&lt;/a&gt;+&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;的方式簡易快速的假設網站深感興趣，一整晚沒睡的邊看邊實作，學習完了整套課程，照著老師的步調實作，一定可以實作出來，不過如果要自己的網站更加豐富，就學習些HTML、CSS甚至是 JavaScript 才可以做出更加動態的網頁效果。&lt;/p&gt;
+    &gt;Github 免費架站術！輕鬆打造個人品牌&lt;/a&gt;」內容主要是使用 &lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub&lt;/a&gt; + &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo&lt;/a&gt; 的方式簡易快速的假設網站深感興趣，一整晚沒睡的邊看邊實作，學習完了整套課程，照著老師的步調實作，一定可以實作出來，不過如果要自己的網站更加豐富，就學習些 HTML、CSS 甚至是 JavaScript 才可以做出更加動態的網頁效果。&lt;/p&gt;
 &lt;h2 id=&#34;網站建置完成的後續&#34;&gt;網站建置完成的後續&lt;/h2&gt;
-&lt;p&gt;基於Hugo建置的網站已經架設完畢了，接下來JR得來好好整理過去的文章，陸續將的過去的文章也得汰舊換新，往後JR就在這裡與各位分享生活點滴。&lt;/p&gt;
+&lt;p&gt;基於 Hugo 建置的網站已經架設完畢了，接下來 JR 得來好好整理過去的文章，陸續將的過去的文章也得汰舊換新，往後 JR 就在這裡與各位分享生活點滴。&lt;/p&gt;
 &lt;h2 id=&#34;相關網站&#34;&gt;相關網站&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://hahow.in/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1759,20 +1757,20 @@
 </description>
         </item>
         <item>
-        <title>四處趴趴走-南港老爺旅行</title>
+        <title>四處趴趴走 - 南港老爺旅行</title>
         <link>https://jren.cc/p/travel-hotelroyal/</link>
         <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/travel-hotelroyal/</guid>
-        <description>&lt;img src="https://jren.cc/p/travel-hotelroyal/IMG_20201211_155141.jpg" alt="Featured image of post 四處趴趴走-南港老爺旅行" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR在跑龍套的生活，好不容易挣到一天假期，在台北這幾天都在下雨，因此規劃了一趟都市旅行，網路上看南港老爺旅行最近有優惠，因此就趁著這一次機會到這邊住個一天體驗一下，畢竟工作之餘也得體驗一下生活嘛~&lt;/p&gt;
-&lt;p&gt;JR是先到&lt;a class=&#34;link&#34; href=&#34;https://www.hotelroyal.com.tw/nangang/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://jren.cc/p/travel-hotelroyal/IMG_20201211_155141.jpg" alt="Featured image of post 四處趴趴走 - 南港老爺旅行" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 在跑龍套的生活，好不容易挣到一天假期，在台北這幾天都在下雨，因此規劃了一趟都市旅行，網路上看南港老爺旅行最近有優惠，因此就趁著這一次機會到這邊住個一天體驗一下，畢竟工作之餘也得體驗一下生活嘛~&lt;/p&gt;
+&lt;p&gt;JR 是先到&lt;a class=&#34;link&#34; href=&#34;https://www.hotelroyal.com.tw/nangang/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;南港老爺行旅網站&lt;/a&gt;進行訂房，在訂房時得先付30%的訂房費用(如果無法入住要退房請自行參考官方退房說明)，在入住時在繳清剩餘費用即可。&lt;/p&gt;
 &lt;p&gt;南港老爺旅行地址：台北市南港區經貿二路196號&lt;/p&gt;
 &lt;p&gt;一到這邊的時候看見了大門不過樓下是餐廳，要入住的話得先到&lt;strong&gt;10樓&lt;/strong&gt;大廳，會有專人協助操作入住機器，到時會順便付款以及拿房卡。&lt;/p&gt;
-&lt;p&gt;因為JR是一個人出來，因此訂了最最最陽春的方案，沒有餐卷也沒附早餐什麼的，不過一個人的關係JR是覺得還好，如果是有家人一起入住的話，可以考慮訂有附餐券的方案，不過其實這邊吃得還算方便，這一點也是因人而異。&lt;/p&gt;
+&lt;p&gt;因為 JR 是一個人出來，因此訂了最最最陽春的方案，沒有餐卷也沒附早餐什麼的，不過一個人的關係JR是覺得還好，如果是有家人一起入住的話，可以考慮訂有附餐券的方案，不過其實這邊吃得還算方便，這一點也是因人而異。&lt;/p&gt;
 &lt;h2 id=&#34;房間&#34;&gt;房間&lt;/h2&gt;
-&lt;p&gt;JR到了房間之後，感覺這邊房間的設計真的挺溫馨的，是JR非常喜歡的風格。&lt;/p&gt;
+&lt;p&gt;JR 到了房間之後，感覺這邊房間的設計真的挺溫馨的，是 JR 非常喜歡的風格。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155141.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
@@ -1847,7 +1845,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;浴室&#34;&gt;浴室&lt;/h2&gt;
-&lt;p&gt;浴室也相當的整潔乾淨，JR一眼看過去就覺得挺舒服的。&lt;/p&gt;
+&lt;p&gt;浴室也相當的整潔乾淨，JR 一眼看過去就覺得挺舒服的。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jren.cc/p/travel-hotelroyal/IMG_20201211_155506.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;3000&#34;
@@ -1876,7 +1874,7 @@
 		data-flex-basis=&#34;320px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;時間不早了，JR也準備休息了，覺得這邊不錯的朋友也可以來這邊體驗看看唷!晚安各位~&lt;/p&gt;
+&lt;p&gt;時間不早了，JR 也準備休息了，覺得這邊不錯的朋友也可以來這邊體驗看看唷!晚安各位~&lt;/p&gt;
 </description>
         </item>
         

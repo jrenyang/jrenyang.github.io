@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/categories/database/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>SQLite-刪除大量資料後瘦身</title>
+        <title>SQLite - 刪除大量資料後瘦身</title>
         <link>https://jren.cc/p/sqlite-vaccum/</link>
         <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/sqlite-vaccum/</guid>
-        <description>&lt;img src="https://jren.cc/images/database/sqlite.png" alt="Featured image of post SQLite-刪除大量資料後瘦身" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;JR近期在開發Site Project，一方面使用最近學的Python語言爬取資料，並使用SQLite做為後端資料庫，最近刪除大量資料，準備要重新寫入，不過刪除資料後SQLite的檔案大小並未縮小，此時只要一個單詞指令即可達到SQLite瘦身。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/database/sqlite.png" alt="Featured image of post SQLite - 刪除大量資料後瘦身" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;JR 近期在開發 Site Project，一方面使用最近學的 Python 語言爬取資料，並使用 SQLite 做為後端資料庫，最近刪除大量資料，準備要重新寫入，不過刪除資料後 SQLite 的檔案大小並未縮小，此時只要一個單詞指令即可達到 SQLite 瘦身。&lt;/p&gt;
 &lt;h2 id=&#34;實作&#34;&gt;實作&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

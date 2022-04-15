@@ -7,18 +7,18 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jren.cc/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Python-multithreading與multiprocessing使用</title>
+        <title>Python-multithreading 與 multiprocessing 使用</title>
         <link>https://jren.cc/p/python-multithreading-and-multiprocessing/</link>
         <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-multithreading-and-multiprocessing/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-multithreading與multiprocessing使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;一支Python程式在運行的時候如果沒加入multithreading或multiprocessing的設計，程式只會一行一行執行無法發揮CPU性能，multithreading或multiprocessing都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立process，而一個process內又運行著thread用來運行程式，因此若不使用multithreading或multiprocessing方式進行程式開發，程式就只能在一個process裡的thread執行了。&lt;/p&gt;
-&lt;p&gt;Python的解釋器在每一個process內都設了一個GIL(Global Interpreter Lock)，用來避免資源死鎖，這是Python語言獨有的設計，GIL確保Python應用程式一次這會有一個Thread在運行，這也就是Python在這方面令許多人垢病的地方，關於GIL的歷史淵源，在此不加以探究，學習如何減少GIL對程式帶來的影響才是重點。&lt;/p&gt;
-&lt;p&gt;至於要使用multithreading還是multiprocessing，這得取決於程式考量，multithreading是存在於process，因此較為輕量，但會受到GIL的限制，用於IO-bound較為適合，而multiprocessing適合用於CPU-bound，主要在於IO-bound的情境CPU大部分時間都在等待IO操作完成，因此任務越多CPU使用率也越高，而CPU-bound因CPU較為忙碌，若使用multithreading的方式，需花在任務切換的時間就越多，如此一來CPU執行效率就越低。&lt;/p&gt;
-&lt;p&gt;說了這麼多JR將multithreading與multiprocessing記錄下來，使用時機對了，可讓程式效能增進不少。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-multithreading 與 multiprocessing 使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一支 Python 程式在運行的時候如果沒加入 multithreading 或 multiprocessing 的設計，程式只會一行一行執行無法發揮 CPU 性能，multithreading 或 multiprocessing 都是讓程式在電腦上進行多工的方式，一個程式要運行時得先建立 process，而一個 process 內又運行著 thread 用來運行程式，因此若不使用 multithreading 或 multiprocessing 方式進行程式開發，程式就只能在一個 process 裡的 thread 執行了。&lt;/p&gt;
+&lt;p&gt;Python 的解釋器在每一個 process 內都設了一個 GIL(Global Interpreter Lock)，用來避免資源死鎖，這是 Python 語言獨有的設計，GIL 確保 Python 應用程式一次這會有一個 Thread 在運行，這也就是 Python 在這方面令許多人垢病的地方，關於 GIL 的歷史淵源，在此不加以探究，學習如何減少 GIL 對程式帶來的影響才是重點。&lt;/p&gt;
+&lt;p&gt;至於要使用 multithreading 還是 multiprocessing，這得取決於程式考量，multithreading 是存在於 process，因此較為輕量，但會受到 GIL 的限制，用於 IO-bound 較為適合，而 multiprocessing 適合用於CPU-bound，主要在於 IO-bound 的情境 CPU 大部分時間都在等待 IO 操作完成，因此任務越多 CPU 使用率也越高，而 CPU-bound 因 CPU 較為忙碌，若使用 multithreading 的方式，需花在任務切換的時間就越多，如此一來 CPU 執行效率就越低。&lt;/p&gt;
+&lt;p&gt;說了這麼多 JR 將 multithreading 與 multiprocessing 記錄下來，使用時機對了，可讓程式效能增進不少。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式multithreading_demopy&#34;&gt;Python程式：multithreading_demo.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式multithreading_demopy&#34;&gt;Python 程式：multithreading_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -73,7 +73,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;python程式multiprocessing_demopy&#34;&gt;Python程式：multiprocessing_demo.py&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;python-程式multiprocessing_demopy&#34;&gt;Python 程式：multiprocessing_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -131,15 +131,15 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Python-使用python-dotenv建立臨時環境變數</title>
+        <title>Python - 使用 python-dotenv 建立臨時環境變數</title>
         <link>https://jren.cc/p/python-python-dotenv/</link>
         <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-python-dotenv/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-使用python-dotenv建立臨時環境變數" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - 使用 python-dotenv 建立臨時環境變數" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在開發專案的過程中因為不會把參數寫死，因此會透過使用這輸入或是設定檔案的方式處理，在使用設定檔的時候，難免會有些參數不適合公開出去給其他人使用的，例如自己的 API KEY 或是自己測試使用的參數，此時可以定義在自己的環境變數中，不過設置系統上的環境變數，其實不是這麼方便，在 Python 上可透過 python-dotenv 套件解決此問題。&lt;/p&gt;
 &lt;p&gt;使用 python-dotenv 套件方法如下。&lt;/p&gt;
-&lt;h2 id=&#34;安裝python-dotenv套件&#34;&gt;安裝python-dotenv套件&lt;/h2&gt;
+&lt;h2 id=&#34;安裝-python-dotenv-套件&#34;&gt;安裝 python-dotenv 套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -148,7 +148,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;&amp;gt;&lt;/span&gt; pip install python-dotenv
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;建立env檔案於目錄下並寫入參數內容&#34;&gt;建立.env檔案於目錄下並寫入參數內容&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;建立-env-檔案於目錄下並寫入參數內容&#34;&gt;建立 .env 檔案於目錄下並寫入參數內容&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -164,9 +164,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;* 注意Key與Value的等號中間不要有空格。&lt;/p&gt;
-&lt;p&gt;再來就可以透過&lt;code&gt;load_dotenv()&lt;/code&gt;將.env檔案設定中的值讀取成環境變數了。&lt;/p&gt;
+&lt;p&gt;再來就可以透過 &lt;code&gt;load_dotenv()&lt;/code&gt; 將.env檔案設定中的值讀取成環境變數了。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式env_demopy&#34;&gt;Python程式：env_demo.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式env_demopy&#34;&gt;Python 程式：env_demo.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -180,14 +180,12 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Python - 使用 python-dotenv 建立臨時環境變數&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;dotenv&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;load_dotenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -197,18 +195,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;getenv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;PARAM_4&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;透過python-dotenv建立的臨時環境變數，去的方式其實跟取系統環境變數的方式是完全一樣的，JR在專案中會使用python-dotenv搭配設定檔，判定如果環境變數有值則優先使用環境變數的值，以上分享。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;透過 python-dotenv 建立的臨時環境變數，去的方式其實跟取系統環境變數的方式是完全一樣的，JR 在專案中會使用 python-dotenv 搭配設定檔，判定如果環境變數有值則優先使用環境變數的值，以上分享。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python-logging使用</title>
+        <title>Python - logging 使用</title>
         <link>https://jren.cc/p/python-logging/</link>
         <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-logging/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-logging使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;一般小程式上可能會比較少寫log記錄程式中發生了什麼事，一般可能會比較多用&lt;code&gt;print()&lt;/code&gt;的方式，不過對於大型專案來說寫log是不可少的部分，畢竟大型專案涵蓋的層面廣，程式檔案數量多，甚至需要24小時運行，例如網站系統，因此如果再發生問題時未將訊息記錄下來，這樣會造成問題難以排查。&lt;/p&gt;
-&lt;p&gt;在Python中提供了&lt;code&gt;logging&lt;/code&gt;模組可以方便定義log的記錄方式，一般記錄於檔案以及顯示到console上，而&lt;code&gt;logging&lt;/code&gt;模組也提自定義logger的方式，一般來說除非在專案開始的時候才比較有機會做這個動作，甚至到下個專案之後也會將自定義好的logger直接延續使用，所以要再寫一次的機會就更少了，因此JR將如何自定義logger記錄器的方法記錄下來，以後也方便直接拿範本下來改。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - logging 使用" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一般小程式上可能會比較少寫 log 記錄程式中發生了什麼事，一般可能會比較多用 &lt;code&gt;print()&lt;/code&gt; 的方式，不過對於大型專案來說寫 log 是不可少的部分，畢竟大型專案涵蓋的層面廣，程式檔案數量多，甚至需要 24 小時運行，例如網站系統，因此如果再發生問題時未將訊息記錄下來，這樣會造成問題難以排查。&lt;/p&gt;
+&lt;p&gt;在Python中提供了 &lt;code&gt;logging&lt;/code&gt; 模組可以方便定義log的記錄方式，一般記錄於檔案以及顯示到 console上，而 &lt;code&gt;logging&lt;/code&gt; 模組也提自定義 logger 的方式，一般來說除非在專案開始的時候才比較有機會做這個動作，甚至到下個專案之後也會將自定義好的 logger 直接延續使用，所以要再寫一次的機會就更少了，因此 JR 將如何自定義 logger 記錄器的方法記錄下來，以後也方便直接拿範本下來改。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
 &lt;h3 id=&#34;python-程式loggerpy&#34;&gt;Python 程式：logger.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -279,18 +277,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;logger&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;以上需要注意的是每個Handler都可以有自己的log Level需個別設定，包含logger本身也有預設的層級，因此在自定義時記得將它重新設置，更多的詳細logging使用可參考&lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/howto/logging.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/div&gt;&lt;p&gt;以上需要注意的是每個 Handler 都可以有自己的 log Level 需個別設定，包含 logger 本身也有預設的層級，因此在自定義時記得將它重新設置，更多的詳細 logging 使用可參考 &lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/howto/logging.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方網站-Logging HOWTO&lt;/a&gt;。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python-virtualenv虛擬開發環境</title>
+        <title>Python - virtualenv 虛擬開發環境</title>
         <link>https://jren.cc/p/python-virtualenv/</link>
         <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-virtualenv/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-virtualenv虛擬開發環境" /&gt;&lt;p&gt;於Python進行專案開發一般會建立虛擬開發環境，其實Python上的虛擬開發環境有點像是Java當中使用Maven或是像是JavaScript使用npm，甚至是PHP使用composer一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此Python專案需要安裝那些套件，不用自行&lt;code&gt;pip install &amp;lt;packages&amp;gt;&lt;/code&gt;安裝依賴套件到專案可以執行為止。&lt;/p&gt;
-&lt;h2 id=&#34;安裝virtualenv套件&#34;&gt;安裝&lt;code&gt;virtualenv&lt;/code&gt;套件&lt;/h2&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - virtualenv 虛擬開發環境" /&gt;&lt;p&gt;於 Python 進行專案開發一般會建立虛擬開發環境，其實 Python 上的虛擬開發環境有點像是 Java 當中使用 Maven 或是像是 JavaScript 使用 npm，甚至是 PHP 使用 composer 一樣，用於管理專案所依賴的套件，透過這樣的方式，一來可以將各個專案所依賴的套件分離開來，尤其是可以區分套件版本問題，也可以讓其他使用專案的人也才能夠明確知道要使用此 Python 專案需要安裝那些套件，不用自行 &lt;code&gt;pip install &amp;lt;packages&amp;gt;&lt;/code&gt; 安裝依賴套件到專案可以執行為止。&lt;/p&gt;
+&lt;h2 id=&#34;安裝-virtualenv-套件&#34;&gt;安裝 &lt;code&gt;virtualenv&lt;/code&gt; 套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -329,10 +327,10 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ source ./venv/bin/activate
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;執行成功後命令列前端會出現&lt;code&gt;(venv)&lt;/code&gt;字符。&lt;/p&gt;
-&lt;p&gt;之後專案所需要的套件都在虛擬開發環境進行安裝，不會影響到原本機Python環境。&lt;/p&gt;
-&lt;p&gt;每當安裝新套件後，別忘了同時導出requirements.txt檔案，此檔案是用來管理Python專案使用的必要套件。&lt;/p&gt;
-&lt;h2 id=&#34;導出requirementstxt檔案&#34;&gt;導出requirements.txt檔案&lt;/h2&gt;
+&lt;/div&gt;&lt;p&gt;執行成功後命令列前端會出現 &lt;code&gt;(venv)&lt;/code&gt; 字符。&lt;/p&gt;
+&lt;p&gt;之後專案所需要的套件都在虛擬開發環境進行安裝，不會影響到原本機 Python 環境。&lt;/p&gt;
+&lt;p&gt;每當安裝新套件後，別忘了同時導出 requirements.txt 檔案，此檔案是用來管理 Python 專案使用的必要套件。&lt;/p&gt;
+&lt;h2 id=&#34;導出-requirementstxt-檔案&#34;&gt;導出 requirements.txt 檔案&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -353,16 +351,16 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Python-取得執行檔案當前路徑</title>
+        <title>Python - 取得執行檔案當前路徑</title>
         <link>https://jren.cc/p/python-get-file-current-path/</link>
         <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://jren.cc/p/python-get-file-current-path/</guid>
-        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python-取得執行檔案當前路徑" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;在進行資料處理的時候，難免使用需要知道目前執行檔案的路徑，在JR的開發經驗當中並非所有情況都可以使用相對路徑，有時需要取得目前執行檔案的路徑後再搭配相對路徑使用，要取得目前執行檔案的路徑可以透過&lt;code&gt;os&lt;/code&gt;以及&lt;code&gt;pathlib&lt;/code&gt;兩個套件取得。&lt;/p&gt;
-&lt;p&gt;首先展示&lt;code&gt;os&lt;/code&gt;套件使用。&lt;/p&gt;
+        <description>&lt;img src="https://jren.cc/images/programming/python.jpg" alt="Featured image of post Python - 取得執行檔案當前路徑" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在進行資料處理的時候，難免使用需要知道目前執行檔案的路徑，在JR的開發經驗當中並非所有情況都可以使用相對路徑，有時需要取得目前執行檔案的路徑後再搭配相對路徑使用，要取得目前執行檔案的路徑可以透過 &lt;code&gt;os&lt;/code&gt; 以及 &lt;code&gt;pathlib&lt;/code&gt; 兩個套件取得。&lt;/p&gt;
+&lt;p&gt;首先展示 &lt;code&gt;os&lt;/code&gt; 套件使用。&lt;/p&gt;
 &lt;h2 id=&#34;程式實作&#34;&gt;程式實作&lt;/h2&gt;
-&lt;h3 id=&#34;python程式os_get_current_pathpy&#34;&gt;Python程式：os_get_current_path.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式os_get_current_pathpy&#34;&gt;Python 程式：os_get_current_path.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -390,7 +388,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;接下來展示&lt;code&gt;pathlib&lt;/code&gt;套件使用。&lt;/p&gt;
-&lt;h3 id=&#34;python程式pathlib_get_current_pathpy&#34;&gt;Python程式：pathlib_get_current_path.py&lt;/h3&gt;
+&lt;h3 id=&#34;python-程式pathlib_get_current_pathpy&#34;&gt;Python 程式：pathlib_get_current_path.py&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
