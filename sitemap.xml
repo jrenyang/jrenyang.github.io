@@ -3,24 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jren.cc/</loc>
-    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/categories/</loc>
-    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jren.cc/tags/java/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jren.cc/p/java-properties-write-and-read/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/post/</loc>
-    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/categories/programming/</loc>
-    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jren.cc/tags/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/tags/spring-boot/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/p/spring-boot-spring-initializr/</loc>
-    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jren.cc/tags/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/tags/python/</loc>
@@ -85,9 +91,6 @@
   </url><url>
     <loc>https://jren.cc/p/onyx-boox-note-air/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jren.cc/tags/java/</loc>
-    <lastmod>2021-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jren.cc/p/java-apache-velocity/</loc>
     <lastmod>2021-06-07T00:00:00+00:00</lastmod>
